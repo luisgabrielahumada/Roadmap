@@ -607,6 +607,7 @@
             width: 100%;
             overflow: visible;
             z-index: 1;
+            border: @wborder solid #FFFFFF;
         }
 
         .cell-content {
@@ -620,65 +621,6 @@
         .cell .cell-content {
             text-align: center;
         }
-
-        .H {
-            height: calc(@height - (2 * @iheight));
-            border: @wborder solid #FFFFFF;
-            border-right: none;
-        }
-
-        .N, .N::before { border-top: @wborder solid #FFFFFF; }
-
-        .N::before, .N::after { bottom: 0px; }
-
-        .E, .E::before {
-            border-right: @wborder solid #FFFFFF;
-        }
-
-        .E::before, .W::after { left: 0px; }
-
-        .S, .S::before { border-bottom: @wborder solid #FFFFFF; }
-
-        .S::before, .S::after { top: 0px; }
-
-        .W, .W::before { border-left: @wborder solid #FFFFFF; }
-
-        .W::before, .E::after { right: 0px; }
-
-        .N::before, .S::before, .N::after, .S::after {
-            content: '';
-            position: absolute;
-        }
-
-        .N::before, .S::before {
-            padding: @iheight 25%;
-            background: @backgound;
-        }
-
-        .N::after, .S::after {
-            background-color: white;
-            padding: calc(@wborder / 4) 25%;
-        }
-
-        .N.E { border-top-right-radius: @height; }
-
-        .N.E::before { border-top-right-radius: 30px; }
-
-        .S.E { border-bottom-right-radius: @height; }
-
-        .S.E::before { border-bottom-right-radius: 30px; }
-
-        .S.W { border-bottom-left-radius: @height; }
-
-        .S.W::before { border-bottom-left-radius: 30px; }
-
-        .N.W { border-top-left-radius:@height; }
-
-        .N.W::before { border-top-left-radius: 30px; }
-
-        .mv-down { margin-top: calc( @iheight * 2); }
-
-        .mv-down2 { margin-top: calc( @iheight * 4); }
 
         #title {
             display: block;
