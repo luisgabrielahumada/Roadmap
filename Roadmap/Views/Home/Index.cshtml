@@ -26,33 +26,35 @@
 }
 
     <div class="flex-container" id="roadmap">
-        <div class="flex-item item-1">
+        <div class="flex-item item-1" style="z-index:99;">
             <span id="title" style="line-height: 1.1em;">@Html.Raw(HttpUtility.HtmlDecode(Resources.Common.WelcomeToRoadmap))</span>
             @if (languages.Count() > 1)
             {
-                <span id="select-country">@Resources.Common.SelectCountry</span><br />
-                <div class="dropdown" id="country-dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" id="languageText">
-                        <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + selectedLanguage.CultureCode.Substring(3, 2) + ".png")" />
-                        <span style="color:#1F2A44; font-size:12px;">&nbsp;@selectedLanguage.Country&nbsp;</span><b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        @foreach (var item in languages.Distinct())
-                        {
-                            var countryCode = item.CultureCode.Substring(3, 2);
-                            if (countryCode == CountryCodes.Mexico || countryCode == CountryCodes.Colombia ||
-                                countryCode == CountryCodes.Peru || countryCode == CountryCodes.Guatemala ||
-                                countryCode == CountryCodes.DominicanRepublic)
+                <div id="language-container" >
+                    <span id="select-country">@Resources.Common.SelectCountry</span><br />
+                    <div class="dropdown" id="country-dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" id="languageText">
+                            <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + selectedLanguage.CultureCode.Substring(3, 2) + ".png")" />
+                            <span style="color:#1F2A44; font-size:12px;">&nbsp;@selectedLanguage.Country&nbsp;</span><b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            @foreach (var item in languages.Distinct())
                             {
-                                <li class="dropdown-menu-item">
-                                    <a class="dropdown-menu-item-link" href="home/ChangeLanguage?language=@item.CultureCode">
-                                        <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + countryCode + ".png")" />
-                                        <span style="color: #1F2A44; font-size: 12px;">@item.Country</span>
-                                    </a>
-                                </li>
+                                var countryCode = item.CultureCode.Substring(3, 2);
+                                if (countryCode == CountryCodes.Mexico || countryCode == CountryCodes.Colombia ||
+                                    countryCode == CountryCodes.Peru || countryCode == CountryCodes.Guatemala ||
+                                    countryCode == CountryCodes.DominicanRepublic)
+                                {
+                                    <li class="dropdown-menu-item">
+                                        <a class="dropdown-menu-item-link" href="home/ChangeLanguage?language=@item.CultureCode">
+                                            <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + countryCode + ".png")" />
+                                            <span style="color: #1F2A44; font-size: 12px;">@item.Country</span>
+                                        </a>
+                                    </li>
+                                }
                             }
-                        }
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             }
         </div>
@@ -115,15 +117,15 @@
                 <div style="margin-top: @iheight;">
                     <div id="triangle-part1">
                         <img style="height: 100%" src="@Url.Content("~/Content/images/RoadmapToSuccess/10.svg")" />
-                        <span style="margin: 0 15px; color: #80B4D6;">@Resources.Common.Prospects</span>
+                        <span style="margin: 0; color: #80B4D6;">@Resources.Common.Prospects</span>
                     </div>
                     <div id="triangle-part2">
                         <img style="height: 100%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/3.svg")" />
-                        <span style="margin: 0 15px; color: #7299D0;">@Resources.Common.Meetings<br /></span>
+                        <span style="margin: 0; color: #7299D0;">@Resources.Common.Meetings<br /></span>
                     </div>
                     <div id="triangle-part3">
                         <img style="height: 100%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/1.svg")" />
-                        <span style="margin: 0 15px; color: #2272BA;">@Resources.Common.NewConsultantEnrollment<br /></span>
+                        <span style="margin: 0; color: #2272BA;">@Resources.Common.NewConsultantEnrollment<br /></span>
                     </div>
                 </div>
                 <span id="popup-mobile">
@@ -155,9 +157,9 @@
                         <span style="margin-top: 20%;">
                             @Resources.Common.ContactYourProspects<br />
                         </span>
-                        <img style="width: 15%; margin: 10% 5% 0% 5%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-people.svg")" />
-                        <img style="width: 15%; margin: 10% 5% 0% 5%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-laptop.svg")" />
-                        <img style="width: 15%; margin: 10% 5% 0% 5%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-phone.svg")" />
+                        <img style="width: 15%; margin: 2% 5%" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-people.svg")" />
+                        <img style="width: 15%; margin: 2% 5%" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-laptop.svg")" />
+                        <img style="width: 15%; margin: 2% 5%" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-phone.svg")" />
                     </div>
                 </div>
             </a>
@@ -289,10 +291,10 @@
     body { background-color: @backgound; }
     
     @@media only screen and (min-width: 600px) {
-
+        
         #roadmap {
             margin: 80px auto;
-            padding: 0 100px 0 100px;
+            padding: 0 5%;
             font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
@@ -391,15 +393,15 @@
             padding: calc(@wborder / 4) 25%;
         }
 
-        .N.E { border-top-right-radius: @height; }
+        .N.E { border-top-right-radius: calc(0.7 * @height); }
 
         .N.E::before { border-top-right-radius: 30px; }
 
-        .S.E { border-bottom-right-radius: @height; }
+        .S.E { border-bottom-right-radius: calc(0.7 * @height); }
 
         .S.E::before { border-bottom-right-radius: 30px; }
 
-        .S.W { border-bottom-left-radius: @height; }
+        .S.W { border-bottom-left-radius: calc(0.7 * @height); }
 
         .S.W .cell-content {
             text-align: left;
@@ -408,7 +410,7 @@
 
         .S.W::before { border-bottom-left-radius: 30px; }
 
-        .N.W { border-top-left-radius:@height; }
+        .N.W { border-top-left-radius: calc(0.7 * @height); }
 
         .N.W::before { border-top-left-radius: 30px; }
 
@@ -416,11 +418,8 @@
 
         .mv-down2 { margin-top: calc( @iheight * 4); }
 
-        #title {
-            display: block;
-            color: #1F2A44;
-            font-weight: bold;
-            font-size: 25px;
+        .item-1 {
+            transform: translateY(-50%);
         }
 
         #title::first-line { font-size:15px; }
@@ -621,6 +620,10 @@
         #arrow-down-id {
             width: 100%;
             text-align: center;
+        }
+
+        #triangle-part1 span, #triangle-part2 span, #triangle-part3 span{
+            font-size: 13px;
         }
     }
 
@@ -908,14 +911,15 @@
         }
 
         .yt-video .cell {
-            background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/play-circle-regular.svg"));
+            background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/play-circle-regular.svg") );
             background-repeat: no-repeat;
             background-position: center;
             background-position: center 80%;
         }
 
         .clickable .cell {
-            background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/hand-point-up-regular.svg"));
+            background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/hand-point-up-regular.svg")
+            );
             background-repeat: no-repeat;
             background-position: center;
             background-position: center 80%;
@@ -935,7 +939,7 @@
             text-align: left;
             transform: translateX(20%);
         }
-        
+
         #modal-roadmap {
             left: 0;
             top: 0;
@@ -1031,16 +1035,6 @@
             display: none;
         }
     }
-
-    @@media only screen and (max-width: 1000px) and (min-width: 600px)  {
-        #title {
-            display: block;
-            color: #1F2A44;
-            font-weight: bold;
-            font-size: 18px;
-        }
-    }
-
 </style>
 
 <script>
