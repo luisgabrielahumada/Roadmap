@@ -610,6 +610,7 @@
     <Content Include="Content\images\RoadmapToSuccess\arrow-1.svg" />
     <Content Include="Content\images\RoadmapToSuccess\arrow-2.svg" />
     <Content Include="Content\images\RoadmapToSuccess\arrow-3.svg" />
+    <Content Include="Content\images\RoadmapToSuccess\arrow-down.svg" />
     <Content Include="Content\images\RoadmapToSuccess\Arrow-Loop-2.svg" />
     <Content Include="Content\images\RoadmapToSuccess\Arrow-Loop.svg" />
     <Content Include="Content\images\RoadmapToSuccess\Arrow.svg" />
