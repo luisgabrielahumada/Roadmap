@@ -37,7 +37,7 @@
                         <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + selectedLanguage.CultureCode.Substring(3, 2) + ".png")" />
                         <span style="color:#1F2A44; font-size:12px;">&nbsp;@selectedLanguage.Country&nbsp;</span><b class="caret"></b>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu changelanguage-list">
                         @foreach (var item in languages.Distinct())
                         {
                             var countryCode = item.CultureCode.Substring(3, 2);
@@ -46,7 +46,7 @@
                                 countryCode == CountryCodes.DominicanRepublic)
                             {
                                 <li class="dropdown-menu-item">
-                                    <a class="dropdown-menu-item-link" href="home/ChangeLanguage?language=@item.CultureCode">
+                                    <a class="dropdown-menu-item-link" data-culture="@item.CultureCode">
                                         <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + countryCode + ".png")" />
                                         <span style="color: #1F2A44; font-size: 12px;">@item.Country</span>
                                     </a>
@@ -549,5 +549,20 @@
         if (event.target == modal) {
             modal.style.display = "none";
         }
+    }
+
+    $('.changelanguage-list li a').click(function () {
+        ChangeLanguage($(this).attr("data-culture"));
+    });
+
+    function ChangeLanguage(_language) {
+        $.ajax({
+            url: '@Url.Action("changeLanguage", "home")',
+            method: "POST",
+            data: { language: _language},
+            success: function() {
+                window.location.reload(true);
+            }
+        });
     }
 </script>

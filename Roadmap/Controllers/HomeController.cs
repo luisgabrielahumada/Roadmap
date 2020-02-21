@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Net;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
@@ -32,7 +33,8 @@ namespace Roadmap.Controllers
         {
             this.HttpContext.Response.Cookies.Remove("LanguageCookieName");
             this.HttpContext.Response.Cookies.Add(new HttpCookie("LanguageCookieName", language));
-            return RedirectToAction("Index", "Home");
+
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
     }
 }
