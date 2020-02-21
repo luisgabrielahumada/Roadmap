@@ -37,7 +37,7 @@
                             <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + selectedLanguage.CultureCode.Substring(3, 2) + ".png")" />
                             <span style="color:#1F2A44; font-size:12px;">&nbsp;@selectedLanguage.Country&nbsp;</span><b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu changelanguage-list">
                             @foreach (var item in languages.Distinct())
                             {
                                 var countryCode = item.CultureCode.Substring(3, 2);
@@ -46,7 +46,7 @@
                                     countryCode == CountryCodes.DominicanRepublic)
                                 {
                                     <li class="dropdown-menu-item">
-                                        <a class="dropdown-menu-item-link" href="home/ChangeLanguage?language=@item.CultureCode">
+                                        <a class="dropdown-menu-item-link" data-culture="@item.CultureCode">
                                             <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + countryCode + ".png")" />
                                             <span style="color: #1F2A44; font-size: 12px;">@item.Country</span>
                                         </a>
@@ -240,28 +240,28 @@
             <div style="float: left; color: #1F2A44; padding:0 0 5px 10px; font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;@Resources.Common.HowToMix</div>
             <div style="float:right" onclick='document.getElementById("modal-roadmap").style.display = "none"'>X</div>
         </div>
-        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="@Resources.Common.MixImmunocal1Link">
             <div class="cell H color2 modal-cellstyle-25">
                 <div class="cell-content ">
                     <span>@Resources.Common.MixImmunocal1</span>
                 </div>
             </div>
         </a>
-        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="@Resources.Common.MixImmunocal2Link">
             <div class="cell H color2 modal-cellstyle-25">
                 <div class="cell-content ">
                     <span>@Resources.Common.MixImmunocal2</span>
                 </div>
             </div>
         </a>
-        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="@Resources.Common.MixImmunocal3Link">
             <div class="cell H color2 modal-cellstyle-25">
                 <div class="cell-content ">
                     <span>@Resources.Common.MixImmunocal3</span>
                 </div>
             </div>
         </a>
-        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="@Resources.Common.MixImmunocal4Link">
             <div class="cell H color2 modal-cellstyle-25">
                 <div class="cell-content ">
                     <span>@Resources.Common.MixImmunocal4</span>
@@ -1070,5 +1070,20 @@
         if (event.target == modal) {
             modal.style.display = "none";
         }
+    }
+
+    $('.changelanguage-list li a').click(function () {
+        ChangeLanguage($(this).attr("data-culture"));
+    });
+
+    function ChangeLanguage(_language) {
+        $.ajax({
+            url: '@Url.Action("changeLanguage", "home")',
+            method: "POST",
+            data: { language: _language},
+            success: function() {
+                window.location.reload(true);
+            }
+        });
     }
 </script>
