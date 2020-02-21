@@ -58,9 +58,9 @@
         </div>
         <div class="flex-item">
             <div class="cell N W color1">
-                <div class="cell-content">
-                    <span style="display:block; text-align:center;">@Resources.Common.InviteToJoin<br /></span>
-                    <div style="display: block; position: relative; left: 50%; transform: translateX(-17%);">
+                <div class="cell-content" style="transform: translateY(calc(50% - @iheight))">
+                    <span>@Resources.Common.InviteToJoin<br /></span>
+                    <div style="display: block; position: relative; left: 25%; transform: translateX(6%);">
                         <a target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
                             <div class="invite-button">@Resources.Common.Yes</div>
                         </a>
@@ -75,7 +75,7 @@
             <a class="pdf" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
                 <div class="cell H color1">
                     <div class="cell-content">
-                        <span style="display: inline-block;">@Resources.Common.ScheduleNextContact</span>
+                        <span>@Resources.Common.ScheduleNextContact</span>
                     </div>
                 </div>
             </a>
@@ -109,7 +109,7 @@
                         </span>
                     </span>
                 </div>
-                <div style="font-size: 12px;">
+                <div style="margin-top: @iheight; font-size: 12px;">
                     <div style="position: relative; left: 0; height: calc(2.5 * @iheight);">
                         <img style="height: 100%" src="@Url.Content("~/Content/images/RoadmapToSuccess/10.svg")" />
                         <span style="margin: 0 15px; color: #80B4D6;">@Resources.Common.Prospects</span>
@@ -126,9 +126,9 @@
             </div>
         </div>
         <div class="flex-item">
-            <a class="pdf" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
+            <a class="pdf" target="_blank" href="@Resources.Common.UseYourStarLink">
                 <div class="cell S W color1" style="z-index: -1;">
-                    <div class="cell-content">
+                    <div class="cell-content" style="text-align: left; transform: translate(35%,calc(-50% + @iheight))">
                         <div>
                             @Html.Raw(HttpUtility.HtmlDecode(String.Format(Resources.Common.UseYourStar, "<y>STAR</y>")))
                         </div>
@@ -157,7 +157,7 @@
             </a>
         </div>
         <div class="flex-item">
-            <a class="pdf" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
+            <a class="yt-video" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
                 <div class="cell N E mv-down color2">
                     <div class="cell-content">
                         <span>@Resources.Common.WatchTheVideo</span>
@@ -167,13 +167,13 @@
         </div>
         <div class="flex-item"></div>
         <div class="flex-item">
-            <div class="cell N W mv-down color2">
+            <div class="cell N W mv-down2 color2">
                 <div class="cell-content" style="font-weight:bold; font-size: 30px; white-space: pre;">GO!! </div>
             </div>
         </div>
         <div class="flex-item">
-            <a class="pdf" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
-                <div class="cell H mv-down color2">
+            <a class="clickable">
+                <div class="cell H mv-down2 color2">
                     <div class="cell-content">
                         <span>@Resources.Common.StartTakingImmunocal</span>
                     </div>
@@ -181,8 +181,8 @@
             </a>
         </div>
         <div class="flex-item">
-            <a class="pdf" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
-                <div class="cell H mv-down color2">
+            <a class="pdf" target="_blank" href="@Resources.Common.SetYourGoalLink">
+                <div class="cell H mv-down2 color2" style="border-right: @wborder solid #FFFFFF;">
                     <div class="cell-content">
                         <span>@Resources.Common.SetYourGoal</span>
                     </div>
@@ -190,8 +190,8 @@
             </a>
         </div>
         <div class="flex-item">
-            <a class="pdf" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
-                <div class="cell S E color2">
+            <a class="pdf" target="_blank" href="@Resources.Common.MakeYourProspectListLink">
+                <div class="cell S E color2 mv-down">
                     <div class="cell-content">
                         <span>@Resources.Common.MakeYourProspectList</span>
                     </div>
@@ -200,7 +200,7 @@
         </div>
         <div class="flex-item"></div>
         <div class="flex-item">
-            <div class="cell H color4 mv-down" style="width:calc(50% + @wborder); border-right: @wborder solid #FFFFFF;">
+            <div class="cell H color4 mv-down2" style="width:calc(50% + @wborder); border-right: @wborder solid #FFFFFF;">
                 <div class="cell-content">
                     <img style="width: 50%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/Arrow.svg")" />
                 </div>
@@ -290,7 +290,6 @@
 	    align-items: center;
     }
 
-
     #roadmap {
         font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
@@ -300,7 +299,7 @@
         position: relative;
         float: left;
         padding: 0;
-        height: @height;
+        height: 100%;
         width: 100%;
         overflow: visible;
         z-index: 1;
@@ -309,9 +308,13 @@
     .cell-content {
         color: #FFFFFF;
         position: relative;
-        top: calc(50% - @iheight );
+        top: calc(50% );
         transform: translateY(-50%);
         width: 100%;
+    }
+
+    .cell .cell-content {
+        text-align: center;
     }
 
     .H {
@@ -371,6 +374,8 @@
 
     .mv-down { margin-top: calc( @iheight * 2); }
 
+    .mv-down2 { margin-top: calc( @iheight * 4); }
+
     #title {
         display: block;
         color: #1F2A44;
@@ -408,20 +413,20 @@
         box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
     }
 
-    .popup .popuptext {
-        height: calc(7.5 * @iheight);
-        width: 150px;
-        position: absolute;
-        top: 19px;
-        left: 50px;
-        margin-top: calc((@iheight / 2) + 15px);
-        margin-left: -75px;
-        z-index: 4;
-        font-size: 10px;
-        color: black;
-        visibility: hidden;
-        @(languageCode != "en"? "line-height: 1em;": "")
-    }
+        .popup .popuptext {
+            height: calc(7.5 * @iheight );
+            width: 150px;
+            position: absolute;
+            top: 19px;
+            left: 50px;
+            margin-top: calc((@iheight / 2) + 15px);
+            margin-left: -75px;
+            z-index: 4;
+            font-size: 10px;
+            color: black;
+            visibility: hidden;
+            @(languageCode != "en"? "line-height: 1em;": "")
+        }
 
     .popup .popuptext::after {
         content: "";
