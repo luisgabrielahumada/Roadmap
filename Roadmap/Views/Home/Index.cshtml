@@ -58,7 +58,7 @@
         </div>
         <div class="flex-item">
             <div class="cell N W color1">
-                <div class="cell-content" style="transform: translateY(calc(50% - @iheight))">
+                <div class="cell-content" style="transform: translateY(calc(50% - (3 *@iheight)))">
                     <span>@Resources.Common.InviteToJoin<br /></span>
                     <div style="display: block; position: relative; left: 25%; transform: translateX(6%);">
                         <a target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
@@ -168,7 +168,7 @@
         <div class="flex-item"></div>
         <div class="flex-item">
             <div class="cell N W mv-down2 color2">
-                <div class="cell-content" style="font-weight:bold; font-size: 30px; white-space: pre;">GO!! </div>
+                <div class="cell-content" style="font-weight:bold; font-size: 30px; white-space: pre; transform: translateY(calc(50% - (5 * @iheight)))">GO!! </div>
             </div>
         </div>
         <div class="flex-item">
@@ -192,7 +192,7 @@
         <div class="flex-item">
             <a class="pdf" target="_blank" href="@Resources.Common.MakeYourProspectListLink">
                 <div class="cell S E color2 mv-down">
-                    <div class="cell-content">
+                    <div class="cell-content" style="transform: translateY(calc(50% - @iheight))">
                         <span>@Resources.Common.MakeYourProspectList</span>
                     </div>
                 </div>
@@ -276,7 +276,6 @@
 
     .flex-container {
 	    width: 100%;
-	    height: 100%;
 	    margin: auto;
 	    display: flex;
 	    flex-wrap: wrap;
@@ -286,11 +285,11 @@
     .flex-item {
 	    width: 20%;
 	    height: 140px;
-	    justify-content: center;
-	    align-items: center;
     }
 
     #roadmap {
+        margin: 10% auto;
+        padding: 0 100px 0 100px;
         font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
@@ -460,6 +459,26 @@
 
     a .color4:hover {
         background-color: #6289A3;
+    }
+
+        a:hover .cell-content > * { display: none; }
+
+    .pdf:hover .cell {
+        background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/file-pdf-regular.svg") );
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .yt-video:hover .cell {
+        background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/play-circle-regular.svg"));
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .clickable:hover .cell {
+        background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/mouse-solid.svg"));
+        background-repeat: no-repeat;
+        background-position: center;
     }
 </style>
 
