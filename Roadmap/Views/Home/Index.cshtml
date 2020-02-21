@@ -1,0 +1,553 @@
+﻿@model Roadmap.Models.RoadmapViewModel
+
+@{
+    var availableMarkets = Markets.AvailableMarkets;
+    var languages = Common.GetLanguages();
+    var selectedCountryCode = "es-MX";
+    var hasCultura = this.Request.Cookies.AllKeys.Contains("LanguageCookieName");
+    if (!hasCultura) {
+        selectedCountryCode = this.Request.Cookies.Get("LanguageCookieName").Value;
+    }
+    //var selectedCountryCode = Common.GetSelectedCountryCode();
+    var selectedLanguageID = Common.GetSelectedLanguageID();
+    var selectedMarket = availableMarkets.FirstOrDefault(c => c.Countries.Contains(selectedCountryCode));
+    var selectedCountry = selectedMarket == null ? CommonResources.Countries(availableMarkets.FirstOrDefault(m => m.IsDefault).CookieValue) : CommonResources.Countries(selectedMarket.CookieValue);
+    var selectedLanguageCode = Common.GetLanguage(selectedLanguageID, selectedCountryCode);
+    var selectedLanguage = languages.FirstOrDefault(l => l.CultureCode == selectedLanguageCode.CultureCode);
+    var languageCode = selectedLanguage.CultureCode.Substring(0, 2).ToLower();
+}
+
+
+@{
+    var height = "140px";
+    var iheight = "10px";
+    var backgound = "#F2F3F4";
+    var wborder = "7px";
+}
+
+<div id="roadmap">
+    <div class="row">
+        <div class="cell" style="z-index:10;">
+            <span id="title" style="line-height: 1.1em;">@Html.Raw(HttpUtility.HtmlDecode(Resources.Common.WelcomeToRoadmap))</span>
+            @if (languages.Count() > 1)
+            {
+                <span style="color:#1F2A44; font-size:12px;">@Resources.Common.SelectCountry</span><br />
+                <div class="dropdown ">
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="languageText">
+                        <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + selectedLanguage.CultureCode.Substring(3, 2) + ".png")" />
+                        <span style="color:#1F2A44; font-size:12px;">&nbsp;@selectedLanguage.Country&nbsp;</span><b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        @foreach (var item in languages.Distinct())
+                        {
+                            var countryCode = item.CultureCode.Substring(3, 2);
+                            if (countryCode == CountryCodes.Mexico || countryCode == CountryCodes.Colombia ||
+                                countryCode == CountryCodes.Peru || countryCode == CountryCodes.Guatemala ||
+                                countryCode == CountryCodes.DominicanRepublic)
+                            {
+                                <li class="dropdown-menu-item">
+                                    <a class="dropdown-menu-item-link" href="home/ChangeLanguage?language=@item.CultureCode">
+                                        <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + countryCode + ".png")" />
+                                        <span style="color: #1F2A44; font-size: 12px;">@item.Country</span>
+                                    </a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+            }
+        </div>
+        <div class="cell N W color1">
+            <div class="cell-content" style="transform: translate(@(languageCode != "fr"? "-50%" : "0"), -25%)">
+                <span style="display:block; text-align:center;">@Resources.Common.InviteToJoin<br /></span>
+                <div style="display: block; position: relative; @(languageCode == "fr"? "transform: translateX(25%)" : "")">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+                        <div class="invite-button">@Resources.Common.Yes</div>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+                        <div class="invite-button">@Resources.Common.No</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a class="pdf" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
+            <div class="color1" style="width: 100%;" onmouseover="hoverArrow();" onmouseout="unhoverArrow();">
+                <div class="cell H" style="text-align:center">
+                    <div class="cell-content">
+                        <span>@Resources.Common.ScheduleNextContact</span>
+                    </div>
+                </div>
+                <div style="position:relative; top:calc(@height - (2 * @iheight)); left: calc(-10% - (2.5 * @iheight))">
+                    <img id="arrow" style="z-index: 2; position: absolute; width: calc(5 * @iheight);"
+                         src="@Url.Content("~/Content/images/RoadmapToSuccess/Arrow-Loop.svg")" />
+                </div>
+            </div>
+        </a>
+        <a class="pdf" target="_blank" href="@Resources.Common.QualifyAsSilverLink">
+            <div class="cell H color3">
+                <div class="cell-content">
+                    <span>@Resources.Common.QualifyAsSilver</span>
+                </div>
+            </div>
+        </a>
+        <a class="pdf" target="_blank" href="@Resources.Common.MaintainSilverLink">
+            <div class="cell H color4" style="border-right: @wborder solid #FFFFFF;">
+                <div class="cell-content">
+                    <span>@Resources.Common.MaintainSilver</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <div class="cell" style="z-index: 3;">
+            <div class="cell-content">
+                <div style="color:#2272BA;">
+                    <span style="font-weight: bold; font-size: 13px;">@Resources.Common.GetToSilver</span>
+                    <span class="popup" onmouseover="hoverInfo()" onmouseout="unhoverInfo()">
+                        <i class="fa fa-info-circle fa-xs" aria-hidden="true" style="font-size: 10px"></i>
+                        <span class="popuptext" id="info">
+                            @Resources.Common.RecipeForSuccess
+                        </span>
+                    </span>
+                </div>
+                <div style="margin-top: @iheight; font-size: 12px;">
+                    <div style="position: relative; left: 0; height: calc(2.5 * @iheight);">
+                        <img style="height: 100%" src="@Url.Content("~/Content/images/RoadmapToSuccess/10.svg")" />
+                        <span style="margin: 0 15px; color: #80B4D6;">@Resources.Common.Prospects</span>
+                    </div>
+                    <div style="position: relative; left: calc(@iheight + 4px); height: calc(2.5 * @iheight);">
+                        <img style="height: 100%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/3.svg")" />
+                        <span style="margin: 0 15px; color: #7299D0;">@Resources.Common.Meetings<br /></span>
+                    </div>
+                    <div style="position: relative; left: calc(2 * (@iheight + 4px)); height: calc(2.5 * @iheight);">
+                        <img style="height: 100%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/1.svg")" />
+                        <span style="margin: 0 15px; color: #2272BA;">@Resources.Common.NewConsultantEnrollment<br /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="pdf" target="_blank" href="@Resources.Common.UseYourStarLink">
+            <div class="cell S W color1" style="z-index: 1;">
+                <div class="cell-content">
+                    <div>
+                        @Html.Raw(HttpUtility.HtmlDecode(String.Format(Resources.Common.UseYourStar, "<y>STAR</y>")))
+                    </div>
+                    <div style="font-size: @(languageCode == "fr"? "9px" : "12px"); margin-right: -5px;">
+                        <y1 style="display: block; margin: 0; ">@Resources.Common.StarShare</y1>
+                        <y1 style="display: block; margin: 0; ">@Resources.Common.StarTell</y1>
+                        <y1 style="display: block; margin: 0; ">@Resources.Common.StarAnswer</y1>
+                        <y1 style="display: block; margin: 0; ">@Resources.Common.StarRecommend</y1>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="clickable">
+            <div class="cell H mv-down color1" style="border-right: @wborder solid #FFFFFF;" onclick="showModal2()">
+                <div class="cell-content">
+                    <span style="text-align:center;">
+                        @Resources.Common.ContactYourProspects<br />
+                    </span>
+                    <img style="width: 15%; margin: 10% 5% 0% 5%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-people.svg")" />
+                    <img style="width: 15%; margin: 10% 5% 0% 5%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-laptop.svg")" />
+                    <img style="width: 15%; margin: 10% 5% 0% 5%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-phone.svg")" />
+                </div>
+            </div>
+        </a>
+        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+            <div class="cell N E mv-down color2">
+                <div class="cell-content" style="transform: translate(@(languageCode != "fr"? "50%" : "50%"), -50%);">
+                    <span>@Resources.Common.WatchTheVideo</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <div class="cell N W mv-down color2">
+            <div class="cell-content" style="font-weight:bold; font-size: 30px; white-space: pre; transform: translate(-50%, -50%);">GO!! </div>
+        </div>
+        <a class="clickable">
+            <div class="cell H mv-down color2" onclick="showModal()">
+                <div class="cell-content">
+                    <span>@Resources.Common.StartTakingImmunocal</span>
+                </div>
+            </div>
+        </a>
+        <a class="pdf" target="_blank" href="@Resources.Common.SetYourGoalLink">
+            <div class="cell H mv-down color2" style="border-right: @wborder solid #FFFFFF;">
+                <div class="cell-content">
+                    <span>@Resources.Common.SetYourGoal</span>
+                </div>
+            </div>
+        </a>
+        <a class="pdf" target="_blank" href="@Resources.Common.MakeYourProspectListLink">
+            <div class="cell S E color2">
+                <div class="cell-content">
+                    <span>@Resources.Common.MakeYourProspectList</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <div class="cell H color4" style="width:10%; border-right: @wborder solid #FFFFFF;">
+            <div class="cell-content">
+                <img style="width: 50%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/Arrow.svg")" />
+            </div>
+        </div>
+        <div class="cell" style="width:10%"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell">
+            <div class="cell-content">
+                <img src="@Url.Content("~/Content/images/immunotec-logo_{0}.svg".FormatWith(languageCode))" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@{var modalRoadmapWborder = "7px";}
+
+<div class="modal" id="modal-roadmap" style="z-index: 9999999 !important;">
+    <div class="modal-content">
+        <div style="color: #1F2A44; padding:0 0 5px 10px; font-size: 16px;">@Resources.Common.HowToMix</div>
+        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
+                    <span>@Resources.Common.MixImmunocal1</span>
+                </div>
+            </div>
+        </a>
+        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
+                    <span>@Resources.Common.MixImmunocal2</span>
+                </div>
+            </div>
+        </a>
+        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
+                    <span>@Resources.Common.MixImmunocal3</span>
+                </div>
+            </div>
+        </a>
+        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
+                    <span>@Resources.Common.MixImmunocal4</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="modal" id="modal-roadmap2" style="z-index: 9999999 !important;">
+    <div class="modal-content" style="height: calc(@height * 1.05);">
+        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+            <div class="cell H color2" style="width: 50%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
+                    <span>@Resources.Common.Prospects1</span>
+                </div>
+            </div>
+        </a>
+        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+            <div class="cell H color2" style="width: 50%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
+                    <span>@Resources.Common.Prospects2</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+    body { background-color: @backgound; }
+
+    #roadmap {
+        font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+    }
+
+    .cell {
+        display: block;
+        position: relative;
+        float: left;
+        padding: 0;
+        height: @height;
+        width: 20%;
+        overflow: visible;
+        z-index: 1;
+    }
+
+    .H {
+        height: calc(@height - (2 * @iheight));
+        border: @wborder solid #FFFFFF;
+        border-right: none;
+    }
+
+    .N, .N::before { border-top: @wborder solid #FFFFFF; }
+
+    .N::before, .N::after { bottom: 0px; }
+
+    .E, .E::before { border-right: @wborder solid #FFFFFF; }
+
+    .E::before, .W::after { left: 0px; }
+
+    .S, .S::before { border-bottom: @wborder solid #FFFFFF; }
+
+    .S::before, .S::after { top: 0px; }
+
+    .W, .W::before { border-left: @wborder solid #FFFFFF; }
+
+    .W::before, .E::after { right: 0px; }
+
+    .N::before, .S::before, .N::after, .S::after {
+        content: '';
+        position: absolute;
+    }
+
+    .N::before, .S::before {
+        padding: @iheight 25%;
+        background: @backgound;
+    }
+
+    .N::after, .S::after {
+        background-color: white;
+        padding: calc(@wborder / 4) 25%;
+    }
+
+    .N.E { border-top-right-radius: @height; }
+
+    .N.E::before { border-top-right-radius: 30px; }
+
+    .S.E { border-bottom-right-radius: @height; }
+
+    .S.E::before { border-bottom-right-radius: 30px; }
+
+    .S.W { border-bottom-left-radius: @height; }
+
+    .S.W::before { border-bottom-left-radius: 30px; }
+
+    .N.W { border-top-left-radius:@height; }
+
+    .N.W::before { border-top-left-radius: 30px; }
+
+    .mv-down { margin-top: calc( @iheight * 2); }
+
+    .cell-content {
+        color: #FFFFFF;
+        position: relative;
+        top: calc(50% - @iheight );
+        transform: translateY(-50%);
+    }
+
+    .H .cell-content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .N .cell-content {
+        position: relative;
+        top: calc(50% - @iheight);
+        transform: translateY(-50%);
+    }
+
+    .E .cell-content {
+        float: left;
+        margin-left: 5%;
+    }
+
+    .S .cell-content {
+        position: relative;
+        top: calc(50% + @iheight );
+        transform: translateY(-50%);
+    }
+
+    .W .cell-content {
+        float: right;
+        margin-right: 5%;
+    }
+
+    .color1, .color1 .cell { background-color: #2272BA; }
+
+    a .color1:hover, a .color1:hover > * { background-color: #195387; }
+
+    .color2 { background-color: #1F2A44; }
+
+    a .color2:hover { background-color: #14252B; }
+
+    .color3 { background-color: #B2B6B6; }
+
+    .color3 .cell-content { color: #1F2A44; }
+
+    a .color3:hover { background-color: #E3E8E8; }
+
+    .color4 { background-color: #80B4D6; }
+
+    a .color4:hover {
+        background-color: #6289A3;
+    }
+
+    a:hover .cell-content > * { display: none; }
+
+    .pdf:hover .cell {
+        background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/file-pdf-regular.svg") );
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .yt-video:hover .cell {
+        background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/play-circle-regular.svg"));
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .clickable:hover .cell {
+        background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/mouse-solid.svg"));
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .invite-button {
+        margin: 5px;
+        padding: 5px 10px;
+        background-color:#FFFFFF;
+        color:#2272BA;
+        float:left;
+        font-size: 10px;
+    }
+
+    .invite-button:hover { background-color: #FED304; }
+
+    y { color: #FED304; }
+
+    y1::first-letter { color: #FED304; }
+
+    .popup {
+        position: relative;
+    }
+
+    .popup .popuptext::before {
+        content: "";
+        height: 0;
+        width: calc(100% + 60px);
+        position: absolute;
+        left: -45px;
+        top: -10px;
+        z-index: -1;
+        border-bottom: calc(7.5 * @iheight) solid #FFFFFF;
+        border-left: 45px solid transparent;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+    }
+
+    .popup .popuptext {
+        height: calc(7.5 * @iheight);
+        width: 150px;
+        position: absolute;
+        top: 19px;
+        left: 50px;
+        margin-top: calc((@iheight / 2) + 15px);
+        margin-left: -75px;
+        z-index: 4;
+        font-size: 10px;
+        color: black;
+        visibility: hidden;
+        @(languageCode != "en"? "line-height: 1em;": "")
+    }
+
+    .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 20px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #FFFFFF transparent;
+    }
+
+    #modal-roadmap {
+        position: fixed;
+        padding-top: 165px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    #modal-roadmap2 {
+        position: fixed;
+        padding-top: 165px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        height: calc(@height * 1.25);
+        margin: auto;
+        padding: 15px;
+        border: 1px solid #888;
+        width: 70%;
+        border-radius: 0;
+    }
+
+    #modal-roadmap2 .modal-content{
+        width: 50%;
+    }
+
+    #title {
+        display: block;
+        color: #1F2A44;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    #title::first-line { font-size:15px; }
+
+</style>
+
+<script>
+    function hoverArrow() {
+        document.getElementById("arrow").setAttribute('src', '@Url.Content("~/Content/images/RoadmapToSuccess/Arrow-Loop-2.svg")');
+    }
+
+    function unhoverArrow() {
+        document.getElementById("arrow").setAttribute('src', '@Url.Content("~/Content/images/RoadmapToSuccess/Arrow-Loop.svg")');
+    }
+
+    function hoverInfo() {
+        document.getElementById("info").style.visibility = 'visible';
+    }
+
+    function unhoverInfo() {
+        document.getElementById("info").style.visibility = 'hidden';
+    }
+
+    function showModal() {
+        document.getElementById("modal-roadmap").style.display = "block";
+    }
+
+    function showModal2() {
+        document.getElementById("modal-roadmap2").style.display = "block";
+    }
+
+    window.onclick = function (event) {
+        var modal = document.getElementById("modal-roadmap");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        modal = document.getElementById("modal-roadmap2");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>

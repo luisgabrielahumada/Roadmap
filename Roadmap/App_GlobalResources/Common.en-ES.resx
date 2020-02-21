@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TimelineOfMilestones" xml:space="preserve">
+    <value>A timeline of Immunotec milestones</value>
+  </data>
+  <data name="ItAllStarted" xml:space="preserve">
+    <value>&lt;strong&gt;It all started with the immune system.&lt;/strong&gt; Over forty years ago, scientists based in Montreal, Canada, discovered the role of a specially-prepared whey protein isolate (now famous as Immunocal) in raising glutathione, a molecule often referred to as the body's master antioxidant. By the mid-1990s, the scientists had teamed up with veteran network marketing entrepreneur, Chuck Roberts, Dieter Beer, and John Molson, of the notable Canadian Molson family, to found the company now known to the world as Immunotec.</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>read more</value>
+  </data>
+  <data name="Milestone01" xml:space="preserve">
+    <value>Immunotec transitions from public to private company under the leadership of Mauricio Domenzain.</value>
+  </data>
+  <data name="Milestone02" xml:space="preserve">
+    <value>Immunotec is recognized as a Top 100 Direct Selling company worldwide in 2017 and 2015.</value>
+  </data>
+  <data name="Milestone03" xml:space="preserve">
+    <value>Immunotec launches its brand evolution featuring a new logo and new tagline: "The Science of Living Better".</value>
+  </data>
+  <data name="Milestone04" xml:space="preserve">
+    <value>Immunotec launches Cogniva, a product on the new frontier in brain health.</value>
+  </data>
+  <data name="Milestone05" xml:space="preserve">
+    <value>Immunotec enters the skin care market with the launch of the Elasense Skin Care line.</value>
+  </data>
+  <data name="Milestone06" xml:space="preserve">
+    <value>Immunotec receives regulatory approval to market Immunocal with the health claim: &lt;em&gt;"Helps increase muscle strength and enhance performance when combined with regular exercise."&lt;/em&gt;</value>
+  </data>
+  <data name="Milestone07" xml:space="preserve">
+    <value>Immunocal and Immunocal Platinum are certified by the anti-doping laboratory LGC and granted the "Informed-Choice Trusted by sport" logo.</value>
+  </data>
+  <data name="Milestone08" xml:space="preserve">
+    <value>Immunotec is recognized as a Top 50 direct selling company in Canada and the U.S. and a Top 2 in Canada.</value>
+  </data>
+  <data name="Milestone09" xml:space="preserve">
+    <value>Immunotec named sponsor of Rowing Canada.</value>
+  </data>
+  <data name="Milestone10" xml:space="preserve">
+    <value>Immunotec launches the MiForm Weight Management System.</value>
+  </data>
+  <data name="Milestone11" xml:space="preserve">
+    <value>Glutathione research papers surpass 100,000 articles on PubMed.</value>
+  </data>
+  <data name="Milestone12" xml:space="preserve">
+    <value>Immunotec opens new office in Mexico City.</value>
+  </data>
+  <data name="Milestone13" xml:space="preserve">
+    <value>Immunocal first appears in Canadian Compendium of Pharmaceuticals and Specialties (CPS).</value>
+  </data>
+  <data name="Milestone14" xml:space="preserve">
+    <value>Immunocal is certified free of prohibited substances based on the 2007 World Anti‑Doping Code Prohibited List.</value>
+  </data>
+  <data name="Milestone15" xml:space="preserve">
+    <value>Immunotec receives approval to market Immunocal with the health claim: &lt;em&gt;"A natural source of the glutathione precursor cysteine for the maintenance of a strong immune system."&lt;/em&gt;</value>
+  </data>
+  <data name="Milestone16" xml:space="preserve">
+    <value>Dr. Dröge launches Immunocal Platinum, the next generation of Immunocal with CMP and RMF.</value>
+  </data>
+  <data name="Milestone17" xml:space="preserve">
+    <value>World renowned immunologist, Dr. Wulf Dröge, joins Immunotec as Senior VP, Research and Development.</value>
+  </data>
+  <data name="Milestone18" xml:space="preserve">
+    <value>Immunotec moves to new 37,000 sq. ft. headquarters and 1,000 Consultants celebrate.</value>
+  </data>
+  <data name="Milestone19" xml:space="preserve">
+    <value>The first Immunotec Consultant earns a million dollars.</value>
+  </data>
+  <data name="Milestone20" xml:space="preserve">
+    <value>Immunocal listed in the highly respected U.S. Physicians' Desk Reference (PDR).</value>
+  </data>
+  <data name="Milestone21" xml:space="preserve">
+    <value>Dr. Larry Lands publishes first paper on Immunocal and sports performance.</value>
+  </data>
+  <data name="Milestone22" xml:space="preserve">
+    <value>Official launch of HMS 90 (Immunocal) in Canada in 1996. Official launch of Immunocal in the U.S. in 1997.</value>
+  </data>
+  <data name="Milestone23" xml:space="preserve">
+    <value>Immunotec Research Corp. merges with Chuck Roberts' company to form Immunotec Research Ltd. with John Molson as founding shareholder.</value>
+  </data>
+  <data name="Milestone24" xml:space="preserve">
+    <value>Dr. Gustavo Bounous and Dieter Beer initiate close association. Launch Immunotec Research Corp.</value>
+  </data>
+  <data name="Milestone25" xml:space="preserve">
+    <value>Dr. Wulf Dröge describes the effect of glutathione on the immune response of a living organism.</value>
+  </data>
+  <data name="Milestone26" xml:space="preserve">
+    <value>Dr. Gustavo Bounous and Dr. Patricia Kongshavn are the first to discover the effect of whey protein on the immune system.</value>
+  </data>
+  <data name="Milestone27" xml:space="preserve">
+    <value>Dr. Gustavo Bounous initiated a novel research program in conjunction with colleagues, including Dr. Patricia Kongshavn, to search for a dietary protein source that would optimize the immune system.</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>hide</value>
+  </data>
+  <data name="EmailUnavailable" xml:space="preserve">
+    <value>This email isn't available</value>
+  </data>
+  <data name="CanadaAndTheUS" xml:space="preserve">
+    <value>Canada and the U.S.</value>
+  </data>
+  <data name="Mexico" xml:space="preserve">
+    <value>Mexico</value>
+  </data>
+  <data name="UnitedKingdom" xml:space="preserve">
+    <value>United Kingdom</value>
+  </data>
+  <data name="Ireland" xml:space="preserve">
+    <value>Ireland</value>
+  </data>
+  <data name="DominicanRepublic" xml:space="preserve">
+    <value>Dominican Republic</value>
+  </data>
+  <data name="TrinidadAndTobago" xml:space="preserve">
+    <value>Trinidad and Tobago</value>
+  </data>
+  <data name="PuertoRico" xml:space="preserve">
+    <value>Puerto Rico</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="HoursCanadaUS" xml:space="preserve">
+    <value>Monday to Friday, 8:30 a.m. to 9:00 p.m. ET, Saturday: 12:00 p.m. to 5:00 p.m. ET</value>
+  </data>
+  <data name="HoursTrinidadTobago" xml:space="preserve">
+    <value>Monday to Friday, 8:30 a.m. to 9:00 p.m. ET</value>
+  </data>
+  <data name="ImmunotecHeadOffice" xml:space="preserve">
+    <value>Immunotec Canada (Head Office)</value>
+  </data>
+  <data name="ImmunotecUSOffice" xml:space="preserve">
+    <value>Immunotec U.S.</value>
+  </data>
+  <data name="ImmunotecMexicoOffice" xml:space="preserve">
+    <value>Immunotec Mexico</value>
+  </data>
+  <data name="ResearchAndDevelopment" xml:space="preserve">
+    <value>Research and Development</value>
+  </data>
+  <data name="WeHaveCollaborated" xml:space="preserve">
+    <value>At Immunotec we have collaborated with many public, private and academic research institutions to further the knowledge of glutathione augmentation. We are pleased to review any well-prepared proposal for consideration.</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="PickupHoursForCaliforniaOffice" xml:space="preserve">
+    <value>Pick-up Hours for California Office</value>
+  </data>
+  <data name="PickupHoursForMexicoOffice" xml:space="preserve">
+    <value>Pick-up Hours for Mexico Office</value>
+  </data>
+  <data name="CustomerService" xml:space="preserve">
+    <value>Customer Service</value>
+  </data>
+  <data name="MexicoPhone" xml:space="preserve">
+    <value>+52 55 4161 3146</value>
+  </data>
+  <data name="NewVideoLivingBetter" xml:space="preserve">
+    <value> New Video - Living Better with Immunotec</value>
+  </data>
+  <data name="ChooseSection" xml:space="preserve">
+    <value>Choose Section</value>
+  </data>
+  <data name="BrandEvolution" xml:space="preserve">
+    <value>Brand Evolution</value>
+  </data>
+  <data name="Immunocal" xml:space="preserve">
+    <value>Immunocal</value>
+  </data>
+  <data name="OtherProducts" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="RealLifeStories" xml:space="preserve">
+    <value>Real Life Stories</value>
+  </data>
+  <data name="Recognition" xml:space="preserve">
+    <value>Recognition</value>
+  </data>
+  <data name="EventHighlights" xml:space="preserve">
+    <value>Event Highlights</value>
+  </data>
+  <data name="ImmunotecHistory" xml:space="preserve">
+    <value>Immunotec History</value>
+  </data>
+  <data name="MiForm" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="LivingBetterWithImmunotec" xml:space="preserve">
+    <value>Living Better with Immunotec</value>
+  </data>
+  <data name="TheStoryOfImmunotec" xml:space="preserve">
+    <value>The Story of Immunotec</value>
+  </data>
+  <data name="ImmunotecBrandEvolution" xml:space="preserve">
+    <value>Immunotec brand evolution</value>
+  </data>
+  <data name="TheStoryOfImmunocal" xml:space="preserve">
+    <value>The Story of Immunocal</value>
+  </data>
+  <data name="ImmunocalMixingInstructions" xml:space="preserve">
+    <value>Immunocal Mixing Instructions</value>
+  </data>
+  <data name="ElasenseCollection" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="DrPrussick" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="HowToUseTheElasenseCollection" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="ElasenseTestimonial" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="InSpanish" xml:space="preserve">
+    <value>in Spanish</value>
+  </data>
+  <data name="InFrench" xml:space="preserve">
+    <value>in French</value>
+  </data>
+  <data name="NewCherryConcentrate" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="CognivaABrainHealth" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="OmegaGenV" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="ImmunotecToothpasteWithSynerG4" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="Probio3PlusWithCranberry" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="Contralenta" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="PortraitsInLeadership" xml:space="preserve">
+    <value>Portraits in Leadership</value>
+  </data>
+  <data name="ConsultantOfTheYear" xml:space="preserve">
+    <value>Consultant of the Year</value>
+  </data>
+  <data name="ImmunotecConvention" xml:space="preserve">
+    <value>2016 Immunotec Convention - Mexico</value>
+  </data>
+  <data name="IncentiveTripGala2015" xml:space="preserve">
+    <value>2015 Incentive Trip Gala - Palm Springs, California</value>
+  </data>
+  <data name="IncentiveTrip2015" xml:space="preserve">
+    <value>2015 Incentive Trip - Palm Springs, California</value>
+  </data>
+  <data name="ImmunotecBBQ" xml:space="preserve">
+    <value>2014 Immunotec BBQ</value>
+  </data>
+  <data name="AnnualConvention2014" xml:space="preserve">
+    <value>2014 Annual Convention</value>
+  </data>
+  <data name="IncentiveTrip2013" xml:space="preserve">
+    <value>2013 Incentive Trip - Puerto Vallarta, MX</value>
+  </data>
+  <data name="NationalConventionMexico2013" xml:space="preserve">
+    <value>2013 Immunotec BBQ</value>
+  </data>
+  <data name="TributeToDrBounous" xml:space="preserve">
+    <value>Tribute to Dr. Bounous</value>
+  </data>
+  <data name="Anniversary20th" xml:space="preserve">
+    <value>20th Anniversary</value>
+  </data>
+  <data name="MiFormationItsALifestyle" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="MiFormationCalorieConfusion" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="MiFormationMealReplacement" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="ScienceBehind_Article1" xml:space="preserve">
+    <value>&lt;div class="ScienceBehind-content"&gt;
+                &lt;h1&gt;The science behind Immunocal&lt;/h1&gt;
+                &lt;div class="articles"&gt;
+                    &lt;h3&gt;Discovery of the health benefits of Immunocal&lt;/h3&gt;
+                    &lt;p&gt;&lt;img src="https://media.immunotec.com/EN/images/sports_1405000.jpg" class="articlesRight" alt="Article 1" /&gt;At the beginning of the 70&amp;rsquo;s, under the direction of Gustavo Bounous, MD, (FRCSC), a team of researchers from the Faculty of Medicine at McGill University (Canada), was studying proteins of animal and vegetable origins in order to feed the patients with an elemental diet that would allow them to reduce their stay in hospital. Since 1978, their studies had been focusing on whey proteins. This work led to the surprising discovery that a specific undenatured whey protein concentrate helped to sustain optimal glutathione levels. Subsequent identification of the active ingredients present in this protein mixture led in 1993 to the production of a high-quality bioactive protein that was given the name Immunocal.&lt;/p&gt;
+                    &lt;p&gt;This research was supported by the Medical Research Council of Canada and the National Institutes of Health in the United States. The observed effects of Immunocal which have been discovered at McGill University have been evaluated by numerous independent research centers worldwide, notable in Germany, Japan, Australia, France, United States and in Nova Scotia (Canada).&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;a class="btnTextLinkBack" href="back"&gt;BACK&lt;/a&gt;
+            &lt;/div&gt;</value>
+  </data>
+  <data name="EnrollmentMessage" xml:space="preserve">
+    <value>You are enrolling in Spain</value>
+  </data>
+  <data name="EnrollmentTerms" xml:space="preserve">
+    <value>
+      
+        I have read and agree with the &lt;a href="https://media.immunotec.com/EN/IE/terms-IE.pdf" style="text-decoration: underline;color: black;"&gt;Consultant Terms and Conditions&lt;/a&gt; and the Immunotec &lt;a href="https://media.immunotec.com/EN/businessGuide-global-EN.pdf" style="text-decoration: underline;color: black;"&gt;Business Guide&lt;/a&gt;. I agree to comply with the provisions of the &lt;a href="https://media.immunotec.com/EN/privacy-policy-EN.pdf" style="text-decoration: underline;color: black;"&gt;Privacy Policy&lt;/a&gt; and &lt;a href="https://media.immunotec.com/EN/terms-of-use-EN.pdf" style="text-decoration: underline;color: black;"&gt;Terms of Use&lt;/a&gt;. Both policies are incorporated by reference. I also agree to share my personal information.
+      
+    </value>
+  </data>
+  <data name="TermsOfSaleUrl" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/ES/terms-of-sale-ES.pdf</value>
+  </data>
+  <data name="CompanyTaxID" xml:space="preserve">
+    <value>VAT: IE9502226E </value>
+  </data>
+  <data name="MilestoneImage03" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/milestone-logo.jpg</value>
+  </data>
+  <data name="LaVidaProgressReport" xml:space="preserve">
+    <value>Live Immunotec {0} Progress Report</value>
+  </data>
+  <data name="EventsLink" xml:space="preserve">
+    <value>https://www.facebook.com/pg/Immunotec/events/</value>
+  </data>
+  <data name="BV" xml:space="preserve">
+    <value>PV</value>
+  </data>
+  <data name="DistributorSince" xml:space="preserve">
+    <value>Consultant since</value>
+  </data>
+  <data name="NewDistributorsList" xml:space="preserve">
+    <value>New Consultants List</value>
+  </data>
+  <data name="ViewNewestDistributors" xml:space="preserve">
+    <value>View newest Consultants</value>
+  </data>
+  <data name="YourNewestDistributors" xml:space="preserve">
+    <value>Your Newest Consultants</value>
+  </data>
+  <data name="SearchForYourDistributor" xml:space="preserve">
+    <value>Search for your a Consultant by entering their customer ID, first name or last name.</value>
+  </data>
+  <data name="IndividualDistributor" xml:space="preserve">
+    <value>Individual Consultant Account</value>
+  </data>
+  <data name="BusinessEntityDistributor" xml:space="preserve">
+    <value>Business Entity Consultant Account</value>
+  </data>
+  <data name="BeforeYouMayContinue" xml:space="preserve">
+    <value>Before you may continue with your application, please download and review the terms and conditions of the Consultant Agreement and Policies and Procedures located below.</value>
+  </data>
+  <data name="TermsAndConditionsAgree" xml:space="preserve">
+    <value>I agree to the terms and conditions of the Consultant Agreement and the Policies and Procedures.</value>
+  </data>
+  <data name="OnceYouHaveReviewedThePolicies" xml:space="preserve">
+    <value>Once you have reviewed the Policies, and if you agree to abide by them, please click the "I agree" box located below and continue with your application to become an independent Consultant.</value>
+  </data>
+  <data name="box2" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/promoBox-EU.jpg</value>
+  </data>
+  <data name="box3" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/boxLinks-video-immunocal-EU.jpg</value>
+  </data>
+  <data name="box4" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/boxLinks-eliteClub.jpg</value>
+  </data>
+  <data name="box8" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/boxLinks-platinum-EU.jpg</value>
+  </data>
+  <data name="Immunocal_Informed" xml:space="preserve">
+    <value>immunocal-informedSportLogo.jpg</value>
+  </data>
+  <data name="MexicoOfficePhone" xml:space="preserve">
+    <value>Phone: 0155-5255-6900</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>County</value>
+  </data>
+  <data name="Zip" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="AnyQuestionsCallCustomerService" xml:space="preserve">
+    <value>If you have any questions or concerns about your AutoShip, please call our Customer Service Team at &lt;a href="tel:{0}"&gt;{0}&lt;/a&gt; (Monday to Friday from 8:30 a.m. to 7:00 p.m. (ET)) or email us at &lt;a href="mailto:{1}" target="_blank"&gt;{1}&lt;/a&gt;. We'll be glad to assist you.</value>
+  </data>
+  <data name="SaveCard" xml:space="preserve">
+    <value>Save this credit card for future purchases</value>
+  </data>
+  <data name="HaveNewPersonallyDistributor" xml:space="preserve">
+    <value>
+You have a new personally enrolled Consultant:</value>
+  </data>
+  <data name="HasBeenEnrolledBy" xml:space="preserve">
+    <value>has been enrolled by</value>
+  </data>
+  <data name="HasBeenEnrolledByUpline" xml:space="preserve">
+    <value>has been enrolled by (upline)</value>
+  </data>
+  <data name="InLevel" xml:space="preserve">
+    <value>in level</value>
+  </data>
+  <data name="OfYourDownline" xml:space="preserve">
+    <value>of your downline</value>
+  </data>
+  <data name="AndPlacedInLevel" xml:space="preserve">
+    <value>and placed in level</value>
+  </data>
+  <data name="InYourDownline" xml:space="preserve">
+    <value>in your downline</value>
+  </data>
+  <data name="InYourDownlineHasAchieved" xml:space="preserve">
+    <value>in your downline, has achieved a new rank of</value>
+  </data>
+  <data name="SelectDateRange" xml:space="preserve">
+    <value>Select Date Range</value>
+  </data>
+  <data name="ItemStatus" xml:space="preserve">
+    <value>Item Status</value>
+  </data>
+  <data name="ItemNumber" xml:space="preserve">
+    <value>Item Number</value>
+  </data>
+  <data name="EnterItemCodeOrName" xml:space="preserve">
+    <value>Enter item code or name</value>
+  </data>
+  <data name="AgreeToConsultantTermsLabel" xml:space="preserve">
+    <value>I have reviewed and accept the &lt;a href="{0}" target="_blank"&gt;Consultant Terms and Conditions&lt;/a&gt; and the Immunotec &lt;a href="https://media.immunotec.com/EN/businessGuide-global-EN.pdf" target="_blank"&gt;Business Guide&lt;/a&gt;.</value>
+  </data>
+  <data name="WebsiteNotAvailableError" xml:space="preserve">
+    <value>This website name is already taken</value>
+  </data>
+  <data name="TermsOfSale" xml:space="preserve">
+    <value>Terms of Sale</value>
+  </data>
+  <data name="NoSpecialCharacters" xml:space="preserve">
+    <value>This field only accepts letters, numbers and special characters / and _</value>
+  </data>
+  <data name="PickUpCenters" xml:space="preserve">
+    <value>Pick-up Centers</value>
+  </data>
+  <data name="Colombia" xml:space="preserve">
+    <value>Colombia</value>
+  </data>
+  <data name="HoursColombia" xml:space="preserve">
+    <value>Monday to Friday: 9:00 a.m. to 7:00 p.m. CT, Saturday: 10:00 a.m. to 2:00 p.m. CT</value>
+  </data>
+  <data name="ImmunotecOnlineStore" xml:space="preserve">
+    <value>Immunotec Online Store</value>
+  </data>
+  <data name="NoSpecialCharactersCompany" xml:space="preserve">
+    <value>This field only accepts letters, numbers and spaces.</value>
+  </data>
+  <data name="RegisterAnotherCountry" xml:space="preserve">
+    <value>I want to shop or register from another country:</value>
+  </data>
+  <data name="EmailContact" xml:space="preserve">
+    <value>infoeurope@immunotec.com</value>
+  </data>
+  <data name="PhoneContact" xml:space="preserve">
+    <value>(+34) 518 880 576</value>
+  </data>
+  <data name="AventriLink" xml:space="preserve">
+    <value>https://www.immunotecconference.com/391147</value>
+  </data>
+  <data name="LaVidaDownloadUrl" xml:space="preserve">
+    <value>https://media.immunotec.com/BC/EN/event-incentive2020-EN.pdf</value>
+  </data>
+  <data name="Paperwork" xml:space="preserve">
+    <value>Paperwork included in order shipment</value>
+  </data>
+  <data name="PackingSlip" xml:space="preserve">
+    <value>Packing slip</value>
+  </data>
+  <data name="SendInvoice" xml:space="preserve">
+    <value>Send invoice</value>
+  </data>
+  <data name="InventoryStatus" xml:space="preserve">
+    <value>This item is temporarily unavailable, we apologize for the inconvenience. Please check back soon to place your order for this product.</value>
+  </data>
+  <data name="AutoshipInstuctions1" xml:space="preserve">
+    <value>Click the Edit button for any changes that you wish to make to your AutoShip settings below or you can add or remove any products to your AutoShip order. Make sure to click the SAVE AUTOSHIP button below to save any changes that you have made.</value>
+  </data>
+  <data name="CloseWithoutChanges" xml:space="preserve">
+    <value>Close without changes</value>
+  </data>
+  <data name="SaveNewAddress" xml:space="preserve">
+    <value>SAVE NEW ADDRESS</value>
+  </data>
+  <data name="YourShouldSelectPaymentMethod" xml:space="preserve">
+    <value>You should select pay method</value>
+  </data>
+  <data name="HeaderKeywordsShakerCup1" xml:space="preserve">
+    <value>mixing, cups, immunocal, shaker</value>
+  </data>
+  <data name="HeaderKeywordsImmunocal" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HeaderKeywordsImmunocalPlatinum" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HeaderKeywordsCustomerHealthPackImmunocal" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HeaderKeywordsCustomerHealthPackDuo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HeaderKeywordsCustomerHealthPackPlatinum" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HeaderKeywordsShakerCup5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HeaderDescriptionImmunocal" xml:space="preserve">
+    <value>Immunocal is a patented, unique and specially formulated natural health product that has been clinically demonstrated to maintain your immune system, increase muscle strength and enhance performance.</value>
+  </data>
+  <data name="HeaderDescriptionImmunocalPlatinum" xml:space="preserve">
+    <value>Immunocal Platinum is a natural source of GSH cysteine precursor for the maintenance of a strong immune system.</value>
+  </data>
+  <data name="HeaderDescriptionCustomerHealthPackImmunocal" xml:space="preserve">
+    <value>Contains 2 boxes of Immunocal. Immunocal is a patented, unique and specially formulated natural health product that has been clinically demonstrated to maintain your immune system, increase muscle strength and enhance performance.</value>
+  </data>
+  <data name="HeaderDescriptionCustomerHealthPackDuo" xml:space="preserve">
+    <value>Contains 1 box of Immunocal and 1 box of Immunocal Platinum. Immunocal is a patented, unique and specially formulated natural health product that has been clinically demonstrated to maintain your immune system, increase muscle strength and enhance performance, and Immunocal Platinum is a natural source of GSH cysteine precursor for the maintenance of a strong immune system.</value>
+  </data>
+  <data name="HeaderDescriptionCustomerHealthPackPlatinum" xml:space="preserve">
+    <value>Contains 2 boxes of Immunocal Platinum. Immunocal Platinum is a natural source of GSH cysteine precursor for the maintenance of a strong immune system.</value>
+  </data>
+  <data name="HeaderDescriptionShakerCup5" xml:space="preserve">
+    <value>A pack of 5 plastic mixing cups especially designed for mixing your Immunocal or Immunocal Platinum.</value>
+  </data>
+  <data name="HeaderDescriptionShakerCup1" xml:space="preserve">
+    <value>A plastic mixing cup especially designed for mixing your Immunocal and Immunocal Platinum.</value>
+  </data>
+  <data name="ChooseAutoShipDate" xml:space="preserve">
+    <value>Choose the date you want your AutoShip order to process</value>
+  </data>
+  <data name="ScheduledFor" xml:space="preserve">
+    <value>Scheduled for {0}</value>
+  </data>
+  <data name="ErrorAutoOrderDateRange" xml:space="preserve">
+    <value>Autoorder date out of valid range.</value>
+  </data>
+  <data name="AutoshipOrderCanBeSet" xml:space="preserve">
+    <value>Please note your first Autoship order can be set to any date during the calendar month following your initial enrollment.</value>
+  </data>
+  <data name="AutoShip_Message" xml:space="preserve">
+    <value>We also offer a convenient monthly AutoShip program, so you never run out of your favorite products. With additional discounts and with bonus PV, our AutoShip bundles offer great value. You can also choose individual products from the menu below for your monthly shipment. Your AutoShip order will be scheduled to process this same day next month, if you choose you can move your AutoShip date as early as the first of next month.</value>
+  </data>
+  <data name="IncludeVAT" xml:space="preserve">
+    <value>VAT included</value>
+  </data>
+  <data name="WebSiteName" xml:space="preserve">
+    <value>/carmenchurruca</value>
+  </data>
+  <data name="DocumentMessage" xml:space="preserve">
+    <value>You must enter your document</value>
+  </data>
+  <data name="Passport" xml:space="preserve">
+    <value>Passport</value>
+  </data>
+  <data name="DocumentType" xml:space="preserve">
+    <value>Document Type</value>
+  </data>
+  <data name="AutoShipsCanModified" xml:space="preserve">
+    <value>AutoShips are optional and can be modified or cancelled up to 7 days before your scheduled AutoShip date.</value>
+  </data>
+  <data name="MaxAmountError" xml:space="preserve">
+    <value>Your order has exceeded the maximum amount of {0} (1.336,80 € with VAT). ). Please contact Customer Service to place a larger order.</value>
+  </data>
+  <data name="ScienceBehind_Article3" xml:space="preserve">
+    <value>&lt;div class="ScienceBehind-content"&gt;
+          &lt;h1&gt;The science behind Immunocal&lt;/h1&gt;
+          &lt;div class="articles"&gt;
+              &lt;a class="btnTextLinkBack" href="back"&gt;BACK&lt;/a&gt;
+              &lt;h3&gt;Living Healthier Through Natural Technologies&lt;/h3&gt;
+              &lt;p&gt;&lt;img src="https://media.immunotec.com/images/science_article-3.jpg" alt="Article 3" class="rticlesRight"&gt;The last few decades have witnessed a major shift from the reliance on drugs to a demand for natural alternatives. What has spurred this change is an increasingly overburdened, expensive and often inaccessible medical system that has been so busy taking care of the sick, that wellness has been left to non-conventional medicine. More and more of us are now moving from a reactive to a proactive approach to maintaining health and well-being, and this includes lifestyle changes, exercise, nutrition and natural supplements.&lt;/p&gt;
+              &lt;p&gt;Until recently, many medical professionals have been somewhat wary of natural supplements, worried about quality, consistency and efficacy of what was being sold to the public. In the world of science, it is research that represents the gold standard, and without the funding available to drug manufacturers, natural products have historically fallen short of the rigor involved in investigating a new medication.&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;em&gt;Until recently...&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+              &lt;p&gt;Both in the United States and in Canada, federal agencies (the NIH&lt;sup&gt;1&lt;/sup&gt; initiative and Health Canada’s NHPD&lt;sup&gt;2&lt;/sup&gt;) have taken strides to promote the use of natural products, but only if they meet the standards of validation through appropriate research.&lt;/p&gt;
+              &lt;p&gt;Immunotec has taken full advantage of this opportunity, and with some ease. Immunocal, its flagship product, has been studied extensively with numerous medical and scientific articles written in peer-reviewed journals. Research on this natural substance already existed for over three decades.&lt;/p&gt;
+              &lt;p&gt;Currently, people are looking for clinically proven, natural products that will help to improve health and help them feel younger and more energetic. You have the opportunity to gain tremendous benefits from the leader in the field of natural products, Immunotec and its principal product, Immunocal.&lt;/p&gt;
+              &lt;p class="textSmaller"&gt;
+                  1. NIH – National Institutes of Health&lt;br&gt;
+                  2. NHPD – Natural Health Products Directorate
+              &lt;/p&gt;
+
+              &lt;h4&gt;Improve Your Immune System and Optimize Your Quality of Life&lt;/h4&gt;
+              &lt;p&gt;&lt;strong&gt;Immunocal is a natural protein that addresses several critical factors affecting your quality of life. Immunocal&amp;nbsp;can:&lt;/strong&gt;&lt;/p&gt;
+              &lt;ul&gt;
+                  &lt;li&gt;Increase your ability to fight off free radicals through optimizing you antioxidation ability&lt;/li&gt;
+                  &lt;li&gt;Strengthen your immune defenses&lt;/li&gt;
+                  &lt;li&gt;Help properly deal with pollutants and toxins in your body&lt;/li&gt;
+                  &lt;li&gt;Enhance your energy and sense of well-being&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;p&gt;It is easy to explain how Immunocal does this.&lt;/p&gt;
+
+              &lt;h4&gt;What is Immunocal?&lt;/h4&gt;
+              &lt;p&gt;Immunocal is a patented supplement that in nature is most similar to mother’s milk. It is over 90% pure protein and has a biological value higher than any other protein supplement or food available. The term “biological value” (BV) refers to a measurement of how important any edible protein is to your body.&lt;/p&gt;
+              &lt;p&gt;Taken daily, Immunocal will raise your body’s concentration of glutathione (abbreviated as GSH), a molecule referred to as “Your Body’s Most Important Protector”. Most individuals have never heard of glutathione, however given the huge amount of research publications on the subject and the large impact it will have in future health care, the term glutathione will shortly become part of our everyday language, the same way as we use the words “antioxidant” or “cholesterol”. To date, there have been over 80,000 published articles on glutathione in the medical literature.&lt;/p&gt;
+
+              &lt;h4&gt;What is Glutathione?&lt;/h4&gt;
+              &lt;p&gt;Glutathione (GSH) is the body’s own health ‘AID to Energy’– Antioxidant, Immune Booster, Detoxifier and Energy enhancer. This small protein, produced naturally in the body, supports these four crucial functions. In fact, your life depends upon glutathione. Without it, your cells would disintegrate from unrestrained oxidation, your body would have little resistance to bacteria, viruses and cancer, and your liver would cease functioning from the accumulation of toxins.&lt;/p&gt;
+
+              &lt;h4&gt;The Roles of Glutathione&lt;/h4&gt;
+              &lt;p&gt;Medical science has described literally dozens of roles that glutathione plays in your body. However, the four most important &lt;a href="https://media.immunotec.com/EN/science_rolesGlutathione.pdf " target="_blank"&gt;roles of glutathione&lt;/a&gt; can be summarized by the acronym:&lt;/p&gt;
+              &lt;p&gt;
+                  &lt;span class="textStandout"&gt;I D E A&lt;/span&gt;&lt;br&gt;
+                  These letters stand for:
+              &lt;/p&gt;
+              &lt;ul&gt;
+                  &lt;li&gt;&lt;span class="textStandout"&gt;I&lt;/span&gt;mmune&lt;/li&gt;                                                
+                  &lt;li&gt;&lt;span class="textStandout"&gt;D&lt;/span&gt;etox&lt;/li&gt;
+                  &lt;li&gt;&lt;span class="textStandout"&gt;E&lt;/span&gt;nergy&lt;/li&gt;
+                  &lt;li&gt;&lt;span class="textStandout"&gt;A&lt;/span&gt;ntioxidant&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;p&gt;&lt;strong&gt;Let’s look at these four critical processes driven by glutathione:&lt;/strong&gt;&lt;/p&gt;
+              &lt;p&gt;
+                  &lt;strong&gt;&lt;span class="textStandout"&gt;I&lt;/span&gt; – Glutathione – “Food for the &lt;span class="textStandout"&gt;I&lt;/span&gt;mmune  System”&lt;/strong&gt;&lt;br&gt;
+                  Your immune system is constantly on the prowl for pathogens and foreign antigens—agents of cellular damage, toxicity and disease.  These antigens include viruses, bacteria, parasites, fungi and even pre-cancerous cells. To neutralize these pathogens the body needs a ready supply of glutathione. If it doesn’t have enough, some of the invaders will get through, infecting the body and/or contributing to aging, long-term accumulative damage—even eventual cancer. We can’t avoid illness and aging altogether—although a few scientists are pursuing some age-old dreams—but by keeping our intracellular glutathione levels up we also keep our immune system on full alert and fully armed. Dr.&amp;nbsp;Gustavo&amp;nbsp;Bounous, discoverer of Immunocal, has focused on glutathione as support for the immune system. “ The limiting factor for the proper activity and multiplication of our lymphocytes (white blood cells) is the availability of glutathione”. Dr.&amp;nbsp;Bounous’ research at McGill University has spawned countless other research papers worldwide examining this phenomenon.
+              &lt;/p&gt;
+              &lt;p&gt;
+                  &lt;strong&gt;&lt;span class="textStandout"&gt;D&lt;/span&gt; – Glutathione – “&lt;span class="textStandout"&gt;D&lt;/span&gt;etoxification  System”&lt;/strong&gt;&lt;br&gt;
+                  Hundreds of toxins are eliminated by the GSH enzyme system, including drug breakdown products, pollutants, carcinogens and radiation damage. It’s no surprise that GSH concentrations are highest in the liver, the body’s major detoxifying organ. We inhale and ingest natural and synthetic toxins every day of our lives and can’t possibly avoid them, especially in our technological times, our congested and polluted cities and with our bio-engineered food supplies. Experimental studies have shown that low glutathione levels lead to poor liver and kidney function, and result in unnecessarily large quantities of toxins circulating through the body. There, they continuously damage individual cells and organs. The list of toxins eliminated include cigarette smoke, automobile exhaust and heavy metals. Physicians regularly use drugs to elevate glutathione levels in critical illnesses like acetaminophen overdose and severe liver failure.
+              &lt;/p&gt;
+              &lt;p&gt;
+                  &lt;strong&gt;&lt;span class="textStandout"&gt;E&lt;/span&gt; – Glutathione – “&lt;span class="textStandout"&gt;E&lt;/span&gt;nergize  Yourself”&lt;/strong&gt;&lt;br&gt;
+                  Our cells are like little machines, running 24 hours a day. Where does the energy to fuel this constant activity come from? The answer is quite complicated but science had identified tiny structures within our cells called “mitochondria” which serve as tiny batteries inside the cell. Like any source of fuel, inevitably burning and waste products are a result. The mitochondria literally burn up oxygen and as a result are prone to overload and damage and are limited in their ability to continue working unless these breakdown products like oxyradicals are removed. The major substance produced by the cell to keep these mitochondria “cool” and efficient is glutathione. This translates into more energy and more strength. Raising glutathione has become a focus for many studies from sports medicine to anti-aging for this reason.
+              &lt;/p&gt;
+              &lt;p&gt;
+                  &lt;strong&gt;&lt;span class="textStandout"&gt;A&lt;/span&gt; – Glutathione – “Your Master &lt;span class="textStandout"&gt;A&lt;/span&gt;ntioxidant”&lt;/strong&gt;&lt;br&gt;
+                  Over the past thirty years, advances in the study of antioxidants have grown to the point that a whole new branch of medicine has developed called “Free Radical Biology” which focuses on oxidant/antioxidant balance. These scientists have elaborated upon several hundred different disease processes where antioxidants play a vital role. The shelves of natural food stores and pharmacies are resplendent with a large array of different antioxidants offered. However, although these antioxidants including vitamin C and vitamin E are usually “natural”, they are not natural to your body. If you do not ingest these vitamins, they will not be found in your cells naturally. Given the importance of antioxidation in hundreds of different disease processes, one poses the question – “What antioxidant does the body manufacture to ward off these processes?” Glutathione is the most abundantly produced antioxidant in the body. In fact, the presence of this small protein is crucial for the functioning of all of the other antioxidants we know of, gaining the title of “Master Antioxidant”.
+              &lt;/p&gt;
+              &lt;h4&gt;What Causes Us to LOSE Glutathione (GSH)&lt;/h4&gt;
+              &lt;p&gt;
+                  Every day our bodies are exposed to factors that drain our levels of glutathione: stress, pollution, radiation, infection, drugs, poor diet, aging, injury and fatigue. These all contribute to glutathione depletion which, in turn, leads to cellular aging, disease and death. “Concern about maintaining one’s glutathione level will eventually be on par with other health maintenance issues.” says Dr.&amp;nbsp;Bounous, discoverer of Immunocal.
+              &lt;/p&gt;
+              &lt;h4&gt;Immunocal Can Fix the Problem&lt;/h4&gt;
+              &lt;p&gt;Immunocal is proven and patented to raise glutathione. It is a natural source of the glutathione building block called cysteine, for the maintenance of a strong immune system.&lt;/p&gt;
+              &lt;p&gt;There are other synthetic ways in which glutathione levels may be raised, but the high level of side effects and short duration of action limits their usefulness. In contrast, Immunocal is extremely effective and has negligible side effects when used as directed. It is a protein isolate from milk, but has an insignificant amount of lactose (&amp;lt;1%); therefore, it is easily tolerated by lactose intolerant individuals.&lt;/p&gt;
+              &lt;h4&gt;Recognition&lt;/h4&gt;
+              &lt;p&gt;Immunocal is patent-protected worldwide and has several important high-level acknowledgments: &lt;/p&gt;
+              &lt;ul&gt;
+                  &lt;li&gt;Awarded an NPN (Natural Product Number) issued by Health Canada&lt;/li&gt;
+                  &lt;li&gt;Listed in the U.S. Physicians’ Desk Reference (PDR)&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;h4&gt;Give Your Body What it Needs to Perform Optimally&lt;/h4&gt;
+              &lt;p&gt;Most of us know it’s a good idea to eat well, exercise and get a good night’s sleep. We might also know that it’s a good idea to take some vitamins and minerals.&lt;/p&gt;
+              &lt;p&gt;But if you are seeking a way to give your body an extra edge in a world where we are constantly bombarded with environmental stressors, then supporting your immune system is key. And typical vitamin and mineral supplements aren’t enough to do the job.&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;em&gt;Taking Immunocal on a regular basis will give you more control over your health, vitality and wellbeing.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+              &lt;a class="btnTextLinkBack" href="back"&gt;BACK&lt;/a&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;</value>
+  </data>
+  <data name="Join_1" xml:space="preserve">
+    <value>&lt;strong&gt;Shop online&lt;/strong&gt; for Immunotec’s science-based wellness products.</value>
+  </data>
+  <data name="DNI" xml:space="preserve">
+    <value>The DNI (Documento nacional de identidad) consists of eight digits and one letter.</value>
+  </data>
+  <data name="NIE" xml:space="preserve">
+    <value>The NIE (Número de identificación de extranjero) consists of an initial letter, seven digits and a final letter.</value>
+  </data>
+  <data name="ExcludesShipping" xml:space="preserve">
+    <value>* Excludes shipping. Click the blue "View / Edit" link to see the full total.</value>
+  </data>
+  <data name="AutoShipDisclaimer2" xml:space="preserve">
+    <value>Your AutoShip order can be modified or cancelled anytime up to 7 days before your scheduled AutoShip date.</value>
+  </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Your Account is Pending Approval</value>
+  </data>
+  <data name="WeAreReviewingYourAccount" xml:space="preserve">
+    <value>We're currently reviewing your account details and when we have confirmed your identity. Thanks for your patience.</value>
+  </data>
+  <data name="PleaseContactUs" xml:space="preserve">
+    <value>Please {0} for more information.</value>
+  </data>
+  <data name="TemporarilyLock" xml:space="preserve">
+    <value>Your Account Has Been Temporarily Locked</value>
+  </data>
+  <data name="WeDetectedSuspiciousActivity" xml:space="preserve">
+    <value>We've detected suspicious activity Immunotec account and have temporarily locked it as a security precaution.</value>
+  </data>
+  <data name="OrderIncomplete" xml:space="preserve">
+    <value>We’ve detected suspicious activity; Immunotec has placed your order under review.</value>
+  </data>
+  <data name="OrderIncompleteTitle" xml:space="preserve">
+    <value>Order Under Review</value>
+  </data>
+  <data name="EnrollmentRejectTitle" xml:space="preserve">
+    <value>Account Creation Rejected</value>
+  </data>
+  <data name="EnrollmentRejectMessage" xml:space="preserve">
+    <value>Based on the information provided we are unable to create your account at this time. For further assistance please contact customer services.</value>
+  </data>
+  <data name="EnrollmentReviewTitle" xml:space="preserve">
+    <value>Order Under Review</value>
+  </data>
+  <data name="EnrollmentReviewMessage" xml:space="preserve">
+    <value>Your order is currently under review and should  be processed within 24hrs.</value>
+  </data>
+  <data name="AccountrReviewTitle" xml:space="preserve">
+    <value>Account Under Review</value>
+  </data>
+  <data name="AccountReviewMessage" xml:space="preserve">
+    <value>Your account is currently under review and should  be processed within 24hrs.</value>
+  </data>
+  <data name="OrderRejectTitle" xml:space="preserve">
+    <value>Order Creation Rejected</value>
+  </data>
+  <data name="OrderRejectMessage" xml:space="preserve">
+    <value>Based on the information provided we are unable to create your order at this time. For further assistance please contact customer services.</value>
+  </data>
+  <data name="CommunicationPreference" xml:space="preserve">
+    <value>Communication Preference</value>
+  </data>
+</root>

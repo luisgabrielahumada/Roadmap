@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TimelineOfMilestones" xml:space="preserve">
+    <value>A timeline of Immunotec milestones</value>
+  </data>
+  <data name="ItAllStarted" xml:space="preserve">
+    <value>&lt;strong&gt;It all started with the immune system.&lt;/strong&gt; Over forty years ago, scientists based in Montreal, Canada, discovered the role of a specially-prepared whey protein isolate (now famous as Immunocal) in raising glutathione, a molecule often referred to as the body's master antioxidant. By the mid-1990s, the scientists had teamed up with veteran network marketing entrepreneur, Chuck Roberts, Dieter Beer, and John Molson, of the notable Canadian Molson family, to found the company now known to the world as Immunotec.</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>read more</value>
+  </data>
+  <data name="Milestone01" xml:space="preserve">
+    <value>Immunotec transitions from public to private company under the leadership of Mauricio Domenzain.</value>
+  </data>
+  <data name="Milestone02" xml:space="preserve">
+    <value>Immunotec is recognized as a Top 100 Direct Selling company worldwide in 2017 and 2015.</value>
+  </data>
+  <data name="Milestone03" xml:space="preserve">
+    <value>Immunotec launches its brand evolution featuring a new logo and new tagline: "The Science of Living Better".</value>
+  </data>
+  <data name="Milestone04" xml:space="preserve">
+    <value>Immunotec launches Cogniva, a product on the new frontier in brain health.</value>
+  </data>
+  <data name="Milestone05" xml:space="preserve">
+    <value>Immunotec enters the skin care market with the launch of the Elasense Skin Care line.</value>
+  </data>
+  <data name="Milestone06" xml:space="preserve">
+    <value>Immunotec receives regulatory approval to market Immunocal with the health claim: &lt;em&gt;"Helps increase muscle strength and enhance performance when combined with regular exercise."&lt;/em&gt;</value>
+  </data>
+  <data name="Milestone07" xml:space="preserve">
+    <value>Immunocal and Immunocal Platinum are certified by the anti-doping laboratory LGC and granted the "Informed-Choice Trusted by sport" logo.</value>
+  </data>
+  <data name="Milestone08" xml:space="preserve">
+    <value>Immunotec is recognized as a Top 50 direct selling company in Canada and the U.S. and a Top 2 in Canada.</value>
+  </data>
+  <data name="Milestone09" xml:space="preserve">
+    <value>Immunotec named sponsor of Rowing Canada.</value>
+  </data>
+  <data name="Milestone10" xml:space="preserve">
+    <value>Immunotec launches the MiForm Weight Management System.</value>
+  </data>
+  <data name="Milestone11" xml:space="preserve">
+    <value>Glutathione research papers surpass 100,000 articles on PubMed.</value>
+  </data>
+  <data name="Milestone12" xml:space="preserve">
+    <value>Immunotec opens new office in Mexico City.</value>
+  </data>
+  <data name="Milestone13" xml:space="preserve">
+    <value>Immunocal first appears in Canadian Compendium of Pharmaceuticals and Specialties (CPS).</value>
+  </data>
+  <data name="Milestone14" xml:space="preserve">
+    <value>Immunocal is certified free of prohibited substances based on the 2007 World Anti‑Doping Code Prohibited List.</value>
+  </data>
+  <data name="Milestone15" xml:space="preserve">
+    <value>Immunotec receives approval to market Immunocal with the health claim: &lt;em&gt;"A natural source of the glutathione precursor cysteine for the maintenance of a strong immune system."&lt;/em&gt;</value>
+  </data>
+  <data name="Milestone16" xml:space="preserve">
+    <value>Dr. Dröge launches Immunocal Platinum, the next generation of Immunocal with CMP and RMF.</value>
+  </data>
+  <data name="Milestone17" xml:space="preserve">
+    <value>World renowned immunologist, Dr. Wulf Dröge, joins Immunotec as Senior VP, Research and Development.</value>
+  </data>
+  <data name="Milestone18" xml:space="preserve">
+    <value>Immunotec moves to new 37,000 sq. ft. headquarters and 1,000 Consultants celebrate.</value>
+  </data>
+  <data name="Milestone19" xml:space="preserve">
+    <value>The first Immunotec Consultant earns a million dollars.</value>
+  </data>
+  <data name="Milestone20" xml:space="preserve">
+    <value>Immunocal listed in the highly respected U.S. Physicians' Desk Reference (PDR).</value>
+  </data>
+  <data name="Milestone21" xml:space="preserve">
+    <value>Dr. Larry Lands publishes first paper on Immunocal and sports performance.</value>
+  </data>
+  <data name="Milestone22" xml:space="preserve">
+    <value>Official launch of HMS 90 (Immunocal) in Canada in 1996. Official launch of Immunocal in the U.S. in 1997.</value>
+  </data>
+  <data name="Milestone23" xml:space="preserve">
+    <value>Immunotec Research Corp. merges with Chuck Roberts' company to form Immunotec Research Ltd. with John Molson as founding shareholder.</value>
+  </data>
+  <data name="Milestone24" xml:space="preserve">
+    <value>Dr. Gustavo Bounous and Dieter Beer initiate close association. Launch Immunotec Research Corp.</value>
+  </data>
+  <data name="Milestone25" xml:space="preserve">
+    <value>Dr. Wulf Dröge describes the effect of glutathione on the immune response of a living organism.</value>
+  </data>
+  <data name="Milestone26" xml:space="preserve">
+    <value>Dr. Gustavo Bounous and Dr. Patricia Kongshavn are the first to discover the effect of whey protein on the immune system.</value>
+  </data>
+  <data name="Milestone27" xml:space="preserve">
+    <value>Dr. Gustavo Bounous initiated a novel research program in conjunction with colleagues, including Dr. Patricia Kongshavn, to search for a dietary protein source that would optimize the immune system.</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>hide</value>
+  </data>
+  <data name="MilestoneImage04" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/milestone-cogniva.jpg</value>
+  </data>
+  <data name="MilestoneImage10" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/milestone-miform.jpg</value>
+  </data>
+  <data name="EmailUnavailable" xml:space="preserve">
+    <value>This email isn't available</value>
+  </data>
+  <data name="CanadaAndTheUS" xml:space="preserve">
+    <value>Canada and the U.S.</value>
+  </data>
+  <data name="Mexico" xml:space="preserve">
+    <value>Mexico</value>
+  </data>
+  <data name="UnitedKingdom" xml:space="preserve">
+    <value>United Kingdom</value>
+  </data>
+  <data name="Ireland" xml:space="preserve">
+    <value>Ireland</value>
+  </data>
+  <data name="DominicanRepublic" xml:space="preserve">
+    <value>Dominican Republic</value>
+  </data>
+  <data name="TrinidadAndTobago" xml:space="preserve">
+    <value>Trinidad and Tobago</value>
+  </data>
+  <data name="PuertoRico" xml:space="preserve">
+    <value>Puerto Rico</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="HoursCanadaUS" xml:space="preserve">
+    <value>Monday to Friday, 8:30 a.m. to 9:00 p.m. ET, Saturday: 12:00 p.m. to 5:00 p.m. ET</value>
+  </data>
+  <data name="HoursTrinidadTobago" xml:space="preserve">
+    <value>Monday to Friday, 8:30 a.m. to 9:00 p.m. ET</value>
+  </data>
+  <data name="ImmunotecHeadOffice" xml:space="preserve">
+    <value>Immunotec Canada (Head Office)</value>
+  </data>
+  <data name="ImmunotecUSOffice" xml:space="preserve">
+    <value>Immunotec U.S.</value>
+  </data>
+  <data name="ImmunotecMexicoOffice" xml:space="preserve">
+    <value>Immunotec Mexico</value>
+  </data>
+  <data name="ResearchAndDevelopment" xml:space="preserve">
+    <value>Research and Development</value>
+  </data>
+  <data name="WeHaveCollaborated" xml:space="preserve">
+    <value>At Immunotec we have collaborated with many public, private and academic research institutions to further the knowledge of glutathione augmentation. We are pleased to review any well-prepared proposal for consideration.</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="PickupHoursForCaliforniaOffice" xml:space="preserve">
+    <value>Pick-up Hours for California Office</value>
+  </data>
+  <data name="PickupHoursForMexicoOffice" xml:space="preserve">
+    <value>Pick-up Hours for Mexico Office</value>
+  </data>
+  <data name="CustomerService" xml:space="preserve">
+    <value>Customer Service</value>
+  </data>
+  <data name="MexicoPhone" xml:space="preserve">
+    <value>+52 55 4161 3146</value>
+  </data>
+  <data name="NewVideoLivingBetter" xml:space="preserve">
+    <value>New Video - Living Better with Immunotec</value>
+  </data>
+  <data name="ChooseSection" xml:space="preserve">
+    <value>Choose Section</value>
+  </data>
+  <data name="BrandEvolution" xml:space="preserve">
+    <value>Brand Evolution</value>
+  </data>
+  <data name="Immunocal" xml:space="preserve">
+    <value>Immunocal</value>
+  </data>
+  <data name="OtherProducts" xml:space="preserve">
+    <value>Other Products</value>
+  </data>
+  <data name="RealLifeStories" xml:space="preserve">
+    <value>Real Life Stories</value>
+  </data>
+  <data name="Recognition" xml:space="preserve">
+    <value>Recognition</value>
+  </data>
+  <data name="EventHighlights" xml:space="preserve">
+    <value>Event Highlights</value>
+  </data>
+  <data name="ImmunotecHistory" xml:space="preserve">
+    <value>Immunotec History</value>
+  </data>
+  <data name="MiForm" xml:space="preserve">
+    <value>MiForm</value>
+  </data>
+  <data name="LivingBetterWithImmunotec" xml:space="preserve">
+    <value>Living Better with Immunotec</value>
+  </data>
+  <data name="TheStoryOfImmunotec" xml:space="preserve">
+    <value>The Story of Immunotec</value>
+  </data>
+  <data name="ImmunotecBrandEvolution" xml:space="preserve">
+    <value>Immunotec brand evolution</value>
+  </data>
+  <data name="TheStoryOfImmunocal" xml:space="preserve">
+    <value>The Story of Immunocal</value>
+  </data>
+  <data name="ImmunocalMixingInstructions" xml:space="preserve">
+    <value>Immunocal Mixing Instructions</value>
+  </data>
+  <data name="ElasenseCollection" xml:space="preserve">
+    <value>Elasense Collection</value>
+  </data>
+  <data name="DrPrussick" xml:space="preserve">
+    <value>Dr. Prussick</value>
+  </data>
+  <data name="HowToUseTheElasenseCollection" xml:space="preserve">
+    <value>How to Use the Elasense Collection</value>
+  </data>
+  <data name="ElasenseTestimonial" xml:space="preserve">
+    <value>Elasense Testimonial</value>
+  </data>
+  <data name="InSpanish" xml:space="preserve">
+    <value>in Spanish</value>
+  </data>
+  <data name="InFrench" xml:space="preserve">
+    <value>in French</value>
+  </data>
+  <data name="NewCherryConcentrate" xml:space="preserve">
+    <value>NEW Concentrated Cherry Juice</value>
+  </data>
+  <data name="CognivaABrainHealth" xml:space="preserve">
+    <value>Cogniva - A brain health innovation exclusively from Immunotec</value>
+  </data>
+  <data name="OmegaGenV" xml:space="preserve">
+    <value>Omega Gen V</value>
+  </data>
+  <data name="ImmunotecToothpasteWithSynerG4" xml:space="preserve">
+    <value>Immunotec Toothpaste with SynerG4</value>
+  </data>
+  <data name="Probio3PlusWithCranberry" xml:space="preserve">
+    <value>Probio 3+ with Cranberry</value>
+  </data>
+  <data name="Contralenta" xml:space="preserve">
+    <value>Contralenta</value>
+  </data>
+  <data name="PortraitsInLeadership" xml:space="preserve">
+    <value>Portraits in Leadership</value>
+  </data>
+  <data name="ConsultantOfTheYear" xml:space="preserve">
+    <value>Consultant of the Year</value>
+  </data>
+  <data name="ImmunotecConvention" xml:space="preserve">
+    <value>2016 Immunotec Convention - Mexico</value>
+  </data>
+  <data name="IncentiveTripGala2015" xml:space="preserve">
+    <value>2015 Incentive Trip Gala - Palm Springs, California</value>
+  </data>
+  <data name="IncentiveTrip2015" xml:space="preserve">
+    <value>2015 Incentive Trip - Palm Springs, California</value>
+  </data>
+  <data name="ImmunotecBBQ" xml:space="preserve">
+    <value>2014 Immunotec BBQ</value>
+  </data>
+  <data name="AnnualConvention2014" xml:space="preserve">
+    <value>2014 Annual Convention</value>
+  </data>
+  <data name="IncentiveTrip2013" xml:space="preserve">
+    <value>2013 Incentive Trip - Puerto Vallarta, MX</value>
+  </data>
+  <data name="NationalConventionMexico2013" xml:space="preserve">
+    <value>2013 Immunotec BBQ</value>
+  </data>
+  <data name="TributeToDrBounous" xml:space="preserve">
+    <value>Tribute to Dr. Bounous</value>
+  </data>
+  <data name="Anniversary20th" xml:space="preserve">
+    <value>20th Anniversary</value>
+  </data>
+  <data name="MiFormationItsALifestyle" xml:space="preserve">
+    <value>MiFormation It's a Lifestyle!</value>
+  </data>
+  <data name="MiFormationCalorieConfusion" xml:space="preserve">
+    <value>MiFormation - Calorie Confusion</value>
+  </data>
+  <data name="MiFormationMealReplacement" xml:space="preserve">
+    <value>MiFormation - Meal Replacement</value>
+  </data>
+  <data name="EnrollmentMessage" xml:space="preserve">
+    <value>You are enrolling in Canada</value>
+  </data>
+  <data name="EnrollmentTerms" xml:space="preserve">
+    <value>
+      
+        I have read and agree with the &lt;a href="https://media.immunotec.com/EN/CA/terms-CA-EN.pdf" style="text-decoration: underline;color: black;"&gt;Consultant Terms and Conditions&lt;/a&gt; and the Immunotec &lt;a href="https://media.immunotec.com/EN/businessGuide-global-EN.pdf" style="text-decoration: underline;color: black;"&gt;Business Guide&lt;/a&gt;. I agree to comply with the provisions of the &lt;a href="https://media.immunotec.com/EN/privacy-policy-EN.pdf" style="text-decoration: underline;color: black;"&gt;Privacy Policy&lt;/a&gt; and &lt;a href="https://media.immunotec.com/EN/terms-of-use-EN.pdf" style="text-decoration: underline;color: black;"&gt;Terms of Use&lt;/a&gt;. Both policies are incorporated by reference. I also agree to share my personal information.
+      
+    </value>
+  </data>
+  <data name="TermsOfSaleUrl" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/CA/terms-of-sale-CA-EN.pdf</value>
+  </data>
+  <data name="CompanyTaxID" xml:space="preserve">
+    <value>GST/TPS: 139297220  / QST/TVQ: 1016550678 TQ0001</value>
+  </data>
+  <data name="OvernightShippingMessage" xml:space="preserve">
+    <value>Important! In order to benefit from the expedited delivery service, the order must be placed by 1:30 pm EST today. All expedited delivery orders placed after 1:30 pm EST today will be shipped the next business day.</value>
+  </data>
+  <data name="MilestoneImage03" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/milestone-logo.jpg</value>
+  </data>
+  <data name="LaVidaProgressReport" xml:space="preserve">
+    <value>Live Immunotec {0} Progress Report</value>
+  </data>
+  <data name="EventsLink" xml:space="preserve">
+    <value>https://www.facebook.com/pg/Immunotec/events/</value>
+  </data>
+  <data name="TaxIDError" xml:space="preserve">
+    <value>SIN error.  Please verify and re-enter your SIN or call Customer Service for help</value>
+  </data>
+  <data name="BV" xml:space="preserve">
+    <value>PV</value>
+  </data>
+  <data name="DistributorSince" xml:space="preserve">
+    <value>Consultant since</value>
+  </data>
+  <data name="NewDistributorsList" xml:space="preserve">
+    <value>New Consultants List</value>
+  </data>
+  <data name="ViewNewestDistributors" xml:space="preserve">
+    <value>View newest Consultants</value>
+  </data>
+  <data name="YourNewestDistributors" xml:space="preserve">
+    <value>Your Newest Consultants</value>
+  </data>
+  <data name="SearchForYourDistributor" xml:space="preserve">
+    <value>Search for your a Consultant by entering their customer ID, first name or last name.</value>
+  </data>
+  <data name="IndividualDistributor" xml:space="preserve">
+    <value>Individual Consultant Account</value>
+  </data>
+  <data name="BusinessEntityDistributor" xml:space="preserve">
+    <value>Business Entity Consultant Account</value>
+  </data>
+  <data name="BeforeYouMayContinue" xml:space="preserve">
+    <value>Before you may continue with your application, please download and review the terms and conditions of the Consultant Agreement and Policies and Procedures located below.</value>
+  </data>
+  <data name="TermsAndConditionsAgree" xml:space="preserve">
+    <value>I agree to the terms and conditions of the Consultant Agreement and the Policies and Procedures.</value>
+  </data>
+  <data name="OnceYouHaveReviewedThePolicies" xml:space="preserve">
+    <value>Once you have reviewed the Policies, and if you agree to abide by them, please click the "I agree" box located below and continue with your application to become an independent Consultant.</value>
+  </data>
+  <data name="box2" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/CA/images/promoBox-CA-EN-18-11.jpg</value>
+  </data>
+  <data name="box3" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/boxLinks-omegaVideo.jpg</value>
+  </data>
+  <data name="box4" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/boxLinks-xtraSharp.jpg</value>
+  </data>
+  <data name="box8" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/CA/images/boxLinks-platinum-CA-EN.jpg</value>
+  </data>
+  <data name="MexicoOfficePhone" xml:space="preserve">
+    <value>Phone: 0155-5255-6900</value>
+  </data>
+  <data name="box7" xml:space="preserve">
+    <value>https://media.immunotec.com/EN/images/boxLinks-opportunity-EN.jpg</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="Zip" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="AnyQuestionsCallCustomerService" xml:space="preserve">
+    <value>If you have any questions or concerns about your AutoShip, please call our Customer Service Team at &lt;a href="tel:{0}"&gt;{0}&lt;/a&gt; (Monday to Friday from 8:30 a.m. to 7:00 p.m. (ET)) or email us at &lt;a href="mailto:{1}" target="_blank"&gt;{1}&lt;/a&gt;. We'll be glad to assist you.</value>
+  </data>
+  <data name="SaveCard" xml:space="preserve">
+    <value>Save this credit card for future purchases</value>
+  </data>
+  <data name="HaveNewPersonallyDistributor" xml:space="preserve">
+    <value>
+You have a new personally enrolled Consultant:</value>
+  </data>
+  <data name="HasBeenEnrolledBy" xml:space="preserve">
+    <value>has been enrolled by</value>
+  </data>
+  <data name="HasBeenEnrolledByUpline" xml:space="preserve">
+    <value>has been enrolled by (upline)</value>
+  </data>
+  <data name="InLevel" xml:space="preserve">
+    <value>in level</value>
+  </data>
+  <data name="OfYourDownline" xml:space="preserve">
+    <value>of your downline</value>
+  </data>
+  <data name="AndPlacedInLevel" xml:space="preserve">
+    <value>and placed in level</value>
+  </data>
+  <data name="InYourDownline" xml:space="preserve">
+    <value>in your downline</value>
+  </data>
+  <data name="InYourDownlineHasAchieved" xml:space="preserve">
+    <value>in your downline, has achieved a new rank of</value>
+  </data>
+  <data name="SelectDateRange" xml:space="preserve">
+    <value>Select Date Range</value>
+  </data>
+  <data name="ItemStatus" xml:space="preserve">
+    <value>Item Status</value>
+  </data>
+  <data name="ItemNumber" xml:space="preserve">
+    <value>Item Number</value>
+  </data>
+  <data name="EnterItemCodeOrName" xml:space="preserve">
+    <value>Enter item code or name</value>
+  </data>
+  <data name="AgreeToConsultantTermsLabel" xml:space="preserve">
+    <value>I have reviewed and accept the &lt;a href="{0}" target="_blank"&gt;Consultant Terms and Conditions&lt;/a&gt; and the Immunotec &lt;a href="https://media.immunotec.com/EN/businessGuide-global-EN.pdf" target="_blank"&gt;Business Guide&lt;/a&gt;.</value>
+  </data>
+  <data name="WebsiteNotAvailableError" xml:space="preserve">
+    <value>This website name is already taken</value>
+  </data>
+  <data name="LimitCharacters" xml:space="preserve">
+    <value>Please enter at least three characters.</value>
+  </data>
+  <data name="TermsOfSale" xml:space="preserve">
+    <value>Terms of Sale</value>
+  </data>
+  <data name="NoSpecialCharacters" xml:space="preserve">
+    <value>This field only accepts letters, numbers and special characters / and _</value>
+  </data>
+  <data name="PickUpCenters" xml:space="preserve">
+    <value>Pick-up Centers</value>
+  </data>
+  <data name="YourOrderNumberIs" xml:space="preserve">
+    <value>Your Order Number is</value>
+  </data>
+  <data name="ShipMethodDesc6" xml:space="preserve">
+    <value>Pick Up</value>
+  </data>
+  <data name="ShipMethodDesc8" xml:space="preserve">
+    <value>Ground (3-7 days)</value>
+  </data>
+  <data name="ShipMethodDesc15" xml:space="preserve">
+    <value>Air (2-3 days)</value>
+  </data>
+  <data name="ShipMethodDesc16" xml:space="preserve">
+    <value>Express (1-2 days)</value>
+  </data>
+  <data name="Colombia" xml:space="preserve">
+    <value>Colombia</value>
+  </data>
+  <data name="HoursColombia" xml:space="preserve">
+    <value>Monday to Friday: 9:00 a.m. to 7:00 p.m. CT, Saturday: 10:00 a.m. to 2:00 p.m. CT</value>
+  </data>
+  <data name="ImmunotecOnlineStore" xml:space="preserve">
+    <value>Immunotec Online Store</value>
+  </data>
+  <data name="NoSpecialCharactersCompany" xml:space="preserve">
+    <value>This field only accepts letters, numbers and spaces.</value>
+  </data>
+  <data name="RegisterAnotherCountry" xml:space="preserve">
+    <value>I want to shop or register from another country:</value>
+  </data>
+  <data name="EmailContact" xml:space="preserve">
+    <value>infocanada@immunotec.com</value>
+  </data>
+  <data name="PhoneContact" xml:space="preserve">
+    <value>+1 438-834-3092</value>
+  </data>
+  <data name="AventriLink" xml:space="preserve">
+    <value>https://www.immunotecconference.com/391147</value>
+  </data>
+  <data name="LaVidaDownloadUrl" xml:space="preserve">
+    <value>https://media.immunotec.com/BC/EN/event-incentive2020-EN.pdf</value>
+  </data>
+  <data name="Paperwork" xml:space="preserve">
+    <value>Paperwork included in Order Shipment</value>
+  </data>
+  <data name="PackingSlip" xml:space="preserve">
+    <value>Packing slip</value>
+  </data>
+  <data name="SendInvoice" xml:space="preserve">
+    <value>Send invoice</value>
+  </data>
+  <data name="InventoryStatus" xml:space="preserve">
+    <value>This item is temporarily unavailable, we apologize for the inconvenience. Please check back soon to place your order for this product.</value>
+  </data>
+  <data name="AutoshipInstuctions1" xml:space="preserve">
+    <value>Click the Edit button for any changes that you wish to make to your AutoShip settings below or you can add or remove any products to your AutoShip order. Make sure to click the SAVE AUTOSHIP button below to save any changes that you have made.</value>
+  </data>
+  <data name="CloseWithoutChanges" xml:space="preserve">
+    <value>Close without changes</value>
+  </data>
+  <data name="SaveNewAddress" xml:space="preserve">
+    <value>SAVE NEW ADDRESS</value>
+  </data>
+  <data name="TripProgressReportMenu" xml:space="preserve">
+    <value>Canadian Incentive Trip Progress Report</value>
+  </data>
+  <data name="TripProgressReportTitle" xml:space="preserve">
+    <value>Canadian Incentive Trip Progress Report</value>
+  </data>
+  <data name="DownloadTripFlyer" xml:space="preserve">
+    <value>Download the {0} Trip Flyer</value>
+  </data>
+  <data name="IncentiveTripYourProgress" xml:space="preserve">
+    <value>Your {0} Progress</value>
+  </data>
+  <data name="IncentiveTripTripFor" xml:space="preserve">
+    <value>Trip for {0}</value>
+  </data>
+  <data name="TripCredits" xml:space="preserve">
+    <value>Trip Credits</value>
+  </data>
+  <data name="IncentiveTripYouNeed" xml:space="preserve">
+    <value>You need {0} more a Trip for {1}</value>
+  </data>
+  <data name="IncentiveTripDetailedReport" xml:space="preserve">
+    <value>Detailed {0} Report</value>
+  </data>
+  <data name="TripCreditsEarnedFrom" xml:space="preserve">
+    <value>Trip Credits Earned From</value>
+  </data>
+  <data name="AugustMonth" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="SeptemberMonth" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="OctoberMonth" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="NovemberMonth" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="DecemberMonth" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="One" xml:space="preserve">
+    <value>One</value>
+  </data>
+  <data name="Two" xml:space="preserve">
+    <value>Two</value>
+  </data>
+  <data name="IncentiveTripNewEnrolledConsultants" xml:space="preserve">
+    <value>New personally enrolled Consultants</value>
+  </data>
+  <data name="IncentiveTripDownlineEnrolledConsultants" xml:space="preserve">
+    <value>Downline new personally enrolled Consultants</value>
+  </data>
+  <data name="IncentiveTripNewEnrolledCustomers" xml:space="preserve">
+    <value>New personally enrolled Customer</value>
+  </data>
+  <data name="IncentiveTripDownlineEnrolledCustomers" xml:space="preserve">
+    <value>Downline new personally enrolled Customer</value>
+  </data>
+  <data name="IncentiveTripDownlineTripAchievers" xml:space="preserve">
+    <value>Downline Trip Achievers</value>
+  </data>
+  <data name="IncentiveTripBonus" xml:space="preserve">
+    <value>Bonus</value>
+  </data>
+  <data name="IncentiveTripTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="CanadaTripUrl" xml:space="preserve">
+    <value>https://media.immunotec.com/BC/EN/CA/Great-Canadian-Cancun-Getaway-080119-EN.pdf</value>
+  </data>
+  <data name="CanadianIncentiveTripMenu" xml:space="preserve">
+    <value>Canadian Incentive Trip Progress Report</value>
+  </data>
+  <data name="YourShouldSelectPaymentMethod" xml:space="preserve">
+    <value>You should select pay method</value>
+  </data>
+  <data name="HeaderKeywordsVacuumBottleBlue" xml:space="preserve">
+    <value>vacuum bottle, beverages</value>
+  </data>
+  <data name="HeaderKeywordsVacuumBottleGray" xml:space="preserve">
+    <value>vacuum bottle, beverages</value>
+  </data>
+  <data name="HeaderDescriptionImmunocal" xml:space="preserve">
+    <value>Immunocal is a patented, unique and specially formulated natural health product that has been clinically demonstrated to maintain your immune system, increase muscle strength and enhance performance.</value>
+  </data>
+  <data name="HeaderDescriptionImmunocalPlatinum" xml:space="preserve">
+    <value>Immunocal Platinum is a natural source of GSH cysteine precursor for the maintenance of a strong immune system.</value>
+  </data>
+  <data name="HeaderDescriptionImmunocalBooster" xml:space="preserve">
+    <value>Immunocal Booster switches on Nrf2 – your critical survival gene.  The Booster is powered by our exclusive Nrf2 catalyst™ containing the most powerful Nrf2 switch on the market today: SULFORAPHANE or broccoli seed extract. Sulforaphane activates the body’s natural detoxification system SELENIUM teams up with glutathione to strengthen antioxidant defenses PLUS A UNIQUE RED y GREEN SUPERFOOD BLEND with over 50 polyphenols and phytonutrients from organic fruits and vegetables</value>
+  </data>
+  <data name="HeaderDescriptionOtgShakeChocolate" xml:space="preserve">
+    <value>Raise your nutrition. Reduce your hunger. Powered by our exclusive, scientifically formulated Pro-AMA22™ nutrient blend Our new ON THE GO! SHAKE™ is the perfect nutritional alternative any time of day. High-quality protein, fibre, vitamins, and minerals plus amaranth add up to an exceptional all-in-one nutritional shake that helps satisfy hunger. Look and feel better and have more energy to manage your day.</value>
+  </data>
+  <data name="HeaderDescriptionOtgShakeVanilla" xml:space="preserve">
+    <value>Raise your nutrition. Reduce your hunger. Powered by our exclusive, scientifically formulated Pro-AMA22™ nutrient blend Our new ON THE GO! SHAKE™ is the perfect nutritional alternative any time of day. High-quality protein, fibre, vitamins, and minerals plus amaranth add up to an exceptional all-in-one nutritional shake that helps satisfy hunger. Look and feel better and have more energy to manage your day.</value>
+  </data>
+  <data name="HeaderDescriptionCognivaWithSynaPs50" xml:space="preserve">
+    <value>Cogniva helps temporarily improve cognitive performance Environmental toxins, information overload, stress, and the aging process may all impact our brains, affecting memory, alertness, focus, and overall cognitive performance. This is why you need COGNIVA, an innovative nootropic 'smart chew' exclusively from Immunotec with SYNA-PS50, our proprietary blend of scientifically researched ingredients containing phosphatidylserine (PS).  Cogniva is vegan, gluten-free, and contains no artificial sweeteners or preservatives.</value>
+  </data>
+  <data name="HeaderDescriptionDailyEssentialsPack" xml:space="preserve">
+    <value>Your daily bundle of wellness Our Daily Essentials Pack prepares your body to take the first step towards total health by replenishing vital nutrients your body needs every day.</value>
+  </data>
+  <data name="HeaderDescriptionMultiResveratrol" xml:space="preserve">
+    <value>Multi + Resveratrol Contains a perfect blend of Vitamins and Minerals. Contains Chlorella which provides all the trace elements known to be required by humans. Contains Resveratrol, one of the rising antioxidant stars.</value>
+  </data>
+  <data name="HeaderDescriptionCalciumDFromMilk" xml:space="preserve">
+    <value>Naturally Sourced Calcium from Milk, a supplement that provides far more than just calcium, it's a milk mineral complex containing all the elements needed for optimal bone health.</value>
+  </data>
+  <data name="HeaderDescriptionContralenta" xml:space="preserve">
+    <value>Immunotec Contralenta helps relieve joint pain associated with osteoarthritis.</value>
+  </data>
+  <data name="HeaderDescriptionProbio3WithCranberry" xml:space="preserve">
+    <value>Immunotec Probiotic 3+ with Cranberry for a healthy digestive system with the added benefit of antioxidant protection and fiber.</value>
+  </data>
+  <data name="HeaderDescriptionSerenT200" xml:space="preserve">
+    <value>Seren-T200 contains an active peptide from milk protein. This peptide is actually the 'active ingredient' in a warm glass of milk that makes you calm! Seren-T200 helps temporarily reduce symptoms of mild mental and physical stress.  Seren-T200 is all-natural, and it has undergone clinical testing in human beings to prove its efficacy.</value>
+  </data>
+  <data name="HeaderDescriptionMagistral" xml:space="preserve">
+    <value>Magistral, health support for men. Used in herbal medicine to help relieve the urologic symptoms associated with mild to moderate benign prostatic hyperplasia.</value>
+  </data>
+  <data name="HeaderDescriptionK211l" xml:space="preserve">
+    <value>K-21, a mineral supplement for the maintenance of good health. K-21 helps the body to metabolize carbohydrates, fats and proteins, in the function of the thyroid gland, to form red blood cells and helps in their proper function.</value>
+  </data>
+  <data name="HeaderDescriptionK211lPackOf6" xml:space="preserve">
+    <value>K-21, a mineral supplement for the maintenance of good health. K-21 helps the body to metabolize carbohydrates, fats and proteins, in the function of the thyroid gland, to form red blood cells and helps in their proper function.</value>
+  </data>
+  <data name="HeaderDescriptionXtraSharpOriginalFormula" xml:space="preserve">
+    <value>Xtra Sharp, a herbal, mineral, and electrolyte supplement to help relieve fatigue and improve physical performance. Available in original formula and fruit flavour.</value>
+  </data>
+  <data name="HeaderDescriptionXtraSharpFruitFlavor" xml:space="preserve">
+    <value>Xtra Sharp is an exclusive blend of herbs and minerals to support and improve general well-being, energy and vitality. You literally can feel it working in minutes!</value>
+  </data>
+  <data name="HeaderDescriptionCustomerHealthPackImmunocal" xml:space="preserve">
+    <value>Contains 2 boxes of Immunocal. Immunocal is a patented, unique and specially formulated natural health product that has been clinically demonstrated to maintain your immune system, increase muscle strength and enhance performance.</value>
+  </data>
+  <data name="HeaderDescriptionCustomerHealthPackPlatinum" xml:space="preserve">
+    <value>Contains 2 boxes of Immunocal Platinum. Immunocal Platinum is a natural source of GSH cysteine precursor for the maintenance of a strong immune system.</value>
+  </data>
+  <data name="HeaderDescriptionCustomerHealthPackDuo" xml:space="preserve">
+    <value>Contains 1 box of Immunocal and 1 box of Immunocal Platinum. Immunocal is a patented, unique and specially formulated natural health product that has been clinically demonstrated to maintain your immune system, increase muscle strength and enhance performance, and Immunocal Platinum is a natural source of GSH cysteine precursor for the maintenance of a strong immune system.</value>
+  </data>
+  <data name="HeaderDescriptionImmunocalDerma" xml:space="preserve">
+    <value>Nourish your skin with Immunocal. Our skin: It’s one of the first things people notice about us. Not just a reflection of beauty, our skin is a window to our health, youth, and well-being. Our skin is not only our body’s largest organ, immunologists consider it “our first line of defence”, our immune barrier.</value>
+  </data>
+  <data name="HeaderDescriptionToothpasteWithSynerg4" xml:space="preserve">
+    <value>Immunotec Toothpaste with SynerG4, the only toothpaste containing glutathione in our excluse antioxidant complex.</value>
+  </data>
+  <data name="HeaderDescriptionProductCatalogueEn5" xml:space="preserve">
+    <value>The product catalogue is a beautiful display of our full range of products. Small and compact, it is easy to carry in your pocket or purse insuring that you are always prepared to meet new Customers!  Each product page includes in-depth product descriptions, product benefits, a daily usage chart, the product code number, and the content of the product container or package. (5 catalogues per package</value>
+  </data>
+  <data name="HeaderDescriptionProductCatalogueFr5" xml:space="preserve">
+    <value>The product catalogue is a beautiful display of our full range of products. Small and compact, it is easy to carry in your pocket or purse insuring that you are always prepared to meet new Customers!  Each product page includes in-depth product descriptions, product benefits, a daily usage chart, the product code number, and the content of the product container or package. (5 catalogues per package)</value>
+  </data>
+  <data name="HeaderDescriptionOnTheGoShaker" xml:space="preserve">
+    <value>The ON THE GO! Shaker is the ideal way to go mobile with your shake and show the world your Immunotec pride. Order yours today!</value>
+  </data>
+  <data name="HeaderDescriptionShakerCups5" xml:space="preserve">
+    <value>A pack of 5 plastic shaker cups especially designed for mixing your Immunocal or Immunocal Platinum.</value>
+  </data>
+  <data name="HeaderDescriptionShakerCups50" xml:space="preserve">
+    <value>A pack of 50 plastic shaker cups especially designed for mixing your Immunocal or Immunocal Platinum.</value>
+  </data>
+  <data name="HeaderDescription1gbUsbStick" xml:space="preserve">
+    <value>This 1 GB USB Stick with Immunotec Logo is the perfect tool to download your business presentation and other start up information.  Once downloaded, you can use it as a presentation tool, leaving it with your prospective Consultant.  It is just like leaving your business card but with much more information!</value>
+  </data>
+  <data name="HeaderDescriptionImmunotecEcologicalBag1" xml:space="preserve">
+    <value>This Ecological Bag is made from 100% eco-friendly materials. Let's help protect the environment.</value>
+  </data>
+  <data name="HeaderDescriptionImmunotecEcologicalBag10" xml:space="preserve">
+    <value>This Ecological Bag is made from 100% eco-friendly materials. Let's help protect the environment. Sold in packs of 10</value>
+  </data>
+  <data name="HeaderDescriptionPlasticBagsSmall25" xml:space="preserve">
+    <value>Immunotec plastic bags are available in two sizes to conveniently accommodate your order. These white sturdy bags are marked with the recognizable Immunotec logo.</value>
+  </data>
+  <data name="HeaderDescriptionPlasticBagsLarge25" xml:space="preserve">
+    <value>Immunotec plastic bags are available in two sizes to conveniently accommodate your order. These white sturdy bags are marked with the recognizable Immunotec logo.</value>
+  </data>
+  <data name="HeaderDescriptionVacuumBottleBlue" xml:space="preserve">
+    <value>18/8 Stainless Steel Matte finish Screw-on spill proof cap Double walled, vacuum insulation Keeps beverages cold for up to 24 hours Keeps beverages hot for up 12 hours BPA free and FDA compliant</value>
+  </data>
+  <data name="HeaderDescriptionVacuumBottleGrey" xml:space="preserve">
+    <value>18/8 Stainless Steel Matte finish Screw-on spill proof cap Double walled, vacuum insulation Keeps beverages cold for up to 24 hours Keeps beverages hot for up 12 hours BPA free and FDA compliant</value>
+  </data>
+  <data name="HeaderDescriptionOmegaGenV" xml:space="preserve">
+    <value>Omega Gen V helps support cognitive and cardiovascular health.</value>
+  </data>
+  <data name="ChooseAutoShipDate" xml:space="preserve">
+    <value>Choose the date you want your AutoShip order to process</value>
+  </data>
+  <data name="ScheduledFor" xml:space="preserve">
+    <value>Scheduled for {0}</value>
+  </data>
+  <data name="ErrorAutoOrderDateRange" xml:space="preserve">
+    <value>Autoorder date out of valid range.</value>
+  </data>
+  <data name="AutoshipOrderCanBeSet" xml:space="preserve">
+    <value>Please note your first Autoship order can be set to any date during the calendar month following your initial enrollment.</value>
+  </data>
+  <data name="AutoShip_Message" xml:space="preserve">
+    <value>We also offer a convenient monthly AutoShip program, so you never run out of your favorite products. At up to 44% off retail with bonus PV, our Autoship bundles offer great value. You can also choose individual products from the menu below for your monthly shipment. Your Autoship order will be scheduled to process this same day next month, if you choose you can move your Autoship date as early as the first of next month.</value>
+  </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Your Account is Pending Approval</value>
+  </data>
+  <data name="WeAreReviewingYourAccount" xml:space="preserve">
+    <value>We're currently reviewing your account details and when we have confirmed your identity. Thanks for your patience.</value>
+  </data>
+  <data name="PleaseContactUs" xml:space="preserve">
+    <value>Please {0} for more information.</value>
+  </data>
+  <data name="TemporarilyLock" xml:space="preserve">
+    <value>Your Account Has Been Temporarily Locked</value>
+  </data>
+  <data name="WeDetectedSuspiciousActivity" xml:space="preserve">
+    <value>We've detected suspicious activity Immunotec account and have temporarily locked it as a security precaution.</value>
+  </data>
+  <data name="OrderIncomplete" xml:space="preserve">
+    <value>We’ve detected suspicious activity; Immunotec has placed your order under review.</value>
+  </data>
+  <data name="OrderIncompleteTitle" xml:space="preserve">
+    <value>Order Under Review</value>
+  </data>
+  <data name="EnrollmentRejectTitle" xml:space="preserve">
+    <value>Account Creation Rejected</value>
+  </data>
+  <data name="EnrollmentRejectMessage" xml:space="preserve">
+    <value>Based on the information provided we are unable to create your account at this time. For further assistance please contact customer services.</value>
+  </data>
+  <data name="EnrollmentReviewTitle" xml:space="preserve">
+    <value>Order Under Review</value>
+  </data>
+  <data name="EnrollmentReviewMessage" xml:space="preserve">
+    <value>Your order is currently under review and should  be processed within 24hrs.</value>
+  </data>
+  <data name="AccountrReviewTitle" xml:space="preserve">
+    <value>Account Under Review</value>
+  </data>
+  <data name="AccountReviewMessage" xml:space="preserve">
+    <value>Your account is currently under review and should  be processed within 24hrs.</value>
+  </data>
+  <data name="OrderRejectTitle" xml:space="preserve">
+    <value>Order Creation Rejected</value>
+  </data>
+  <data name="OrderRejectMessage" xml:space="preserve">
+    <value>Based on the information provided we are unable to create your order at this time. For further assistance please contact customer services.</value>
+  </data>
+</root>
