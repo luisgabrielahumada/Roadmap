@@ -222,29 +222,29 @@
     <div class="modal-content">
         <div style="color: #1F2A44; padding:0 0 5px 10px; font-size: 16px;">@Resources.Common.HowToMix</div>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
-                <div class="cell-content" style="padding: 25px;">
+            <div class="cell H color2 width-25">
+                <div class="cell-content padding-25">
                     <span>@Resources.Common.MixImmunocal1</span>
                 </div>
             </div>
         </a>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
-                <div class="cell-content" style="padding: 25px;">
+            <div class="cell H color2 width-25">
+                <div class="cell-content padding-25">
                     <span>@Resources.Common.MixImmunocal2</span>
                 </div>
             </div>
         </a>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
-                <div class="cell-content" style="padding: 25px;">
+            <div class="cell H color2 width-25">
+                <div class="cell-content padding-25">
                     <span>@Resources.Common.MixImmunocal3</span>
                 </div>
             </div>
         </a>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
-                <div class="cell-content" style="padding: 25px;">
+            <div class="cell H color2 width-25">
+                <div class="cell-content padding-25">
                     <span>@Resources.Common.MixImmunocal4</span>
                 </div>
             </div>
@@ -255,15 +255,15 @@
 <div class="modal" id="modal-roadmap2" >
     <div class="modal-content" >
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="cell H color2" style="width: 50%; border-right: @modalRoadmapWborder solid #FFFFFF;">
-                <div class="cell-content" style="padding: 25px;">
+            <div class="cell H color2 width-50">
+                <div class="cell-content padding-25">
                     <span>@Resources.Common.Prospects1</span>
                 </div>
             </div>
         </a>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="cell H color2" style="width: 50%; border-right: @modalRoadmapWborder solid #FFFFFF;">
-                <div class="cell-content" style="padding: 25px;">
+            <div class="cell H color2 width-50">
+                <div class="cell-content padding-25">
                     <span>@Resources.Common.Prospects2</span>
                 </div>
             </div>
@@ -529,6 +529,21 @@
         }
 
         #title::first-line { font-size:15px; }
+
+        .width-25 {
+            width: 25%; 
+            border-right: 
+            @modalRoadmapWborder solid #FFFFFF;
+        }
+
+        .padding-25 {
+            padding:25%;
+        }
+
+        .width-50 {
+             width: 50%; 
+             border-right: @modalRoadmapWborder solid #FFFFFF;
+        }
     }
 
     @@media only screen and (max-width: 600px) {
