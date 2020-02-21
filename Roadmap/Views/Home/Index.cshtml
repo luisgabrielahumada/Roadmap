@@ -218,33 +218,33 @@
 
 @{var modalRoadmapWborder = "7px";}
 
-<div class="modal" id="modal-roadmap">
+<div class="modal" id="modal-roadmap" style="z-index: 9999999 !important;">
     <div class="modal-content">
-        <div >@Resources.Common.HowToMix</div>
+        <div style="color: #1F2A44; padding:0 0 5px 10px; font-size: 16px;">@Resources.Common.HowToMix</div>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="flex-item cell H color2" >
-                <div class="flex-item cell-content" >
+            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
                     <span>@Resources.Common.MixImmunocal1</span>
                 </div>
             </div>
         </a>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="flex-item cell H color2" >
-                <div class="flex-item cell-content" >
+            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
                     <span>@Resources.Common.MixImmunocal2</span>
                 </div>
             </div>
         </a>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="flex-item cell H color2" >
-                <div class="flex-item cell-content" >
+            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
                     <span>@Resources.Common.MixImmunocal3</span>
                 </div>
             </div>
         </a>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="flex-item cell H color2" >
-                <div class="flex-item cell-content" >
+            <div class="cell H color2" style="width: 25%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
                     <span>@Resources.Common.MixImmunocal4</span>
                 </div>
             </div>
@@ -255,15 +255,15 @@
 <div class="modal" id="modal-roadmap2" >
     <div class="modal-content" >
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="flex-item cell H color2" >
-                <div class="flex-item cell-content" >
+            <div class="cell H color2" style="width: 50%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
                     <span>@Resources.Common.Prospects1</span>
                 </div>
             </div>
         </a>
         <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
-            <div class="flex-item cell H color2" >
-                <div class="flex-item cell-content" >
+            <div class="cell H color2" style="width: 50%; border-right: @modalRoadmapWborder solid #FFFFFF;">
+                <div class="cell-content" style="padding: 25px;">
                     <span>@Resources.Common.Prospects2</span>
                 </div>
             </div>
@@ -294,8 +294,6 @@
 	        width: 20%;
 	        height: 140px;
         }
-
-    
 
         .cell {
             display: block;
@@ -403,33 +401,33 @@
             position: relative;
         }
 
-    .popup .popuptext::before {
-        content: "";
-        height: 0;
-        width: calc(100% + 60px);
-        position: absolute;
-        left: -45px;
-        top: -10px;
-        z-index: -1;
-        border-bottom: calc(7.5 * @iheight) solid #FFFFFF;
-        border-left: 45px solid transparent;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
-    }
+        .popup .popuptext::before {
+            content: "";
+            height: 0;
+            width: calc(100% + 60px);
+            position: absolute;
+            left: -45px;
+            top: -10px;
+            z-index: -1;
+            border-bottom: calc(7.5 * @iheight) solid #FFFFFF;
+            border-left: 45px solid transparent;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+        }
 
-            .popup .popuptext {
-                height: calc(7.5 * @iheight );
-                width: 150px;
-                position: absolute;
-                top: 19px;
-                left: 50px;
-                margin-top: calc((@iheight / 2) + 15px);
-                margin-left: -75px;
-                z-index: 4;
-                font-size: 10px;
-                color: black;
-                visibility: hidden;
-                @(languageCode != "en"? "line-height: 1em;": "")
-            }
+        .popup .popuptext {
+            height: calc(7.5 * @iheight );
+            width: 150px;
+            position: absolute;
+            top: 19px;
+            left: 50px;
+            margin-top: calc((@iheight / 2) + 15px);
+            margin-left: -75px;
+            z-index: 4;
+            font-size: 10px;
+            color: black;
+            visibility: hidden;
+            @(languageCode != "en"? "line-height: 1em;": "")
+        }
 
         .popup .popuptext::after {
             content: "";
@@ -487,6 +485,50 @@
             background-position: center;
         }
 
+        #modal-roadmap {
+            position: fixed;
+            padding-top: 165px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        #modal-roadmap2 {
+            position: fixed;
+            padding-top: 165px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            height: calc(@height * 1.25);
+            margin: auto;
+            padding: 15px;
+            border: 1px solid #888;
+            width: 70%;
+            border-radius: 0;
+        }
+
+        #modal-roadmap2 .modal-content{
+            width: 50%;
+        }
+
+        #title {
+            display: block;
+            color: #1F2A44;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        #title::first-line { font-size:15px; }
     }
 
     @@media only screen and (max-width: 600px) {
@@ -513,7 +555,7 @@
 
         .item-1 {
 	        order: -20;
-	        width: 50%;
+	        width: 100%;
         }
 
         .item-2 {
@@ -595,7 +637,7 @@
 
         .item-20 {
 	        order: -21;
-	        width: 50%;
+	        width: 100%;
         }
         
         .cell {
@@ -659,20 +701,20 @@
             box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
         }
 
-            .popup .popuptext {
-                height: calc(7.5 * @iheight );
-                width: 150px;
-                position: absolute;
-                top: 19px;
-                left: 50px;
-                margin-top: calc((@iheight / 2) + 15px);
-                margin-left: -75px;
-                z-index: 4;
-                font-size: 10px;
-                color: black;
-                visibility: hidden;
-                @(languageCode != "en"? "line-height: 1em;": "")
-            }
+        .popup .popuptext {
+            height: calc(7.5 * @iheight );
+            width: 150px;
+            position: absolute;
+            top: 19px;
+            left: 50px;
+            margin-top: calc((@iheight / 2) + 15px);
+            margin-left: -75px;
+            z-index: 4;
+            font-size: 10px;
+            color: black;
+            visibility: hidden;
+            @(languageCode != "en"? "line-height: 1em;": "")
+        }
 
         .popup .popuptext::after {
             content: "";
