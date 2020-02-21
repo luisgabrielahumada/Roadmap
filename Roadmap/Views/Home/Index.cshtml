@@ -289,7 +289,7 @@
 
         #roadmap {
             margin: 10% auto;
-            padding: 0 100px 0 100px;
+            padding: 0 10%;
             font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
@@ -578,6 +578,7 @@
             color: #1F2A44;
             font-weight: bold;
             font-size: 25px;
+            line-height: 1em;
         }
 
         #title::first-line { font-size:15px; }
@@ -801,12 +802,13 @@
         }
 
         .item-6 {
-            padding: 0 7%;
+            padding: 0 10%;
             height: 300px;
         }
 
         .item-6 span {
-            font-size: 18px;
+            font-size: 16px;
+            line-height: 0.5em;
         }
 
         .item-6 .cell-content {
@@ -1015,6 +1017,15 @@
 
         #triangle-part3 {
             position: relative; left: calc(2 * (@iheight + 18px)); height: calc(5 * @iheight);
+        }
+    }
+
+    @@media only screen and (max-width: 1000px) and (min-width: 600px)  {
+        #title {
+            display: block;
+            color: #1F2A44;
+            font-weight: bold;
+            font-size: 18px;
         }
     }
 
