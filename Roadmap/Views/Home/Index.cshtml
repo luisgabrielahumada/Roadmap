@@ -101,7 +101,7 @@
         <div class="flex-item item-6">
             <div class="cell-content">
                 <div style="color:#2272BA;">
-                    <span style="font-weight: bold; font-size: 13px;">@Resources.Common.GetToSilver</span>
+                    <span style="font-weight: bold;">@Resources.Common.GetToSilver</span>
                     <span class="popup" onmouseover="hoverInfo()" onmouseout="unhoverInfo()">
                         <i class="fa fa-info-circle fa-xs" aria-hidden="true" style="font-size: 10px"></i>
                         <span class="popuptext" id="info">
@@ -109,7 +109,7 @@
                         </span>
                     </span>
                 </div>
-                <div style="margin-top: @iheight; font-size: 12px;">
+                <div style="margin-top: @iheight;">
                     <div id="triangle-part1">
                         <img style="height: 100%" src="@Url.Content("~/Content/images/RoadmapToSuccess/10.svg")" />
                         <span style="margin: 0 15px; color: #80B4D6;">@Resources.Common.Prospects</span>
@@ -296,6 +296,10 @@
         .flex-item {
 	        width: 20%;
 	        height: 140px;
+        }
+
+        .item-6 {
+            z-index: 10;
         }
 
         .cell {
@@ -774,7 +778,11 @@
 
         .item-6 {
             padding: 0 7%;
-            height: 200px;
+            height: 300px;
+        }
+
+        .item-6 span {
+            font-size: 18px;
         }
 
         .item-6 .cell-content {
@@ -789,7 +797,7 @@
             left: -45px;
             top: -10px;
             z-index: -1;
-            border-bottom: calc(7.5 * @iheight) solid #FFFFFF;
+            border-bottom: calc(7.5 * @iheight ) solid #FFFFFF;
             border-left: 45px solid transparent;
             box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
         }
@@ -963,6 +971,18 @@
 
         .item-1 {
             height: 120px;
+        }
+
+        #triangle-part1 {
+            position: relative; left: 0; height: calc(5 * @iheight);
+        }
+
+        #triangle-part2 {
+            position: relative; left: calc(@iheight + 18px); height: calc(5 * @iheight);
+        }
+
+        #triangle-part3 {
+            position: relative; left: calc(2 * (@iheight + 18px)); height: calc(5 * @iheight);
         }
     }
 
