@@ -235,28 +235,28 @@
 <div class="modal" id="modal-roadmap" style="z-index: 9999999 !important;">
     <div class="modal-content">
         <div style="color: #1F2A44; padding:0 0 5px 10px; font-size: 16px;">@Resources.Common.HowToMix</div>
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
             <div class="cell H color2 modal-cellstyle-25">
                 <div class="cell-content padding-25">
                     <span>@Resources.Common.MixImmunocal1</span>
                 </div>
             </div>
         </a>
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
             <div class="cell H color2 modal-cellstyle-25">
                 <div class="cell-content padding-25">
                     <span>@Resources.Common.MixImmunocal2</span>
                 </div>
             </div>
         </a>
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
             <div class="cell H color2 modal-cellstyle-25">
                 <div class="cell-content padding-25">
                     <span>@Resources.Common.MixImmunocal3</span>
                 </div>
             </div>
         </a>
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
             <div class="cell H color2 modal-cellstyle-25">
                 <div class="cell-content padding-25">
                     <span>@Resources.Common.MixImmunocal4</span>
@@ -268,14 +268,14 @@
 
 <div class="modal" id="modal-roadmap2" >
     <div class="modal-content" >
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
             <div class="cell H color2 modal-cellstyle-50">
                 <div class="cell-content padding-25">
                     <span>@Resources.Common.Prospects1</span>
                 </div>
             </div>
         </a>
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
+        <a class="yt-video" target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
             <div class="cell H color2 modal-cellstyle-50">
                 <div class="cell-content padding-25">
                     <span>@Resources.Common.Prospects2</span>
@@ -573,6 +573,7 @@
 
         #modal-roadmap2 .modal-content{
             width: 50%;
+            height: calc(@height * 1.05);
         }
 
         #title {
@@ -580,6 +581,7 @@
             color: #1F2A44;
             font-weight: bold;
             font-size: 25px;
+            line-height: 1em;
         }
 
         #title::first-line { font-size:15px; }
@@ -808,12 +810,13 @@
         }
 
         .item-6 {
-            padding: 0 7%;
+            padding: 0 10%;
             height: 300px;
         }
 
         .item-6 span {
-            font-size: 18px;
+            font-size: 16px;
+            line-height: 0.5em;
         }
 
         .item-6 .cell-content {
@@ -1026,6 +1029,15 @@
 
         #arrow-down-id {
             display: none;
+        }
+    }
+
+    @@media only screen and (max-width: 1000px) and (min-width: 600px)  {
+        #title {
+            display: block;
+            color: #1F2A44;
+            font-weight: bold;
+            font-size: 18px;
         }
     }
 
