@@ -117,15 +117,15 @@
                 <div style="margin-top: @iheight;">
                     <div id="triangle-part1">
                         <img style="height: 100%" src="@Url.Content("~/Content/images/RoadmapToSuccess/10.svg")" />
-                        <span style="margin: 0 15px; color: #80B4D6;">@Resources.Common.Prospects</span>
+                        <span style="margin: 0; color: #80B4D6;">@Resources.Common.Prospects</span>
                     </div>
                     <div id="triangle-part2">
                         <img style="height: 100%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/3.svg")" />
-                        <span style="margin: 0 15px; color: #7299D0;">@Resources.Common.Meetings<br /></span>
+                        <span style="margin: 0; color: #7299D0;">@Resources.Common.Meetings<br /></span>
                     </div>
                     <div id="triangle-part3">
                         <img style="height: 100%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/1.svg")" />
-                        <span style="margin: 0 15px; color: #2272BA;">@Resources.Common.NewConsultantEnrollment<br /></span>
+                        <span style="margin: 0; color: #2272BA;">@Resources.Common.NewConsultantEnrollment<br /></span>
                     </div>
                 </div>
                 <span id="popup-mobile">
@@ -157,9 +157,9 @@
                         <span style="margin-top: 20%;">
                             @Resources.Common.ContactYourProspects<br />
                         </span>
-                        <img style="width: 15%; margin: 10% 5% 0% 5%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-people.svg")" />
-                        <img style="width: 15%; margin: 10% 5% 0% 5%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-laptop.svg")" />
-                        <img style="width: 15%; margin: 10% 5% 0% 5%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-phone.svg")" />
+                        <img style="width: 15%; margin: 2% 5%" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-people.svg")" />
+                        <img style="width: 15%; margin: 2% 5%" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-laptop.svg")" />
+                        <img style="width: 15%; margin: 2% 5%" src="@Url.Content("~/Content/images/RoadmapToSuccess/icon-phone.svg")" />
                     </div>
                 </div>
             </a>
@@ -294,7 +294,7 @@
         
         #roadmap {
             margin: 80px auto;
-            padding: 0 100px 0 100px;
+            padding: 0 5%;
             font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
@@ -393,15 +393,15 @@
             padding: calc(@wborder / 4) 25%;
         }
 
-        .N.E { border-top-right-radius: @height; }
+        .N.E { border-top-right-radius: calc(0.7 * @height); }
 
         .N.E::before { border-top-right-radius: 30px; }
 
-        .S.E { border-bottom-right-radius: @height; }
+        .S.E { border-bottom-right-radius: calc(0.7 * @height); }
 
         .S.E::before { border-bottom-right-radius: 30px; }
 
-        .S.W { border-bottom-left-radius: @height; }
+        .S.W { border-bottom-left-radius: calc(0.7 * @height); }
 
         .S.W .cell-content {
             text-align: left;
@@ -410,7 +410,7 @@
 
         .S.W::before { border-bottom-left-radius: 30px; }
 
-        .N.W { border-top-left-radius:@height; }
+        .N.W { border-top-left-radius: calc(0.7 * @height); }
 
         .N.W::before { border-top-left-radius: 30px; }
 
@@ -419,7 +419,7 @@
         .mv-down2 { margin-top: calc( @iheight * 4); }
 
         .item-1 {
-            transform: translateY(-25%);
+            transform: translateY(-50%);
         }
 
         #title::first-line { font-size:15px; }
@@ -620,6 +620,10 @@
         #arrow-down-id {
             width: 100%;
             text-align: center;
+        }
+
+        #triangle-part1 span, #triangle-part2 span, #triangle-part3 span{
+            font-size: 13px;
         }
     }
 
@@ -907,14 +911,15 @@
         }
 
         .yt-video .cell {
-            background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/play-circle-regular.svg"));
+            background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/play-circle-regular.svg") );
             background-repeat: no-repeat;
             background-position: center;
             background-position: center 80%;
         }
 
         .clickable .cell {
-            background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/hand-point-up-regular.svg"));
+            background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/hand-point-up-regular.svg")
+            );
             background-repeat: no-repeat;
             background-position: center;
             background-position: center 80%;
