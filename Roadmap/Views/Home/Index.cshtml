@@ -30,8 +30,8 @@
             <span id="title" style="line-height: 1.1em;">@Html.Raw(HttpUtility.HtmlDecode(Resources.Common.WelcomeToRoadmap))</span>
             @if (languages.Count() > 1)
             {
-                <span style="color:#1F2A44; font-size:12px;">@Resources.Common.SelectCountry</span><br />
-                <div class="dropdown">
+                <span id="select-country">@Resources.Common.SelectCountry</span><br />
+                <div class="dropdown" id="country-dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" id="languageText">
                         <img style="vertical-align:text-bottom" src="@Url.Content("~/Content/Images/country-flags/16/" + selectedLanguage.CultureCode.Substring(3, 2) + ".png")" />
                         <span style="color:#1F2A44; font-size:12px;">&nbsp;@selectedLanguage.Country&nbsp;</span><b class="caret"></b>
@@ -110,19 +110,22 @@
                     </span>
                 </div>
                 <div style="margin-top: @iheight; font-size: 12px;">
-                    <div style="position: relative; left: 0; height: calc(2.5 * @iheight);">
+                    <div id="triangle-part1">
                         <img style="height: 100%" src="@Url.Content("~/Content/images/RoadmapToSuccess/10.svg")" />
                         <span style="margin: 0 15px; color: #80B4D6;">@Resources.Common.Prospects</span>
                     </div>
-                    <div style="position: relative; left: calc(@iheight + 4px); height: calc(2.5 * @iheight);">
+                    <div id="triangle-part2">
                         <img style="height: 100%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/3.svg")" />
                         <span style="margin: 0 15px; color: #7299D0;">@Resources.Common.Meetings<br /></span>
                     </div>
-                    <div style="position: relative; left: calc(2 * (@iheight + 4px)); height: calc(2.5 * @iheight);">
+                    <div id="triangle-part3">
                         <img style="height: 100%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/1.svg")" />
                         <span style="margin: 0 15px; color: #2272BA;">@Resources.Common.NewConsultantEnrollment<br /></span>
                     </div>
                 </div>
+                <span id="popup-mobile">
+                    @Resources.Common.RecipeForSuccess
+                </span>
             </div>
         </div>
         <div class="flex-item item-7">
@@ -416,6 +419,10 @@
             position: relative;
         }
 
+        #popup-mobile {
+            display: none;
+        }
+
         .popup .popuptext::before {
             content: "";
             height: 0;
@@ -563,6 +570,23 @@
         .modal-cellstyle-50 {
              width: 50%; 
              border-right: @modalRoadmapWborder solid #FFFFFF;
+        }
+
+        #select-country {
+            color:#1F2A44;
+            font-size:12px;
+        }
+
+        #triangle-part1 {
+            position: relative; left: 0; height: calc(2.5 * @iheight);
+        }
+
+        #triangle-part2 {
+            position: relative; left: calc(@iheight + 4px); height: calc(2.5 * @iheight);
+        }
+
+        #triangle-part3 {
+            position: relative; left: calc(2 * (@iheight + 4px)); height: calc(2.5 * @iheight);
         }
     }
 
@@ -738,7 +762,23 @@
         .invite-button:hover { background-color: #FED304; }
 
         .popup {
-            position: relative;
+            display: none;
+        }
+
+        #popup-mobile {
+            display: block;
+            line-height: 1.3em;
+            font-size: 15px;
+            color: #000000;
+        }
+
+        .item-6 {
+            padding: 0 7%;
+            height: 200px;
+        }
+
+        .item-6 .cell-content {
+            top: 50%;
         }
 
         .popup .popuptext::before {
@@ -811,8 +851,6 @@
             background-color: #6289A3;
         }
 
-            a:hover .cell-content > * { display: none; }
-
         .pdf .cell {
             background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/file-pdf-regular.svg") );
             background-repeat: no-repeat;
@@ -876,14 +914,22 @@
             width: 100%;
         }
 
+        .modal-content .cell-content {
+            top: 50%;
+            font-size: 20px;
+            line-height: 1em;
+        }
+
         #title {
             display: block;
             color: #1F2A44;
             font-weight: bold;
             font-size: 25px;
+            text-align: center;
+            padding: 0 5%;
         }
 
-        #title::first-line { font-size:15px; }
+        #title::first-line { font-size:20px; }
 
         .modal-cellstyle-25 {
             height: 16%;
@@ -901,6 +947,23 @@
              border-right: @modalRoadmapWborder solid #FFFFFF;
         }
         
+        #select-country {
+            display: none;
+        }
+
+        .item-20 {
+            padding: 0 10%;
+            height: 100px;
+        }
+
+        #country-dropdown {
+            top: -10%;
+            left: 10%;
+        }
+
+        .item-1 {
+            height: 120px;
+        }
     }
 
 </style>
