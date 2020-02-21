@@ -26,7 +26,7 @@
 }
 
     <div class="flex-container" id="roadmap">
-        <div class="flex-item">
+        <div class="flex-item item-1">
             <span id="title" style="line-height: 1.1em;">@Html.Raw(HttpUtility.HtmlDecode(Resources.Common.WelcomeToRoadmap))</span>
             @if (languages.Count() > 1)
             {
@@ -56,7 +56,7 @@
                 </div>
             }
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-2">
             <div class="cell N W color1">
                 <div class="cell-content" style="transform: translateY(calc(50% - (3 *@iheight)))">
                     <span>@Resources.Common.InviteToJoin<br /></span>
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-3">
             <a class="pdf" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
                 <div class="cell H color1">
                     <div class="cell-content">
@@ -80,7 +80,7 @@
                 </div>
             </a>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-4">
             <a class="pdf" target="_blank" href="@Resources.Common.QualifyAsSilverLink">
                 <div class="cell H color3">
                     <div class="cell-content">
@@ -89,7 +89,7 @@
                 </div>
             </a>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-5">
             <a class="pdf" target="_blank" href="@Resources.Common.MaintainSilverLink">
                 <div class="cell H color4" style="border-right: @wborder solid #FFFFFF;">
                     <div class="cell-content">
@@ -98,7 +98,7 @@
                 </div>
             </a>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-6">
             <div class="cell-content">
                 <div style="color:#2272BA;">
                     <span style="font-weight: bold; font-size: 13px;">@Resources.Common.GetToSilver</span>
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-7">
             <a class="pdf" target="_blank" href="@Resources.Common.UseYourStarLink">
                 <div class="cell S W color1" style="z-index: -1;">
                     <div class="cell-content" style="text-align: left; transform: translate(35%,calc(-50% + @iheight))">
@@ -142,7 +142,7 @@
                 </div>
             </a>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-8">
             <a class="clickable">
                 <div class="cell H mv-down color1" style="border-right: @wborder solid #FFFFFF;" onclick="showModal2()">
                     <div class="cell-content">
@@ -156,7 +156,7 @@
                 </div>
             </a>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-9">
             <a class="yt-video" target="_blank" href="@Resources.Common.ScheduleNextContactLink">
                 <div class="cell N E mv-down color2">
                     <div class="cell-content">
@@ -165,13 +165,13 @@
                 </div>
             </a>
         </div>
-        <div class="flex-item"></div>
-        <div class="flex-item">
+        <div class="flex-item item-10"></div>
+        <div class="flex-item item-11">
             <div class="cell N W mv-down2 color2">
                 <div class="cell-content" style="font-weight:bold; font-size: 30px; white-space: pre; transform: translateY(calc(50% - (5 * @iheight)))">GO!! </div>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-12">
             <a class="clickable">
                 <div class="cell H mv-down2 color2">
                     <div class="cell-content">
@@ -180,7 +180,7 @@
                 </div>
             </a>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-13">
             <a class="pdf" target="_blank" href="@Resources.Common.SetYourGoalLink">
                 <div class="cell H mv-down2 color2" style="border-right: @wborder solid #FFFFFF;">
                     <div class="cell-content">
@@ -189,7 +189,7 @@
                 </div>
             </a>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-14">
             <a class="pdf" target="_blank" href="@Resources.Common.MakeYourProspectListLink">
                 <div class="cell S E color2 mv-down">
                     <div class="cell-content" style="transform: translateY(calc(50% - @iheight))">
@@ -198,18 +198,18 @@
                 </div>
             </a>
         </div>
-        <div class="flex-item"></div>
-        <div class="flex-item">
+        <div class="flex-item item-15"></div>
+        <div class="flex-item item-16">
             <div class="cell H color4 mv-down2" style="width:calc(50% + @wborder); border-right: @wborder solid #FFFFFF;">
                 <div class="cell-content">
                     <img style="width: 50%;" src="@Url.Content("~/Content/images/RoadmapToSuccess/Arrow.svg")" />
                 </div>
             </div>
         </div>
-        <div class="flex-item"></div>
-        <div class="flex-item"></div>
-        <div class="flex-item"></div>
-        <div class="flex-item">
+        <div class="flex-item item-17"></div>
+        <div class="flex-item item-18"></div>
+        <div class="flex-item item-19"></div>
+        <div class="flex-item item-20">
             <div class="cell-content">
                 <img src="@Url.Content("~/Content/images/immunotec-logo_{0}.svg".FormatWith(languageCode))" />
             </div>
@@ -274,212 +274,219 @@
 <style>
     body { background-color: @backgound; }
 
-    .flex-container {
-	    width: 100%;
-	    margin: auto;
-	    display: flex;
-	    flex-wrap: wrap;
-	    justify-content: space-around;
-    }
-
-    .flex-item {
-	    width: 20%;
-	    height: 140px;
-    }
-
     #roadmap {
         margin: 10% auto;
         padding: 0 100px 0 100px;
         font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
-    .cell {
-        display: block;
-        position: relative;
-        float: left;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        overflow: visible;
-        z-index: 1;
-    }
+    @@media only screen and (min-width: 600px) {
 
-    .cell-content {
-        color: #FFFFFF;
-        position: relative;
-        top: calc(50% );
-        transform: translateY(-50%);
-        width: 100%;
-    }
-
-    .cell .cell-content {
-        text-align: center;
-    }
-
-    .H {
-        height: calc(@height - (2 * @iheight));
-        border: @wborder solid #FFFFFF;
-        border-right: none;
-    }
-
-    .N, .N::before { border-top: @wborder solid #FFFFFF; }
-
-    .N::before, .N::after { bottom: 0px; }
-
-    .E, .E::before {
-        border-right: @wborder solid #FFFFFF;
-    }
-
-    .E::before, .W::after { left: 0px; }
-
-    .S, .S::before { border-bottom: @wborder solid #FFFFFF; }
-
-    .S::before, .S::after { top: 0px; }
-
-    .W, .W::before { border-left: @wborder solid #FFFFFF; }
-
-    .W::before, .E::after { right: 0px; }
-
-    .N::before, .S::before, .N::after, .S::after {
-        content: '';
-        position: absolute;
-    }
-
-    .N::before, .S::before {
-        padding: @iheight 25%;
-        background: @backgound;
-    }
-
-    .N::after, .S::after {
-        background-color: white;
-        padding: calc(@wborder / 4) 25%;
-    }
-
-    .N.E { border-top-right-radius: @height; }
-
-    .N.E::before { border-top-right-radius: 30px; }
-
-    .S.E { border-bottom-right-radius: @height; }
-
-    .S.E::before { border-bottom-right-radius: 30px; }
-
-    .S.W { border-bottom-left-radius: @height; }
-
-    .S.W::before { border-bottom-left-radius: 30px; }
-
-    .N.W { border-top-left-radius:@height; }
-
-    .N.W::before { border-top-left-radius: 30px; }
-
-    .mv-down { margin-top: calc( @iheight * 2); }
-
-    .mv-down2 { margin-top: calc( @iheight * 4); }
-
-    #title {
-        display: block;
-        color: #1F2A44;
-        font-weight: bold;
-        font-size: 25px;
-    }
-
-    #title::first-line { font-size:15px; }
-
-    .invite-button {
-        margin: 5px;
-        padding: 5px 10px;
-        background-color:#FFFFFF;
-        color:#2272BA;
-        float:left;
-        font-size: 10px;
-    }
-
-    .invite-button:hover { background-color: #FED304; }
-
-    .popup {
-        position: relative;
-    }
-
-    .popup .popuptext::before {
-        content: "";
-        height: 0;
-        width: calc(100% + 60px);
-        position: absolute;
-        left: -45px;
-        top: -10px;
-        z-index: -1;
-        border-bottom: calc(7.5 * @iheight) solid #FFFFFF;
-        border-left: 45px solid transparent;
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
-    }
-
-        .popup .popuptext {
-            height: calc(7.5 * @iheight );
-            width: 150px;
-            position: absolute;
-            top: 19px;
-            left: 50px;
-            margin-top: calc((@iheight / 2) + 15px);
-            margin-left: -75px;
-            z-index: 4;
-            font-size: 10px;
-            color: black;
-            visibility: hidden;
-            @(languageCode != "en"? "line-height: 1em;": "")
+        .flex-container {
+	        width: 100%;
+	        margin: auto;
+	        display: flex;
+	        flex-wrap: wrap;
+	        justify-content: space-around;
         }
 
-    .popup .popuptext::after {
-        content: "";
-        position: absolute;
-        top: -30px;
-        left: 20px;
-        border-width: 10px;
-        border-style: solid;
-        border-color: transparent transparent #FFFFFF transparent;
+        .flex-item {
+	        width: 20%;
+	        height: 140px;
+        }
+
+    
+
+        .cell {
+            display: block;
+            position: relative;
+            float: left;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: visible;
+            z-index: 1;
+        }
+
+        .cell-content {
+            color: #FFFFFF;
+            position: relative;
+            top: calc(50% );
+            transform: translateY(-50%);
+            width: 100%;
+        }
+
+        .cell .cell-content {
+            text-align: center;
+        }
+
+        .H {
+            height: calc(@height - (2 * @iheight));
+            border: @wborder solid #FFFFFF;
+            border-right: none;
+        }
+
+        .N, .N::before { border-top: @wborder solid #FFFFFF; }
+
+        .N::before, .N::after { bottom: 0px; }
+
+        .E, .E::before {
+            border-right: @wborder solid #FFFFFF;
+        }
+
+        .E::before, .W::after { left: 0px; }
+
+        .S, .S::before { border-bottom: @wborder solid #FFFFFF; }
+
+        .S::before, .S::after { top: 0px; }
+
+        .W, .W::before { border-left: @wborder solid #FFFFFF; }
+
+        .W::before, .E::after { right: 0px; }
+
+        .N::before, .S::before, .N::after, .S::after {
+            content: '';
+            position: absolute;
+        }
+
+        .N::before, .S::before {
+            padding: @iheight 25%;
+            background: @backgound;
+        }
+
+        .N::after, .S::after {
+            background-color: white;
+            padding: calc(@wborder / 4) 25%;
+        }
+
+        .N.E { border-top-right-radius: @height; }
+
+        .N.E::before { border-top-right-radius: 30px; }
+
+        .S.E { border-bottom-right-radius: @height; }
+
+        .S.E::before { border-bottom-right-radius: 30px; }
+
+        .S.W { border-bottom-left-radius: @height; }
+
+        .S.W::before { border-bottom-left-radius: 30px; }
+
+        .N.W { border-top-left-radius:@height; }
+
+        .N.W::before { border-top-left-radius: 30px; }
+
+        .mv-down { margin-top: calc( @iheight * 2); }
+
+        .mv-down2 { margin-top: calc( @iheight * 4); }
+
+        #title {
+            display: block;
+            color: #1F2A44;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        #title::first-line { font-size:15px; }
+
+        .invite-button {
+            margin: 5px;
+            padding: 5px 10px;
+            background-color:#FFFFFF;
+            color:#2272BA;
+            float:left;
+            font-size: 10px;
+        }
+
+        .invite-button:hover { background-color: #FED304; }
+
+        .popup {
+            position: relative;
+        }
+
+        .popup .popuptext::before {
+            content: "";
+            height: 0;
+            width: calc(100% + 60px);
+            position: absolute;
+            left: -45px;
+            top: -10px;
+            z-index: -1;
+            border-bottom: calc(7.5 * @iheight) solid #FFFFFF;
+            border-left: 45px solid transparent;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+        }
+
+            .popup .popuptext {
+                height: calc(7.5 * @iheight );
+                width: 150px;
+                position: absolute;
+                top: 19px;
+                left: 50px;
+                margin-top: calc((@iheight / 2) + 15px);
+                margin-left: -75px;
+                z-index: 4;
+                font-size: 10px;
+                color: black;
+                visibility: hidden;
+                @(languageCode != "en"? "line-height: 1em;": "")
+            }
+
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: 20px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent #FFFFFF transparent;
+        }
+
+        y { color: #FED304; }
+
+        y1::first-letter { color: #FED304; }
+
+        .color1, .color1 .cell { background-color: #2272BA; }
+
+        a .color1:hover, a .color1:hover > * { background-color: #195387; }
+
+        .color2 { background-color: #1F2A44; }
+
+        a .color2:hover { background-color: #14252B; }
+
+        .color3 { background-color: #B2B6B6; }
+
+        .color3 .cell-content { color: #1F2A44; }
+
+        a .color3:hover { background-color: #E3E8E8; }
+
+        .color4 { background-color: #80B4D6; }
+
+        a .color4:hover {
+            background-color: #6289A3;
+        }
+
+            a:hover .cell-content > * { display: none; }
+
+        .pdf:hover .cell {
+            background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/file-pdf-regular.svg") );
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .yt-video:hover .cell {
+            background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/play-circle-regular.svg"));
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .clickable:hover .cell {
+            background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/mouse-solid.svg"));
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
     }
 
-    y { color: #FED304; }
-
-    y1::first-letter { color: #FED304; }
-
-    .color1, .color1 .cell { background-color: #2272BA; }
-
-    a .color1:hover, a .color1:hover > * { background-color: #195387; }
-
-    .color2 { background-color: #1F2A44; }
-
-    a .color2:hover { background-color: #14252B; }
-
-    .color3 { background-color: #B2B6B6; }
-
-    .color3 .cell-content { color: #1F2A44; }
-
-    a .color3:hover { background-color: #E3E8E8; }
-
-    .color4 { background-color: #80B4D6; }
-
-    a .color4:hover {
-        background-color: #6289A3;
-    }
-
-        a:hover .cell-content > * { display: none; }
-
-    .pdf:hover .cell {
-        background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/file-pdf-regular.svg") );
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .yt-video:hover .cell {
-        background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/play-circle-regular.svg"));
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .clickable:hover .cell {
-        background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/mouse-solid.svg"));
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 </style>
 
 <script>
