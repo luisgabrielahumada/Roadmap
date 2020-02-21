@@ -8790,4 +8790,16 @@ You have a new personally enrolled Consultant:</value>
   <data name="UseYourStarLink" xml:space="preserve">
     <value>https://media.immunotec.com/roadmap/docs/SP/roadmap-STAR.pdf</value>
   </data>
+  <data name="MixImmunocal1Link" xml:space="preserve">
+    <value>https://youtu.be/RykKYMM-bso</value>
+  </data>
+  <data name="MixImmunocal2Link" xml:space="preserve">
+    <value>https://youtu.be/RvGLInd_OFU</value>
+  </data>
+  <data name="MixImmunocal3Link" xml:space="preserve">
+    <value>https://youtu.be/wCrtpPry9Zo</value>
+  </data>
+  <data name="MixImmunocal4Link" xml:space="preserve">
+    <value>https://youtu.be/m3An9Ezakq4</value>
+  </data>
 </root>
