@@ -58,9 +58,9 @@
         </div>
         <div class="flex-item item-2">
             <div class="cell N W color1">
-                <div class="cell-content" style="transform: translateY(calc(50% - (3 *@iheight)))">
+                <div class="cell-content" id="invite">
                     <span>@Resources.Common.InviteToJoin<br /></span>
-                    <div style="display: block; position: relative; left: calc(50% - 40px);">
+                    <div id="invite-button-container">
                         <a target="_blank" href="https://www.youtube.com/watch?v=N3di2a39VYU">
                             <div class="invite-button">@Resources.Common.Yes</div>
                         </a>
@@ -128,11 +128,11 @@
         <div class="flex-item item-7">
             <a class="pdf" target="_blank" href="@Resources.Common.UseYourStarLink">
                 <div class="cell S W color1">
-                    <div class="cell-content" style="text-align: left; transform: translate(35%,calc(-50% + @iheight))">
+                    <div class="cell-content">
                         <div>
                             @Html.Raw(HttpUtility.HtmlDecode(String.Format(Resources.Common.UseYourStar, "<y>STAR</y>")))
                         </div>
-                        <div style="font-size: @(languageCode == "fr"? "9px" : "12px"); margin-right: -5px;">
+                        <div id="star">
                             <y1 style="display: block; margin: 0; ">@Resources.Common.StarShare</y1>
                             <y1 style="display: block; margin: 0; ">@Resources.Common.StarTell</y1>
                             <y1 style="display: block; margin: 0; ">@Resources.Common.StarAnswer</y1>
@@ -192,7 +192,7 @@
         <div class="flex-item item-14">
             <a class="pdf" target="_blank" href="@Resources.Common.MakeYourProspectListLink">
                 <div class="cell S E color2 mv-down">
-                    <div class="cell-content" style="transform: translateY(calc(50% - @iheight))">
+                    <div class="cell-content">
                         <span>@Resources.Common.MakeYourProspectList</span>
                     </div>
                 </div>
@@ -295,8 +295,6 @@
 	        height: 140px;
         }
 
-    
-
         .cell {
             display: block;
             position: relative;
@@ -328,6 +326,8 @@
 
         .N, .N::before { border-top: @wborder solid #FFFFFF; }
 
+        .N .cell-content { transform: translateY(calc(50% - (3 *@iheight))); }
+
         .N::before, .N::after { bottom: 0px; }
 
         .E, .E::before {
@@ -337,6 +337,8 @@
         .E::before, .W::after { left: 0px; }
 
         .S, .S::before { border-bottom: @wborder solid #FFFFFF; }
+
+        .S .cell-content { transform: translateY(calc(50% - @iheight)); }
 
         .S::before, .S::after { top: 0px; }
 
@@ -369,6 +371,11 @@
 
         .S.W { border-bottom-left-radius: @height; }
 
+        .S.W .cell-content {
+            text-align: left;
+            transform: translate(35%,calc(-50% + @iheight ));
+        }
+
         .S.W::before { border-bottom-left-radius: 30px; }
 
         .N.W { border-top-left-radius:@height; }
@@ -387,6 +394,12 @@
         }
 
         #title::first-line { font-size:15px; }
+
+        #invite-button-container {
+            display: block;
+            position: relative;
+            left: calc(50% - 40px);
+        }
 
         .invite-button {
             margin: 5px;
@@ -487,6 +500,9 @@
             background-position: center;
         }
 
+        #star {
+            font-size: @(languageCode == "fr"? "9px" : "12px"); margin-right: -5px;
+        }
     }
 
     @@media only screen and (max-width: 600px) {
@@ -613,9 +629,18 @@
         .cell-content {
             color: #FFFFFF;
             position: relative;
-            top: calc(50% );
+            top: calc(35%);
             transform: translateY(-50%);
             width: 100%;
+            font-size: 25px;
+        }
+
+        .item-7 .cell-content {
+            top: calc(50%);
+        }
+
+        .item-8 .cell-content {
+            top: calc(50%);
         }
 
         .cell .cell-content {
@@ -631,13 +656,22 @@
 
         #title::first-line { font-size:15px; }
 
+        #invite {
+            top: 20%;
+        }
+
+        #invite-button-container {
+            display: block; 
+            position: relative; left: calc(50% - 100px);
+        }
+
         .invite-button {
             margin: 5px;
-            padding: 5px 10px;
+            padding: 15px 35px;
             background-color:#FFFFFF;
             color:#2272BA;
             float:left;
-            font-size: 10px;
+            font-size: 20px;
         }
 
         .invite-button:hover { background-color: #FED304; }
@@ -718,22 +752,39 @@
 
             a:hover .cell-content > * { display: none; }
 
-        .pdf:hover .cell {
+        .pdf .cell {
             background-image: url( @Url.Content("~/Content/images/RoadmapToSuccess/file-pdf-regular.svg") );
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center 80%;
         }
 
-        .yt-video:hover .cell {
+        .yt-video .cell {
             background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/play-circle-regular.svg"));
             background-repeat: no-repeat;
             background-position: center;
+            background-position: center 80%;
         }
 
-        .clickable:hover .cell {
-            background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/mouse-solid.svg"));
+        .clickable .cell {
+            background-image: url(@Url.Content("~/Content/images/RoadmapToSuccess/hand-point-up-regular.svg"));
             background-repeat: no-repeat;
             background-position: center;
+            background-position: center 80%;
+        }
+
+        .item-7 .cell {
+            background-image: none;
+        }
+
+        .item-8 .cell {
+            background-image: none;
+        }
+
+        #star {
+            font-size: @(languageCode == "fr"? "9px" : "15px"); 
+            margin-right: -5px;
+            text-align: left;
+            transform: translateX(20%);
         }
 
     }

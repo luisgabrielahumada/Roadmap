@@ -611,6 +611,7 @@
     <Content Include="Content\images\RoadmapToSuccess\Arrow-Loop.svg" />
     <Content Include="Content\images\RoadmapToSuccess\Arrow.svg" />
     <Content Include="Content\images\RoadmapToSuccess\file-pdf-regular.svg" />
+    <Content Include="Content\images\RoadmapToSuccess\hand-point-up-regular.svg" />
     <Content Include="Content\images\RoadmapToSuccess\icon-laptop.svg" />
     <Content Include="Content\images\RoadmapToSuccess\icon-people.svg" />
     <Content Include="Content\images\RoadmapToSuccess\icon-phone.svg" />
