@@ -14758,11 +14758,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://youtu.be/RykKYMM-bso.
+        /// </summary>
+        internal static string MixImmunocal1Link {
+            get {
+                return ResourceManager.GetString("MixImmunocal1Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to One pouch (Immunocal) with water.
         /// </summary>
         internal static string MixImmunocal2 {
             get {
                 return ResourceManager.GetString("MixImmunocal2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://youtu.be/RvGLInd_OFU.
+        /// </summary>
+        internal static string MixImmunocal2Link {
+            get {
+                return ResourceManager.GetString("MixImmunocal2Link", resourceCulture);
             }
         }
         
@@ -14776,11 +14794,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://youtu.be/wCrtpPry9Zo.
+        /// </summary>
+        internal static string MixImmunocal3Link {
+            get {
+                return ResourceManager.GetString("MixImmunocal3Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to One pouch (Immunocal) and optimizer with water.
         /// </summary>
         internal static string MixImmunocal4 {
             get {
                 return ResourceManager.GetString("MixImmunocal4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://youtu.be/m3An9Ezakq4.
+        /// </summary>
+        internal static string MixImmunocal4Link {
+            get {
+                return ResourceManager.GetString("MixImmunocal4Link", resourceCulture);
             }
         }
         
@@ -19915,7 +19951,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://media.immunotec.com/roadmap/docs/SP/roadmap-SchedNextContact.pdf.
+        ///   Looks up a localized string similar to https://media.immunotec.com/roadmap/docs/SP/roadmap-SetGoals.pdf.
         /// </summary>
         internal static string ScheduleNextContactLink {
             get {
@@ -23667,6 +23703,15 @@ namespace Resources {
         internal static string WatchTheVideo {
             get {
                 return ResourceManager.GetString("WatchTheVideo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://youtu.be/Nonv4LyeQI4.
+        /// </summary>
+        internal static string WatchTheVideoLink {
+            get {
+                return ResourceManager.GetString("WatchTheVideoLink", resourceCulture);
             }
         }
         

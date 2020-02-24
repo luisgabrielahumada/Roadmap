@@ -8782,7 +8782,7 @@ You have a new personally enrolled Consultant:</value>
     <value>https://media.immunotec.com/roadmap/docs/SP/MX/roadmap-QualifySilver.pdf</value>
   </data>
   <data name="ScheduleNextContactLink" xml:space="preserve">
-    <value>https://media.immunotec.com/roadmap/docs/SP/roadmap-SchedNextContact.pdf</value>
+    <value>https://media.immunotec.com/roadmap/docs/SP/roadmap-SetGoals.pdf</value>
   </data>
   <data name="SetYourGoalLink" xml:space="preserve">
     <value>https://media.immunotec.com/roadmap/docs/SP/roadmap-SetGoals.pdf</value>
@@ -8801,5 +8801,8 @@ You have a new personally enrolled Consultant:</value>
   </data>
   <data name="MixImmunocal4Link" xml:space="preserve">
     <value>https://youtu.be/m3An9Ezakq4</value>
+  </data>
+  <data name="WatchTheVideoLink" xml:space="preserve">
+    <value>https://youtu.be/Nonv4LyeQI4</value>
   </data>
 </root>
