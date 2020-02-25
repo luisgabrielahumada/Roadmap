@@ -1175,10 +1175,10 @@
             };
 
             window.onload = function () {
-                var _language= getCookie("language");
-                if (country = "") {
-                    document.cookie = "language=MX";
-                    country = "MX";
+                var _language = getCookie("language");
+                if (_language == "") {
+                    document.cookie = "language=es-MX";
+                    _language= "es-MX";
                 }
                 this.loadLanguageData(_language);
             }
