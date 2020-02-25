@@ -181,175 +181,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_GlobalResources\Common.en-CA2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.en-CA.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.en-ES2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.en-ES.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.en-GB2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.en-GB.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.en-IE2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.en-IE.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.es-CA2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.es-CA.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.es-CO2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.es-CO.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.es-DO2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.es-DO.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.es-ES2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.es-ES.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.es-GT2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.es-GT.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.es-MX2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.es-MX.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.es-PE2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.es-PE.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.es-US2.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.es-US.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common.fr-CA.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.fr-CA.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Common3.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
-    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
-    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
-    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
-    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
-    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MeController.cs" />
-    <Compile Include="Extensions\Common.cs" />
-    <Compile Include="Extensions\CommonResources.cs" />
-    <Compile Include="Extensions\CompanyInfo.cs" />
-    <Compile Include="Extensions\Configurations\Canada\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\Canada\Market.cs" />
-    <Compile Include="Extensions\Configurations\Colombia\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\Colombia\Market.cs" />
-    <Compile Include="Extensions\Configurations\DominicanRepublic\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\DominicanRepublic\Market.cs" />
-    <Compile Include="Extensions\Configurations\Guatemala\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\Guatemala\Market.cs" />
-    <Compile Include="Extensions\Configurations\IMarketConfiguration.cs" />
-    <Compile Include="Extensions\Configurations\Ireland\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\Ireland\Market.cs" />
-    <Compile Include="Extensions\Configurations\Mexico\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\Mexico\Market.cs" />
-    <Compile Include="Extensions\Configurations\Peru\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\Peru\Market.cs" />
-    <Compile Include="Extensions\Configurations\Settings.cs" />
-    <Compile Include="Extensions\Configurations\Spain\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\Spain\Market.cs" />
-    <Compile Include="Extensions\Configurations\UnitedKingdom\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\UnitedKingdom\Market.cs" />
-    <Compile Include="Extensions\Configurations\UnitedStates\Configuration.cs" />
-    <Compile Include="Extensions\Configurations\UnitedStates\Market.cs" />
-    <Compile Include="Extensions\CultureCodes.cs" />
-    <Compile Include="Extensions\CurrencyCodes.cs" />
-    <Compile Include="Extensions\Languages\Interfaces\ILanguage.cs" />
-    <Compile Include="Extensions\Languages\Language.cs" />
-    <Compile Include="Extensions\Markets\Interfaces\IMarket.cs" />
-    <Compile Include="Extensions\Markets\Market.cs" />
-    <Compile Include="Extensions\OtherConfigurations\Configurations\Interfaces\IAutoOrderConfiguration.cs" />
-    <Compile Include="Extensions\OtherConfigurations\Configurations\Interfaces\IOrderConfiguration.cs" />
-    <Compile Include="Extensions\PaymentMethods\Interfaces\IAutoOrderPaymentMethod.cs" />
-    <Compile Include="Extensions\PaymentMethods\Interfaces\IBankAccount.cs" />
-    <Compile Include="Extensions\PaymentMethods\Interfaces\ICreditCard.cs" />
-    <Compile Include="Extensions\PaymentMethods\Interfaces\IHyperWallet.cs" />
-    <Compile Include="Extensions\PaymentMethods\Interfaces\IPaymentMethod.cs" />
-    <Compile Include="Extensions\PaymentMethods\Interfaces\IPayu.cs" />
-    <Compile Include="Extensions\PaymentMethods\JsonConverters\PaymentMethodJsonConverter.cs" />
-    <Compile Include="Extensions\PaymentMethods\ModelBinders\IPaymentMethodModelBinder.cs" />
-    <Compile Include="Extensions\PaymentMethods\Requests\GetCustomerPaymentMethodsRequest.cs" />
-    <Compile Include="Extensions\SMTPConfiguration.cs" />
-    <Compile Include="Extensions\Strings.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Language.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\MeViewModels.cs" />
-    <Compile Include="Models\RoadmapViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Providers\ApplicationOAuthProvider.cs" />
-    <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\HelpPage\HelpPage.css" />
-    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -637,25 +475,6 @@
     <Content Include="Scripts\app\home.viewmodel.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Areas\HelpPage\Views\Web.config" />
-    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Content\styles\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\styles\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\styles\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
@@ -705,34 +524,6 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\sammy-0.7.5.js" />
     <Content Include="Scripts\sammy-0.7.5.min.js" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Home\_Home.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Web.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -744,9 +535,7 @@
     </Content>
     <Content Include="Scripts\knockout.validation.min.js.map" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
@@ -775,66 +564,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\Common.en-CA.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.en-CA2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.en-ES.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.en-ES2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.en-GB.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.en-GB2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.en-IE.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.en-IE2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.es-CA.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.es-CA2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.es-CO.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.es-CO2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.es-DO.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.es-DO2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.es-ES.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.es-ES2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.es-GT.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.es-GT2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.es-MX.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.es-MX2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.es-PE.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.es-PE2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.es-US.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.es-US2.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Common.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common3.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\Common.fr-CA.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Common.fr-CA.designer.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
