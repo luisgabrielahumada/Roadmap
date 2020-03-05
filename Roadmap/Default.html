@@ -24,82 +24,41 @@
     </script>
 </head>
 <body>
-
-    
-
-
     <div class="" style="width:100%;">
-
-
-
-
-
-
         <div class="flex-container" id="roadmap">
             <div class="flex-item item-1" style="z-index:99;">
-                <span id="title" style="line-height: 1.1em;">Bienvenido a nuestro<br> Mapa del camino al éxito de Immunotec</span>
+                <span id="title-text" style="line-height: 1.1em;"></span>
                 <div id="language-container">
-                    <span id="select-country">Selecciona tu pais</span><br>
+                    <span id="select-country-text">Selecciona tu pais</span><br>
                     <div class="dropdown" id="country-dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" id="languageText" aria-expanded="false">
                             <img id="country-img" style="vertical-align:text-bottom">
                             <span id="country-name" style="color:#1F2A44; font-size:12px;"></span><b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu changelanguage-list">
-                            <li class="dropdown-menu-item">
-                                <a class="dropdown-menu-item-link" data-culture="es-MX">
-                                    <img style="vertical-align:text-bottom" src="/Content/Images/country-flags/16/MX.png">
-                                    <span style="color: #1F2A44; font-size: 12px;">México</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-menu-item">
-                                <a class="dropdown-menu-item-link" data-culture="es-DO">
-                                    <img style="vertical-align:text-bottom" src="/Content/Images/country-flags/16/DO.png">
-                                    <span style="color: #1F2A44; font-size: 12px;">República Dominicana</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-menu-item">
-                                <a class="dropdown-menu-item-link" data-culture="es-GT">
-                                    <img style="vertical-align:text-bottom" src="/Content/Images/country-flags/16/GT.png">
-                                    <span style="color: #1F2A44; font-size: 12px;">Guatemala</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-menu-item">
-                                <a class="dropdown-menu-item-link" data-culture="es-CO">
-                                    <img style="vertical-align:text-bottom" src="/Content/Images/country-flags/16/CO.png">
-                                    <span style="color: #1F2A44; font-size: 12px;">Colombia</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-menu-item">
-                                <a class="dropdown-menu-item-link" data-culture="es-PE">
-                                    <img style="vertical-align:text-bottom" src="/Content/Images/country-flags/16/PE.png">
-                                    <span style="color: #1F2A44; font-size: 12px;">Perú</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <ul id="language-list" class="dropdown-menu changelanguage-list"></ul>
                     </div>
                 </div>
             </div>
             <div class="flex-item item-2">
                 <div class="cell N W color1">
                     <div class="cell-content" id="invite">
-                        <span>Invita a unirse<br></span>
+                        <span id="invite-to-join-text">Invita a unirse<br></span>
                         <div id="invite-button-container">
-                            <a target="_blank" href="https://youtu.be/d4slXTn0Rr8">
-                                <div class="invite-button">Sí</div>
+                            <a id="yes-link" target="_blank" href="">
+                                <div id="yes-text" class="invite-button"></div>
                             </a>
-                            <a target="_blank" href="https://youtu.be/5epXs8BUmrs">
-                                <div class="invite-button">No</div>
+                            <a id="no-link" target="_blank" href="">
+                                <div id="no-text" class="invite-button"></div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex-item item-3">
-                <a class="pdf" target="_blank" href="https://media.immunotec.com/roadmap/docs/SP/roadmap-SchedNextContact.pdf">
+                <a id="schedule-next-contact-link" class="pdf" target="_blank" href="">
                     <div class="cell H color1">
                         <div class="cell-content">
-                            <span>Programa tu próximo encuentro</span>
+                            <span id="schedule-next-contact-text"></span>
                         </div>
                     </div>
                     <div id="arrow-down-id">
@@ -111,7 +70,7 @@
                 <a id="qualify-silver-link" class="pdf" target="_blank" href="">
                     <div class="cell H color3">
                         <div class="cell-content">
-                            <span>Califica como Plata</span>
+                            <span id="qualify-silver-text"></span>
                         </div>
                     </div>
                 </a>
@@ -120,53 +79,47 @@
                 <a id="maintain-silver-link" class="pdf" target="_blank" href="">
                     <div class="cell H color4" style="border-right: 7px solid #FFFFFF;">
                         <div class="cell-content">
-                            <span>Mantén tu rango Plata</span>
+                            <span id="maintain-silver-text"></span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="flex-item item-6">
-                <div class="cell-content">
+                <div class="cell-content" style="z-index: 10">
                     <div style="color:#2272BA;">
-                        <span style="font-weight: bold;">10-3-1 para llegar a Plata</span>
-                        <span class="popup" onmouseover="hoverInfo()" onmouseout="unhoverInfo()">
+                        <span id="10-3-1-text" style="font-weight: bold;"></span>
+                        <span class="popup" onmouseover="hoverRecipe()" onmouseout="unhoverRecipe()">
                             <i class="fa fa-info-circle fa-xs" aria-hidden="true" style="font-size: 10px"></i>
-                            <span class="popuptext" id="info">
-                                La receta recomendada para el éxito consiste en que de cada 10 prospectos tu puedes poner la meta de programar 3 reuniones y de éstas inscribir a 1 nuevo(a) Consultor(a).
-                            </span>
+                            <span class="popuptext" id="recipe-text"></span>
                         </span>
                     </div>
                     <div style="margin-top: 10px;">
                         <div id="triangle-part1">
                             <img style="height: 100%" src="/Content/images/RoadmapToSuccess/10.svg">
-                            <span style="margin: 0; color: #80B4D6;">Prospectos</span>
+                            <span id="prospects-text" style="margin: 0; color: #80B4D6;"></span>
                         </div>
                         <div id="triangle-part2">
                             <img style="height: 100%;" src="/Content/images/RoadmapToSuccess/3.svg">
-                            <span style="margin: 0; color: #7299D0;">Reuniones<br></span>
+                            <span id="meetings-text" style="margin: 0; color: #7299D0;"></span>
                         </div>
                         <div id="triangle-part3">
                             <img style="height: 100%;" src="/Content/images/RoadmapToSuccess/1.svg">
-                            <span style="margin: 0; color: #2272BA;">Inscripción de nuevos consultores<br></span>
+                            <span id="new-consultant-text" style="margin: 0; color: #2272BA;"></span>
                         </div>
                     </div>
-                    <span id="popup-mobile">
-                        La receta recomendada para el éxito consiste en que de cada 10 prospectos tu puedes poner la meta de programar 3 reuniones y de éstas inscribir a 1 nuevo(a) Consultor(a).
-                    </span>
+                    <span id="popup-mobile-text"></span>
                 </div>
             </div>
             <div class="flex-item item-7">
-                <a class="pdf" target="_blank" href="https://media.immunotec.com/roadmap/docs/SP/roadmap-STAR.pdf">
+                <a id="use-your-star-link" class="pdf" target="_blank" href="">
                     <div class="cell S W color1">
                         <div class="cell-content">
-                            <div>
-                                Usa tu "<y>STAR</y>"
-                            </div>
+                            <div id="use-your-star-text"></div>
                             <div id="star">
-                                <y1 style="display: block; margin: 0; ">Siente, conoce y comparte</y1>
-                                <y1 style="display: block; margin: 0; ">Transmite tu historia </y1>
-                                <y1 style="display: block; margin: 0; ">Analiza, estudia y contesta</y1>
-                                <y1 style="display: block; margin: 0; ">Recomienda</y1>
+                                <y1 id="share-text" style="display: block; margin: 0; "></y1>
+                                <y1 id="tell-text" style="display: block; margin: 0; "></y1>
+                                <y1 id="answer-text" style="display: block; margin: 0; "></y1>
+                                <y1 id="recommend-text" style="display: block; margin: 0; "></y1>
                             </div>
                         </div>
                     </div>
@@ -176,9 +129,7 @@
                 <a class="clickable">
                     <div class="cell H mv-down color1" style="border-right: 7px solid #FFFFFF;" onclick="showModal2()">
                         <div class="cell-content">
-                            <span style="margin-top: 20%;">
-                                Contacta tus prospectos<br>
-                            </span>
+                            <span id="contact-your-prospects-text" style="margin-top: 20%;"></span>
                             <img style="width: 15%; margin: 2% 5%" src="/Content/images/RoadmapToSuccess/icon-people.svg">
                             <img style="width: 15%; margin: 2% 5%" src="/Content/images/RoadmapToSuccess/icon-laptop.svg">
                             <img style="width: 15%; margin: 2% 5%" src="/Content/images/RoadmapToSuccess/icon-phone.svg">
@@ -187,10 +138,10 @@
                 </a>
             </div>
             <div class="flex-item item-9">
-                <a class="yt-video" target="_blank" href="https://youtu.be/lCmTYqwjta4">
+                <a id="watch-the-video-link" class="yt-video" target="_blank" href="">
                     <div class="cell N E mv-down color2">
                         <div class="cell-content" style="transform: translateY(calc(50% - (3 * 10px)))">
-                            <span>Ver el video</span>
+                            <span id="watch-the-video-text"></span>
                         </div>
                     </div>
                 </a>
@@ -198,32 +149,32 @@
             <div class="flex-item item-10"></div>
             <div class="flex-item item-11">
                 <div class="cell N W mv-down2 color2">
-                    <div class="cell-content" style="font-weight:bold; font-size: 30px; white-space: pre; transform: translateY(calc(50% - (5 * 10px)))">GO!! </div>
+                    <div id="go-text" class="cell-content" style="font-weight:bold; font-size: 30px; white-space: pre; transform: translateY(calc(50% - (5 * 10px)))"></div>
                 </div>
             </div>
             <div class="flex-item item-12">
                 <a class="clickable">
                     <div class="cell H mv-down2 color2" onclick="showModal()">
                         <div class="cell-content">
-                            <span>Empieza a tomar Immunocal</span>
+                            <span id="start-taking-immunocal-text"></span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="flex-item item-13">
-                <a class="pdf" target="_blank" href="https://media.immunotec.com/roadmap/docs/SP/roadmap-SetGoals.pdf">
+                <a id="set-your-goal-link" class="pdf" target="_blank" href="">
                     <div class="cell H mv-down2 color2" style="border-right: 7px solid #FFFFFF;">
                         <div class="cell-content">
-                            <span>Establece tu meta</span>
+                            <span id="set-your-goal-text"></span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="flex-item item-14">
-                <a class="pdf" target="_blank" href="https://media.immunotec.com/roadmap/docs/SP/roadmap-ProspectList.pdf">
+                <a id="make-your-prospect-list-link"class="pdf" target="_blank" href="">
                     <div class="cell S E color2 mv-down">
                         <div class="cell-content">
-                            <span>Haz tu lista de prospectos</span>
+                            <span id="make-your-prospect-list-text"></span>
                         </div>
                     </div>
                 </a>
@@ -259,34 +210,34 @@
         <div class="modal" id="modal-roadmap" style="z-index: 9999999 !important;">
             <div class="modal-content">
                 <div class="row" style="width: 100%">
-                    <div style="float: left; color: #1F2A44; padding:0 0 5px 10px; font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;Aprende a mezclar Immunocal</div>
+                    <div id="how-to-mix-text" style="float: left; color: #1F2A44; padding:0 0 5px 10px; font-size: 16px;"></div>
                     <div style="float:right" onclick="document.getElementById('modal-roadmap').style.display = 'none'">X</div>
                 </div>
-                <a class="yt-video" target="_blank" href="https://youtu.be/wMoFKiheLYw">
+                <a id="how-to-mix-1-link" class="yt-video" target="_blank" href="">
                     <div class="cell H color2 modal-cellstyle-25">
                         <div class="cell-content ">
-                            <span>Un sobre con jugo de naranja</span>
+                            <span id="how-to-mix-1-text"></span>
                         </div>
                     </div>
                 </a>
-                <a class="yt-video" target="_blank" href="https://youtu.be/DoGw6g6Z-NY">
+                <a id="how-to-mix-2-link" class="yt-video" target="_blank" href="">
                     <div class="cell H color2 modal-cellstyle-25">
                         <div class="cell-content ">
-                            <span>Un sobre con agua</span>
+                            <span id="how-to-mix-2-text"></span>
                         </div>
                     </div>
                 </a>
-                <a class="yt-video" target="_blank" href="https://youtu.be/sY2v7nvSsss">
+                <a id="how-to-mix-3-link" class="yt-video" target="_blank" href="">
                     <div class="cell H color2 modal-cellstyle-25">
                         <div class="cell-content ">
-                            <span>Un sobre de cada uno (Immunocal y Platino) con agua más Optimizer</span>
+                            <span id="how-to-mix-3-text"></span>
                         </div>
                     </div>
                 </a>
-                <a class="yt-video" target="_blank" href="https://youtu.be/oTHsZX203Lw">
+                <a id="how-to-mix-4-link" class="yt-video" target="_blank" href="">
                     <div class="cell H color2 modal-cellstyle-25">
                         <div class="cell-content ">
-                            <span>Un sobre con agua más Optimizer</span>
+                            <span id="how-to-mix-4-text"></span>
                         </div>
                     </div>
                 </a>
@@ -298,961 +249,1196 @@
                 <div class="row" style="width: 100%">
                     <div style="float:right" onclick="document.getElementById('modal-roadmap2').style.display = 'none'">X</div>
                 </div>
-                <a class="yt-video" target="_blank" href="https://youtu.be/ZJVyfLGzyOg">
+                <a id="prospect-knows-link" class="yt-video" target="_blank" href="">
                     <div class="cell H color2 modal-cellstyle-50">
                         <div class="cell-content ">
-                            <span>Prospecto que conoce Immunotec</span>
+                            <span id="prospect-knows-text"></span>
                         </div>
                     </div>
                 </a>
-                <a class="yt-video" target="_blank" href="https://youtu.be/-qdGYaklyjY">
+                <a id="prospect-doesnt-know-link" class="yt-video" target="_blank" href="">
                     <div class="cell H color2 modal-cellstyle-50">
                         <div class="cell-content ">
-                            <span>Prospecto que no conoce Immunotec</span>
+                            <span id="prospect-doesnt-know-text"></span>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <style>
-            body {
-                background-color: #F2F3F4;
-            }
-
-            @media only screen and (min-width: 600px) {
-
-                #roadmap {
-                    margin: 80px auto;
-                    padding: 0 5%;
-                    font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                }
-
-                .flex-container {
-                    width: 100%;
-                    margin: auto;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                }
-
-                .flex-item {
-                    width: 20%;
-                    height: 140px;
-                }
-
-                .item-15 {
-                    visibility: hidden;
-                }
-
-                .item-17 {
-                    visibility: hidden;
-                }
-
-                .item-18 {
-                    visibility: hidden;
-                }
-
-                .item-19 {
-                    visibility: hidden;
-                }
-
-                .cell {
-                    display: block;
-                    position: relative;
-                    float: left;
-                    padding: 0;
-                    height: 100%;
-                    width: 100%;
-                    overflow: visible;
-                    z-index: 1;
-                }
-
-                .cell-content {
-                    color: #FFFFFF;
-                    position: relative;
-                    top: calc(50% );
-                    transform: translateY(-50%);
-                    width: 100%;
-                }
-
-                .cell .cell-content {
-                    text-align: center;
-                }
-
-                .H {
-                    height: calc(140px - (2 * 10px));
-                    border: 7px solid #FFFFFF;
-                    border-right: none;
-                }
-
-                .N, .N::before {
-                    border-top: 7px solid #FFFFFF;
-                }
-
-                    .N .cell-content {
-                        transform: translateY(calc(50% - (3 *10px)));
-                    }
-
-                    .N::before, .N::after {
-                        bottom: 0px;
-                    }
-
-                .E, .E::before {
-                    border-right: 7px solid #FFFFFF;
-                }
-
-                    .E::before, .W::after {
-                        left: 0px;
-                    }
-
-                .S, .S::before {
-                    border-bottom: 7px solid #FFFFFF;
-                }
-
-                    .S .cell-content {
-                        transform: translateY(calc(50% - 10px));
-                    }
-
-                    .S::before, .S::after {
-                        top: 0px;
-                    }
-
-                .W, .W::before {
-                    border-left: 7px solid #FFFFFF;
-                }
-
-                    .W::before, .E::after {
-                        right: 0px;
-                    }
-
-                .N::before, .S::before, .N::after, .S::after {
-                    content: '';
-                    position: absolute;
-                }
-
-                .N::before, .S::before {
-                    padding: 10px 25%;
-                    background: #F2F3F4;
-                }
-
-                .N::after, .S::after {
-                    background-color: white;
-                    padding: calc(7px / 4) 25%;
-                }
-
-                .N.E {
-                    border-top-right-radius: calc(0.7 * 140px);
-                }
-
-                    .N.E::before {
-                        border-top-right-radius: 30px;
-                    }
-
-                .S.E {
-                    border-bottom-right-radius: calc(0.7 * 140px);
-                }
-
-                    .S.E::before {
-                        border-bottom-right-radius: 30px;
-                    }
-
-                .S.W {
-                    border-bottom-left-radius: calc(0.7 * 140px);
-                }
-
-                    .S.W .cell-content {
-                        text-align: left;
-                        transform: translate(35%,calc(-50% + 10px ));
-                    }
-
-                    .S.W::before {
-                        border-bottom-left-radius: 30px;
-                    }
-
-                .N.W {
-                    border-top-left-radius: calc(0.7 * 140px);
-                }
-
-                    .N.W::before {
-                        border-top-left-radius: 30px;
-                    }
-
-                .mv-down {
-                    margin-top: calc( 10px * 2);
-                }
-
-                .mv-down2 {
-                    margin-top: calc( 10px * 4);
-                }
-
-                .item-1 {
-                    transform: translateY(-50%);
-                }
-
-                #title::first-line {
-                    font-size: 15px;
-                }
-
-                #invite-button-container {
-                    display: block;
-                    position: relative;
-                    left: calc(50% - 40px);
-                }
-
-                .invite-button {
-                    margin: 5px;
-                    padding: 5px 10px;
-                    background-color: #FFFFFF;
-                    color: #2272BA;
-                    float: left;
-                    font-size: 10px;
-                }
-
-                    .invite-button:hover {
-                        background-color: #FED304;
-                    }
-
-                .popup {
-                    position: relative;
-                }
-
-                #popup-mobile {
-                    display: none;
-                }
-
-                .popup .popuptext::before {
-                    content: "";
-                    height: 0;
-                    width: calc(100% + 60px);
-                    position: absolute;
-                    left: -45px;
-                    top: -10px;
-                    z-index: -1;
-                    border-bottom: calc(7.5 * 10px) solid #FFFFFF;
-                    border-left: 45px solid transparent;
-                    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
-                }
-
-                .popup .popuptext {
-                    height: calc(7.5 * 10px );
-                    width: 150px;
-                    position: absolute;
-                    top: 19px;
-                    left: 50px;
-                    margin-top: calc((10px / 2) + 15px);
-                    margin-left: -75px;
-                    z-index: 4;
-                    font-size: 10px;
-                    color: black;
-                    visibility: hidden;
-                    line-height: 1em;
-                }
-
-                    .popup .popuptext::after {
-                        content: "";
-                        position: absolute;
-                        top: -30px;
-                        left: 20px;
-                        border-width: 10px;
-                        border-style: solid;
-                        border-color: transparent transparent #FFFFFF transparent;
-                    }
-
-                y {
-                    color: #FED304;
-                }
-
-                y1::first-letter {
-                    color: #FED304;
-                }
-
-                .color1, .color1 .cell {
-                    background-color: #2272BA;
-                }
-
-                a .color1:hover, a .color1:hover > * {
-                    background-color: #195387;
-                }
-
-                .color2 {
-                    background-color: #1F2A44;
-                }
-
-                a .color2:hover {
-                    background-color: #14252B;
-                }
-
-                .color3 {
-                    background-color: #B2B6B6;
-                }
-
-                    .color3 .cell-content {
-                        color: #1F2A44;
-                    }
-
-                a .color3:hover {
-                    background-color: #E3E8E8;
-                }
-
-                .color4 {
-                    background-color: #80B4D6;
-                }
-
-                a:hover .cell-content > * {
-                    display: none;
-                }
-
-                a .color4:hover {
-                    background-color: #6289A3;
-                }
-
-                a:hover .cell-content > * {
-                    display: none;
-                }
-
-                .pdf:hover .cell {
-                    background-image: url( /Content/images/RoadmapToSuccess/file-pdf-regular.svg );
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-
-                .yt-video:hover .cell {
-                    background-image: url(/Content/images/RoadmapToSuccess/play-circle-regular.svg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-
-                .clickable:hover .cell {
-                    background-image: url(/Content/images/RoadmapToSuccess/mouse-solid.svg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-
-                #star {
-                    font-size: 12px;
-                    margin-right: -5px;
-                }
-
-                #modal-roadmap {
-                    position: fixed;
-                    padding-top: 165px;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    overflow: auto;
-                    background-color: rgba(0,0,0,0.4);
-                }
-
-                #modal-roadmap2 {
-                    position: fixed;
-                    padding-top: 165px;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    overflow: auto;
-                    background-color: rgba(0,0,0,0.4);
-                }
-
-                .modal-content {
-                    background-color: #fefefe;
-                    height: calc(140px * 1.25);
-                    margin: auto;
-                    padding: 15px;
-                    border: 1px solid #888;
-                    width: 70%;
-                    border-radius: 0;
-                }
-
-                #modal-roadmap2 .modal-content {
-                    width: 50%;
-                    height: calc(140px * 1.25);
-                }
-
-                #title {
-                    display: block;
-                    color: #1F2A44;
-                    font-weight: bold;
-                    font-size: 25px;
-                    line-height: 1em;
-                }
-
-                    #title::first-line {
-                        font-size: 15px;
-                    }
-
-                .modal-cellstyle-25 {
-                    width: 25%;
-                    border-right: 7px solid #FFFFFF;
-                }
-
-                .modal-cellstyle-50 {
-                    width: 50%;
-                    border-right: 7px solid #FFFFFF;
-                }
-
-                #select-country {
-                    color: #1F2A44;
-                    font-size: 12px;
-                }
-
-                #triangle-part1 {
-                    position: relative;
-                    left: 0;
-                    height: calc(2.5 * 10px);
-                }
-
-                #triangle-part2 {
-                    position: relative;
-                    left: calc(10px + 4px);
-                    height: calc(2.5 * 10px);
-                }
-
-                #triangle-part3 {
-                    position: relative;
-                    left: calc(2 * (10px + 4px));
-                    height: calc(2.5 * 10px);
-                }
-
-                #arrow-down-id {
-                    width: 100%;
-                    text-align: center;
-                }
-
-                #triangle-part1 span, #triangle-part2 span, #triangle-part3 span {
-                    font-size: 13px;
-                }
-            }
-
-            @media only screen and (max-width: 600px) {
-
-                #roadmap {
-                    margin: 0;
-                    padding: 0;
-                    width: 100%;
-                    font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                }
-
-                .flex-container {
-                    margin: auto;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-                }
-
-                .flex-item {
-                    width: 100%;
-                    height: 130px;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .item-1 {
-                    order: -20;
-                    width: 100%;
-                }
-
-                .item-2 {
-                    order: -10;
-                    width: 80%;
-                }
-
-                .item-3 {
-                    order: -8;
-                    width: 80%;
-                }
-
-                .item-4 {
-                    order: -6;
-                }
-
-                .item-5 {
-                    order: -5;
-                }
-
-                .item-6 {
-                    order: -15;
-                }
-
-                .item-7 {
-                    order: -12;
-                    width: 80%;
-                }
-
-                .item-8 {
-                    order: -14;
-                    width: 80%;
-                }
-
-                .item-9 {
-                    order: -16;
-                }
-
-                .item-10 {
-                    display: none;
-                }
-
-                .item-11 {
-                    display: none;
-                }
-
-                .item-12 {
-                    order: -19;
-                }
-
-                .item-13 {
-                    order: -18;
-                }
-
-                .item-14 {
-                    order: -17;
-                }
-
-                .item-15 {
-                    order: -13;
-                    width: 20%;
-                }
-
-                .item-16 {
-                    display: none;
-                }
-
-                .item-17 {
-                    order: -11;
-                    width: 20%;
-                }
-
-                .item-18 {
-                    order: -9;
-                    width: 20%;
-                }
-
-                .item-19 {
-                    order: -7;
-                    width: 20%;
-                }
-
-                .item-20 {
-                    order: -21;
-                    width: 100%;
-                }
-
-                .cell {
-                    display: block;
-                    position: relative;
-                    float: left;
-                    padding: 0;
-                    height: 100%;
-                    width: 100%;
-                    overflow: visible;
-                    z-index: 1;
-                    border: 7px solid #FFFFFF;
-                }
-
-                .cell-content {
-                    color: #FFFFFF;
-                    position: relative;
-                    top: calc(35%);
-                    transform: translateY(-50%);
-                    width: 100%;
-                    font-size: 25px;
-                }
-
-                .item-7 .cell-content {
-                    top: calc(50%);
-                }
-
-                .item-8 .cell-content {
-                    top: calc(50%);
-                }
-
-                .cell .cell-content {
-                    text-align: center;
-                }
-
-                #title {
-                    display: block;
-                    color: #1F2A44;
-                    font-weight: bold;
-                    font-size: 25px;
-                }
-
-                    #title::first-line {
-                        font-size: 15px;
-                    }
-
-                #invite {
-                    top: 20%;
-                }
-
-                #invite-button-container {
-                    display: block;
-                    position: relative;
-                    left: calc(50% - 100px);
-                }
-
-                .invite-button {
-                    margin: 5px;
-                    padding: 15px 35px;
-                    background-color: #FFFFFF;
-                    color: #2272BA;
-                    float: left;
-                    font-size: 20px;
-                }
-
-                    .invite-button:hover {
-                        background-color: #FED304;
-                    }
-
-                .popup {
-                    display: none;
-                }
-
-                #popup-mobile {
-                    display: block;
-                    line-height: 1.3em;
-                    font-size: 15px;
-                    color: #000000;
-                }
-
-                .item-6 {
-                    padding: 0 10%;
-                    height: 300px;
-                }
-
-                    .item-6 span {
-                        font-size: 16px;
-                        line-height: 0.5em;
-                    }
-
-                    .item-6 .cell-content {
-                        top: 50%;
-                    }
-
-                .popup .popuptext::before {
-                    content: "";
-                    height: 0;
-                    width: calc(100% + 60px);
-                    position: absolute;
-                    left: -45px;
-                    top: -10px;
-                    z-index: -1;
-                    border-bottom: calc(7.5 * 10px ) solid #FFFFFF;
-                    border-left: 45px solid transparent;
-                    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
-                }
-
-                .popup .popuptext {
-                    height: calc(7.5 * 10px );
-                    width: 150px;
-                    position: absolute;
-                    top: 19px;
-                    left: 50px;
-                    margin-top: calc((10px / 2) + 15px);
-                    margin-left: -75px;
-                    z-index: 4;
-                    font-size: 10px;
-                    color: black;
-                    visibility: hidden;
-                    line-height: 1em;
-                }
-
-                    .popup .popuptext::after {
-                        content: "";
-                        position: absolute;
-                        top: -30px;
-                        left: 20px;
-                        border-width: 10px;
-                        border-style: solid;
-                        border-color: transparent transparent #FFFFFF transparent;
-                    }
-
-                y {
-                    color: #FED304;
-                }
-
-                y1::first-letter {
-                    color: #FED304;
-                }
-
-                .color1, .color1 .cell {
-                    background-color: #2272BA;
-                }
-
-                a .color1:hover, a .color1:hover > * {
-                    background-color: #195387;
-                }
-
-                .color2 {
-                    background-color: #1F2A44;
-                }
-
-                a .color2:hover {
-                    background-color: #14252B;
-                }
-
-                .color3 {
-                    background-color: #B2B6B6;
-                }
-
-                    .color3 .cell-content {
-                        color: #1F2A44;
-                    }
-
-                a .color3:hover {
-                    background-color: #E3E8E8;
-                }
-
-                .color4 {
-                    background-color: #80B4D6;
-                }
-
-                a .color4:hover {
-                    background-color: #6289A3;
-                }
-
-                .pdf .cell {
-                    background-image: url( /Content/images/RoadmapToSuccess/file-pdf-regular.svg );
-                    background-repeat: no-repeat;
-                    background-position: center 80%;
-                }
-
-                .yt-video .cell {
-                    background-image: url( /Content/images/RoadmapToSuccess/play-circle-regular.svg );
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-position: center 80%;
-                }
-
-                .clickable .cell {
-                    background-image: url( /Content/images/RoadmapToSuccess/hand-point-up-regular.svg );
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-position: center 80%;
-                }
-
-                .item-7 .cell {
-                    background-image: none;
-                }
-
-                .item-8 .cell {
-                    background-image: none;
-                }
-
-                #star {
-                    font-size: 15px;
-                    margin-right: -5px;
-                    text-align: left;
-                    transform: translateX(20%);
-                }
-
-                #modal-roadmap {
-                    left: 0;
-                    top: 0;
-                    width: 90%;
-                    background-color: rgba(0,0,0,0.4);
-                }
-
-                #modal-roadmap2 {
-                    position: fixed;
-                    left: 0;
-                    top: 0;
-                    width: 90%;
-                    overflow: auto;
-                    background-color: rgba(0,0,0,0.4);
-                }
-
-                .modal-content {
-                    background-color: #fefefe;
-                    margin: auto;
-                    border: 1px solid #888;
-                    width: 100%;
-                    border-radius: 0;
-                }
-
-                #modal-roadmap2 .modal-content {
-                    width: 100%;
-                }
-
-                .modal-content .cell-content {
-                    top: 30%;
-                    font-size: 20px;
-                    line-height: 1em;
-                }
-
-                #title {
-                    display: block;
-                    color: #1F2A44;
-                    font-weight: bold;
-                    font-size: 25px;
-                    text-align: center;
-                    padding: 0 5%;
-                }
-
-                    #title::first-line {
-                        font-size: 20px;
-                    }
-
-                .modal-cellstyle-25 {
-                    height: 160px;
-                    width: 100%;
-                    border-right: 7px solid #FFFFFF;
-                }
-
-                .modal-cellstyle-50 {
-                    height: 160px;
-                    width: 100%;
-                    border-right: 7px solid #FFFFFF;
-                }
-
-                #select-country {
-                    display: none;
-                }
-
-                .item-20 {
-                    padding: 0 10%;
-                    height: 100px;
-                }
-
-                #country-dropdown {
-                    top: -10%;
-                    left: 10%;
-                }
-
-                .item-1 {
-                    height: 120px;
-                }
-
-                #triangle-part1 {
-                    position: relative;
-                    left: 0;
-                    height: calc(5 * 10px);
-                }
-
-                #triangle-part2 {
-                    position: relative;
-                    left: calc(10px + 18px);
-                    height: calc(5 * 10px);
-                }
-
-                #triangle-part3 {
-                    position: relative;
-                    left: calc(2 * (10px + 18px));
-                    height: calc(5 * 10px);
-                }
-
-                #arrow-down-id {
-                    display: none;
-                }
-            }
-        </style>
-
-        <script>
-            var data = {
-                "country-name": {
-                    "MX": "México",
-                    "DO": "República Dominicana",
-                    "GT": "Guatemala",
-                    "CO": "Colombia",
-                    "PE": "Perú"
-                },
-                "qualify-silver-link": {
-                    "MX": "https://media.immunotec.com/roadmap/docs/SP/MX/roadmap-QualifySilver.pdf",
-                    "DO": "https://media.immunotec.com/roadmap/docs/SP/DO/roadmap-QualifySilver.pdf",
-                    "GT": "https://media.immunotec.com/roadmap/docs/SP/GT/roadmap-QualifySilver.pdf",
-                    "CO": "https://media.immunotec.com/roadmap/docs/SP/CO/roadmap-QualifySilver.pdf",
-                    "PE": "https://media.immunotec.com/roadmap/docs/SP/PE/roadmap-QualifySilver.pdf"
-                },
-                "maintain-silver-link": {
-                    "MX": "https://media.immunotec.com/roadmap/docs/SP/MX/roadmap-MaintainSilver.pdf",
-                    "DO": "https://media.immunotec.com/roadmap/docs/SP/DO/roadmap-MaintainSilver.pdf",
-                    "GT": "https://media.immunotec.com/roadmap/docs/SP/GT/roadmap-MaintainSilver.pdf",
-                    "CO": "https://media.immunotec.com/roadmap/docs/SP/CO/roadmap-MaintainSilver.pdf",
-                    "PE": "https://media.immunotec.com/roadmap/docs/SP/PE/roadmap-MaintainSilver.pdf"
-                }
-            };
-
-            window.onload = function () {
-                var _language = getCookie("language");
-                if (_language == "") {
-                    document.cookie = "language=es-MX";
-                    _language= "es-MX";
-                }
-                this.loadLanguageData(_language);
-            }
-
-            function loadLanguageData(_language) {
-                var country = _language.split("-")[1];
-                this.document.getElementById("country-img").src = "/Content/Images/country-flags/16/" + country + ".png";
-                this.document.getElementById("country-name").textContent = data["country-name"][country];
-                for (id in data) {
-                    this.document.getElementById(id).href = data[id][country];
-                }
-            }
-
-            function ChangeLanguage(_language) {
-                document.cookie = "language=" + _language;
-                loadLanguageData(_language)
-            }
-
-            function getCookie(name) {
-                var p = ("; " + document.cookie).split("; " + name + "=");
-                if (p.length == 2) return p[1].split(";")[0];
-                return "";
-            }
-
-            function getCountryCode(language) {
-                return language.split("-")[1];
-            }
-
-            $('.changelanguage-list li a').click(function () {
-                ChangeLanguage($(this).attr("data-culture"));
-            });
-
-
-
-            function hoverArrow() {
-                document.getElementById("arrow").setAttribute('src', '/Content/images/RoadmapToSuccess/Arrow-Loop-2.svg');
-            }
-
-            function unhoverArrow() {
-                document.getElementById("arrow").setAttribute('src', '/Content/images/RoadmapToSuccess/Arrow-Loop.svg');
-            }
-
-            function hoverInfo() {
-                document.getElementById("info").style.visibility = 'visible';
-            }
-
-            function unhoverInfo() {
-                document.getElementById("info").style.visibility = 'hidden';
-            }
-
-            function showModal() {
-                document.getElementById("modal-roadmap").style.display = "block";
-            }
-
-            function showModal2() {
-                document.getElementById("modal-roadmap2").style.display = "block";
-            }
-
-            window.onclick = function (event) {
-                var modal = document.getElementById("modal-roadmap");
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-                modal = document.getElementById("modal-roadmap2");
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
     </div>
-
-
-
-
 
 </body>
 </html>
+
+<style>
+    body {
+        background-color: #F2F3F4;
+    }
+
+    @media only screen and (min-width: 600px) {
+
+        #roadmap {
+            margin: 80px auto;
+            padding: 0 5%;
+            font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .flex-container {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .flex-item {
+            width: 20%;
+            height: 140px;
+        }
+
+        .item-15 {
+            visibility: hidden;
+        }
+
+        .item-17 {
+            visibility: hidden;
+        }
+
+        .item-18 {
+            visibility: hidden;
+        }
+
+        .item-19 {
+            visibility: hidden;
+        }
+
+        .cell {
+            display: block;
+            position: relative;
+            float: left;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: visible;
+            z-index: 1;
+        }
+
+        .cell-content {
+            color: #FFFFFF;
+            position: relative;
+            top: calc(50% );
+            transform: translateY(-50%);
+            width: 100%;
+        }
+
+        .cell .cell-content {
+            text-align: center;
+        }
+
+        .H {
+            height: calc(140px - (2 * 10px));
+            border: 7px solid #FFFFFF;
+            border-right: none;
+        }
+
+        .N, .N::before {
+            border-top: 7px solid #FFFFFF;
+        }
+
+            .N .cell-content {
+                transform: translateY(calc(50% - (3 *10px)));
+            }
+
+            .N::before, .N::after {
+                bottom: 0px;
+            }
+
+        .E, .E::before {
+            border-right: 7px solid #FFFFFF;
+        }
+
+            .E::before, .W::after {
+                left: 0px;
+            }
+
+        .S, .S::before {
+            border-bottom: 7px solid #FFFFFF;
+        }
+
+            .S .cell-content {
+                transform: translateY(calc(50% - 10px));
+            }
+
+            .S::before, .S::after {
+                top: 0px;
+            }
+
+        .W, .W::before {
+            border-left: 7px solid #FFFFFF;
+        }
+
+            .W::before, .E::after {
+                right: 0px;
+            }
+
+        .N::before, .S::before, .N::after, .S::after {
+            content: '';
+            position: absolute;
+        }
+
+        .N::before, .S::before {
+            padding: 10px 25%;
+            background: #F2F3F4;
+        }
+
+        .N::after, .S::after {
+            background-color: white;
+            padding: calc(7px / 4) 25%;
+        }
+
+        .N.E {
+            border-top-right-radius: calc(0.7 * 140px);
+        }
+
+            .N.E::before {
+                border-top-right-radius: 30px;
+            }
+
+        .S.E {
+            border-bottom-right-radius: calc(0.7 * 140px);
+        }
+
+            .S.E::before {
+                border-bottom-right-radius: 30px;
+            }
+
+        .S.W {
+            border-bottom-left-radius: calc(0.7 * 140px);
+        }
+
+            .S.W .cell-content {
+                text-align: left;
+                transform: translate(35%,calc(-50% + 10px ));
+            }
+
+            .S.W::before {
+                border-bottom-left-radius: 30px;
+            }
+
+        .N.W {
+            border-top-left-radius: calc(0.7 * 140px);
+        }
+
+            .N.W::before {
+                border-top-left-radius: 30px;
+            }
+
+        .mv-down {
+            margin-top: calc( 10px * 2);
+        }
+
+        .mv-down2 {
+            margin-top: calc( 10px * 4);
+        }
+
+        .item-1 {
+            transform: translateY(-50%);
+        }
+
+        #title-text::first-line {
+            font-size: 15px;
+        }
+
+        #invite-button-container {
+            display: block;
+            position: relative;
+            left: calc(50% - 40px);
+        }
+
+        .invite-button {
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #FFFFFF;
+            color: #2272BA;
+            float: left;
+            font-size: 10px;
+        }
+
+            .invite-button:hover {
+                background-color: #FED304;
+            }
+
+        .popup {
+            position: relative;
+        }
+
+        #popup-mobile-text {
+            display: none;
+        }
+
+        .popup .popuptext::before {
+            content: "";
+            height: 0;
+            width: calc(100% + 60px);
+            position: absolute;
+            left: -45px;
+            top: -10px;
+            z-index: -1;
+            border-bottom: calc(7.5 * 10px) solid #FFFFFF;
+            border-left: 45px solid transparent;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+        }
+
+        .popup .popuptext {
+            height: calc(7.5 * 10px );
+            width: 150px;
+            position: absolute;
+            top: 19px;
+            left: 50px;
+            margin-top: calc((10px / 2) + 15px);
+            margin-left: -75px;
+            z-index: 4;
+            font-size: 10px;
+            color: black;
+            visibility: hidden;
+            line-height: 1em;
+        }
+
+            .popup .popuptext::after {
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: 20px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: transparent transparent #FFFFFF transparent;
+            }
+
+        y {
+            color: #FED304;
+        }
+
+        y1::first-letter {
+            color: #FED304;
+        }
+
+        .color1, .color1 .cell {
+            background-color: #2272BA;
+        }
+
+        a .color1:hover, a .color1:hover > * {
+            background-color: #195387;
+        }
+
+        .color2 {
+            background-color: #1F2A44;
+        }
+
+        a .color2:hover {
+            background-color: #14252B;
+        }
+
+        .color3 {
+            background-color: #B2B6B6;
+        }
+
+            .color3 .cell-content {
+                color: #1F2A44;
+            }
+
+        a .color3:hover {
+            background-color: #E3E8E8;
+        }
+
+        .color4 {
+            background-color: #80B4D6;
+        }
+
+        a:hover .cell-content > * {
+            display: none;
+        }
+
+        a .color4:hover {
+            background-color: #6289A3;
+        }
+
+        a:hover .cell-content > * {
+            display: none;
+        }
+
+        .pdf:hover .cell {
+            background-image: url( /Content/images/RoadmapToSuccess/file-pdf-regular.svg );
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .yt-video:hover .cell {
+            background-image: url(/Content/images/RoadmapToSuccess/play-circle-regular.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .clickable:hover .cell {
+            background-image: url(/Content/images/RoadmapToSuccess/mouse-solid.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #star {
+            font-size: 12px;
+            margin-right: -5px;
+        }
+
+        #modal-roadmap {
+            position: fixed;
+            padding-top: 165px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        #modal-roadmap2 {
+            position: fixed;
+            padding-top: 165px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            height: calc(140px * 1.25);
+            margin: auto;
+            padding: 15px;
+            border: 1px solid #888;
+            width: 70%;
+            border-radius: 0;
+        }
+
+        #modal-roadmap2 .modal-content {
+            width: 50%;
+            height: calc(140px * 1.25);
+        }
+
+        #title-text {
+            display: block;
+            color: #1F2A44;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 1em;
+        }
+
+            #title-text::first-line {
+                font-size: 15px;
+            }
+
+        .modal-cellstyle-25 {
+            width: 25%;
+            border-right: 7px solid #FFFFFF;
+        }
+
+        .modal-cellstyle-50 {
+            width: 50%;
+            border-right: 7px solid #FFFFFF;
+        }
+
+        #select-country-text {
+            color: #1F2A44;
+            font-size: 12px;
+        }
+
+        #triangle-part1 {
+            position: relative;
+            left: 0;
+            height: calc(2.5 * 10px);
+        }
+
+        #triangle-part2 {
+            position: relative;
+            left: calc(10px + 4px);
+            height: calc(2.5 * 10px);
+        }
+
+        #triangle-part3 {
+            position: relative;
+            left: calc(2 * (10px + 4px));
+            height: calc(2.5 * 10px);
+        }
+
+        #arrow-down-id {
+            width: 100%;
+            text-align: center;
+        }
+
+        #triangle-part1 span, #triangle-part2 span, #triangle-part3 span {
+            font-size: 13px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        #roadmap {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .flex-container {
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .flex-item {
+            width: 100%;
+            height: 130px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item-1 {
+            order: -20;
+            width: 100%;
+        }
+
+        .item-2 {
+            order: -10;
+            width: 80%;
+        }
+
+        .item-3 {
+            order: -8;
+            width: 80%;
+        }
+
+        .item-4 {
+            order: -6;
+        }
+
+        .item-5 {
+            order: -5;
+        }
+
+        .item-6 {
+            order: -15;
+        }
+
+        .item-7 {
+            order: -12;
+            width: 80%;
+        }
+
+        .item-8 {
+            order: -14;
+            width: 80%;
+        }
+
+        .item-9 {
+            order: -16;
+        }
+
+        .item-10 {
+            display: none;
+        }
+
+        .item-11 {
+            display: none;
+        }
+
+        .item-12 {
+            order: -19;
+        }
+
+        .item-13 {
+            order: -18;
+        }
+
+        .item-14 {
+            order: -17;
+        }
+
+        .item-15 {
+            order: -13;
+            width: 20%;
+        }
+
+        .item-16 {
+            display: none;
+        }
+
+        .item-17 {
+            order: -11;
+            width: 20%;
+        }
+
+        .item-18 {
+            order: -9;
+            width: 20%;
+        }
+
+        .item-19 {
+            order: -7;
+            width: 20%;
+        }
+
+        .item-20 {
+            order: -21;
+            width: 100%;
+        }
+
+        .cell {
+            display: block;
+            position: relative;
+            float: left;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: visible;
+            z-index: 1;
+            border: 7px solid #FFFFFF;
+        }
+
+        .cell-content {
+            color: #FFFFFF;
+            position: relative;
+            top: calc(35%);
+            transform: translateY(-50%);
+            width: 100%;
+            font-size: 25px;
+        }
+
+        .item-7 .cell-content {
+            top: calc(50%);
+        }
+
+        .item-8 .cell-content {
+            top: calc(50%);
+        }
+
+        .cell .cell-content {
+            text-align: center;
+        }
+
+        #title-text {
+            display: block;
+            color: #1F2A44;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+            #title-text::first-line {
+                font-size: 15px;
+            }
+
+        #invite {
+            top: 20%;
+        }
+
+        #invite-button-container {
+            display: block;
+            position: relative;
+            left: calc(50% - 100px);
+        }
+
+        .invite-button {
+            margin: 5px;
+            padding: 15px 35px;
+            background-color: #FFFFFF;
+            color: #2272BA;
+            float: left;
+            font-size: 20px;
+        }
+
+            .invite-button:hover {
+                background-color: #FED304;
+            }
+
+        .popup {
+            display: none;
+        }
+
+        #popup-mobile-text {
+            display: block;
+            line-height: 1.3em;
+            font-size: 15px;
+            color: #000000;
+        }
+
+        .item-6 {
+            padding: 0 10%;
+            height: 300px;
+        }
+
+            .item-6 span {
+                font-size: 16px;
+                line-height: 0.5em;
+            }
+
+            .item-6 .cell-content {
+                top: 50%;
+            }
+
+        .popup .popuptext::before {
+            content: "";
+            height: 0;
+            width: calc(100% + 60px);
+            position: absolute;
+            left: -45px;
+            top: -10px;
+            z-index: -1;
+            border-bottom: calc(7.5 * 10px ) solid #FFFFFF;
+            border-left: 45px solid transparent;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+        }
+
+        .popup .popuptext {
+            height: calc(7.5 * 10px );
+            width: 150px;
+            position: absolute;
+            top: 19px;
+            left: 50px;
+            margin-top: calc((10px / 2) + 15px);
+            margin-left: -75px;
+            z-index: 4;
+            font-size: 10px;
+            color: black;
+            visibility: hidden;
+            line-height: 1em;
+        }
+
+            .popup .popuptext::after {
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: 20px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: transparent transparent #FFFFFF transparent;
+            }
+
+        y {
+            color: #FED304;
+        }
+
+        y1::first-letter {
+            color: #FED304;
+        }
+
+        .color1, .color1 .cell {
+            background-color: #2272BA;
+        }
+
+        a .color1:hover, a .color1:hover > * {
+            background-color: #195387;
+        }
+
+        .color2 {
+            background-color: #1F2A44;
+        }
+
+        a .color2:hover {
+            background-color: #14252B;
+        }
+
+        .color3 {
+            background-color: #B2B6B6;
+        }
+
+            .color3 .cell-content {
+                color: #1F2A44;
+            }
+
+        a .color3:hover {
+            background-color: #E3E8E8;
+        }
+
+        .color4 {
+            background-color: #80B4D6;
+        }
+
+        a .color4:hover {
+            background-color: #6289A3;
+        }
+
+        .pdf .cell {
+            background-image: url( /Content/images/RoadmapToSuccess/file-pdf-regular.svg );
+            background-repeat: no-repeat;
+            background-position: center 80%;
+        }
+
+        .yt-video .cell {
+            background-image: url( /Content/images/RoadmapToSuccess/play-circle-regular.svg );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: center 80%;
+        }
+
+        .clickable .cell {
+            background-image: url( /Content/images/RoadmapToSuccess/hand-point-up-regular.svg );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: center 80%;
+        }
+
+        .item-7 .cell {
+            background-image: none;
+        }
+
+        .item-8 .cell {
+            background-image: none;
+        }
+
+        #star {
+            font-size: 15px;
+            margin-right: -5px;
+            text-align: left;
+            transform: translateX(20%);
+        }
+
+        #modal-roadmap {
+            left: 0;
+            top: 0;
+            width: 90%;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        #modal-roadmap2 {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 90%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            border: 1px solid #888;
+            width: 100%;
+            border-radius: 0;
+        }
+
+        #modal-roadmap2 .modal-content {
+            width: 100%;
+        }
+
+        .modal-content .cell-content {
+            top: 30%;
+            font-size: 20px;
+            line-height: 1em;
+        }
+
+        #title-text {
+            display: block;
+            color: #1F2A44;
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+            padding: 0 5%;
+        }
+
+            #title-text::first-line {
+                font-size: 20px;
+            }
+
+        .modal-cellstyle-25 {
+            height: 160px;
+            width: 100%;
+            border-right: 7px solid #FFFFFF;
+        }
+
+        .modal-cellstyle-50 {
+            height: 160px;
+            width: 100%;
+            border-right: 7px solid #FFFFFF;
+        }
+
+        #select-country-text {
+            display: none;
+        }
+
+        .item-20 {
+            padding: 0 10%;
+            height: 100px;
+        }
+
+        #country-dropdown {
+            top: -10%;
+            left: 10%;
+        }
+
+        .item-1 {
+            height: 120px;
+        }
+
+        #triangle-part1 {
+            position: relative;
+            left: 0;
+            height: calc(5 * 10px);
+        }
+
+        #triangle-part2 {
+            position: relative;
+            left: calc(10px + 18px);
+            height: calc(5 * 10px);
+        }
+
+        #triangle-part3 {
+            position: relative;
+            left: calc(2 * (10px + 18px));
+            height: calc(5 * 10px);
+        }
+
+        #arrow-down-id {
+            display: none;
+        }
+    }
+</style>
+
+<script>
+    var data = {
+        "country-name": {
+            "en": {
+                "en-US": "United States (English)",
+                "es-US": "United States (Spanish)",
+                "es-MX": "Mexico",
+                "en-IE": "Ireland",
+                "en-GB": "United Kingdom",
+                "es-DO": "Dominican Republic",
+                "es-GT": "Guatemala",
+                "es-CO": "Colombia",
+                "es-PE": "Peru",
+                "es-ES": "Spain (Spanish)",
+                "en-ES": "Spain (English)"
+            },
+            "es": {
+                "en-US": "Estados Unidos (Inglés)",
+                "es-US": "Estados Unidos (Español)",
+                "es-MX": "México",
+                "en-IE": "Irlanda",
+                "en-GB": "Reino Unido",
+                "es-DO": "República Dominicana",
+                "es-GT": "Guatemala",
+                "es-CO": "Colombia",
+                "es-PE": "Perú",
+                "es-ES": "España (Español)",
+                "en-ES": "España (Inglés)"
+
+            }
+        },
+        "title-text": {
+            "en": "Welcome to Our Immunotec<br> Roadmap to Success",
+            "es": "Bienvenido a nuestro<br> Mapa del camino al éxito de Immunotec"
+        },
+        "select-country-text": {
+            "en": "Select your country",
+            "es": "Selecciona tu país"
+        },
+        "invite-to-join-text": {
+            "en": "Invite to join",
+            "es": "Invita a unirse"
+        },
+        "yes-text": {
+            "en": "Yes",
+            "es": "Sí"
+        },
+        "yes-link": {
+            "en": "https://youtu.be/d4slXTn0Rr8",
+            "es": "https://youtu.be/d4slXTn0Rr8"
+        },
+        "no-text": {
+            "en": "No",
+            "es": "No"
+        },
+        "no-link": {
+            "en": "https://youtu.be/5epXs8BUmrs",
+            "es": "https://youtu.be/5epXs8BUmrs"
+        },
+        "schedule-next-contact-text": {
+            "en": "Schedule Your Next Contact",
+            "es": "Programa tu próximo encuentro"
+        },
+        "schedule-next-contact-link": {
+            "en": "https://media.immunotec.com/roadmap/docs/SP/roadmap-SchedNextContact.pdf",
+            "es": "https://media.immunotec.com/roadmap/docs/SP/roadmap-SchedNextContact.pdf"
+        },
+        "qualify-silver-text": {
+            "en": "Qualify As Silver",
+            "es": "Califica como Plata"
+        },
+        "qualify-silver-link": {
+            "es-MX": "https://media.immunotec.com/roadmap/docs/SP/MX/roadmap-QualifySilver.pdf",
+            "es-DO": "https://media.immunotec.com/roadmap/docs/SP/DO/roadmap-QualifySilver.pdf",
+            "es-GT": "https://media.immunotec.com/roadmap/docs/SP/GT/roadmap-QualifySilver.pdf",
+            "es-CO": "https://media.immunotec.com/roadmap/docs/SP/CO/roadmap-QualifySilver.pdf",
+            "es-PE": "https://media.immunotec.com/roadmap/docs/SP/PE/roadmap-QualifySilver.pdf"
+        },
+        "maintain-silver-text": {
+            "en": "Maintain Silver",
+            "es": "Mantén tu rango Plata"
+        },
+        "maintain-silver-link": {
+            "es-MX": "https://media.immunotec.com/roadmap/docs/SP/MX/roadmap-MaintainSilver.pdf",
+            "es-DO": "https://media.immunotec.com/roadmap/docs/SP/DO/roadmap-MaintainSilver.pdf",
+            "es-GT": "https://media.immunotec.com/roadmap/docs/SP/GT/roadmap-MaintainSilver.pdf",
+            "es-CO": "https://media.immunotec.com/roadmap/docs/SP/CO/roadmap-MaintainSilver.pdf",
+            "es-PE": "https://media.immunotec.com/roadmap/docs/SP/PE/roadmap-MaintainSilver.pdf"
+        },
+        "10-3-1-text": {
+            "en": "10-3-1 to get to Silver",
+            "es": "10-3-1 para llegar a Plata"
+        },
+        "recipe-text": {
+            "en": "The recommended recipe for success is with every 10 prospects your goal is to set up 3 meetings from which you enroll 1 new Consultant.",
+            "es": "La receta recomendada para el éxito consiste en que de cada 10 prospectos tu puedes poner la meta de programar 3 reuniones y de éstas inscribir a 1 nuevo(a) Consultor(a)."
+        },
+        "prospects-text": {
+            "en": "Prospects<br>",
+            "es": "Prospectos<br>"
+        },
+        "meetings-text": {
+            "en": "Meetings<br>",
+            "es": "Reuniones<br>"
+        },
+        "new-consultant-text": {
+            "en": "New Consultant<br>",
+            "es": "Inscripción de nuevos consultores<br>"
+        },
+        "popup-mobile-text": {
+            "en": "The recommended recipe for success is with every 10 prospects your goal is to set up 3 meetings from which you enroll 1 new Consultant.",
+            "es": "La receta recomendada para el éxito consiste en que de cada 10 prospectos tu puedes poner la meta de programar 3 reuniones y de éstas inscribir a 1 nuevo(a) Consultor(a)."
+        },
+        "use-your-star-link": {
+            "en": "https://media.immunotec.com/roadmap/docs/SP/roadmap-STAR.pdf",
+            "es": "https://media.immunotec.com/roadmap/docs/SP/roadmap-STAR.pdf"
+        },
+        "use-your-star-text": {
+            "en": "Use Your \"<y>STAR<y>\"",
+            "es": "Usa tu \"<y>STAR<y>\""
+        },
+        "share-text": {
+            "en": "Share",
+            "es": "Siente, conoce y comparte"
+        },
+        "tell-text": {
+            "en": "Tell",
+            "es": "Transmite tu historia"
+        },
+        "answer-text": {
+            "en": "Answer",
+            "es": "Analiza, estudia y contesta"
+        },
+        "recommend-text": {
+            "en": "Recommend",
+            "es": "Recomienda"
+        },
+        "contact-your-prospects-text": {
+            "en": "Contact Your Prospects<br>",
+            "es": "Contacta tus prospectos<br>"
+        },
+        "watch-the-video-text": {
+            "en": "Watch the Video",
+            "es": "Ver el video"
+        },
+        "watch-the-video-link": {
+            "en": "https://youtu.be/lCmTYqwjta4",
+            "es": "https://youtu.be/lCmTYqwjta4"
+        },
+        "go-text": {
+            "en": "GO!!&nbsp;",
+            "es": "GO!!&nbsp;"
+        },
+        "start-taking-immunocal-text": {
+            "en": "Start taking Immunocal",
+            "es": "Empieza a tomar Immunocal"
+        },
+        "set-your-goal-text": {
+            "en": "Set Your Goal",
+            "es": "Establece tu meta"
+        },
+        "set-your-goal-link": {
+            "en": "https://media.immunotec.com/roadmap/docs/SP/roadmap-SetGoals.pdf",
+            "es": "https://media.immunotec.com/roadmap/docs/SP/roadmap-SetGoals.pdf"
+        },
+        "make-your-prospect-list-text": {
+            "en": "Make Your Prospect List",
+            "es": "Haz tu lista de prospectos"
+        },
+        "make-your-prospect-list-link": {
+            "en": "https://media.immunotec.com/roadmap/docs/SP/roadmap-ProspectList.pdf",
+            "es": "https://media.immunotec.com/roadmap/docs/SP/roadmap-ProspectList.pdf"
+        },
+        "how-to-mix-text": {
+            "en": "Learn how to mix Immunocal",
+            "es": "&nbsp;&nbsp;&nbsp;&nbsp;Aprende a mezclar Immunocal"
+        },
+        "how-to-mix-1-text": {
+            "en": "One pouch with orange juice",
+            "es": "Un sobre con jugo de naranja"
+        },
+        "how-to-mix-1-link": {
+            "en": "https://youtu.be/wMoFKiheLYw",
+            "es": "https://youtu.be/wMoFKiheLYw"
+        },
+        "how-to-mix-2-text": {
+            "en": "One pouch with water",
+            "es": "Un sobre con agua"
+        },
+        "how-to-mix-2-link": {
+            "en": "https://youtu.be/DoGw6g6Z-NY",
+            "es": "https://youtu.be/DoGw6g6Z-NY"
+        },
+        "how-to-mix-3-text": {
+            "en": "One pouch of each (Immunocal and Platinum) with water plus Optimizer",
+            "es": "Un sobre de cada uno (Immunocal y Platino) con agua más Optimizer"
+        },
+        "how-to-mix-3-link": {
+            "en": "https://youtu.be/sY2v7nvSsss",
+            "es": "https://youtu.be/sY2v7nvSsss"
+        },
+        "how-to-mix-4-text": {
+            "en": "One pouch with water plus Optimizer",
+            "es": "Un sobre con agua más Optimizer"
+        },
+        "how-to-mix-4-link": {
+            "en": "https://youtu.be/oTHsZX203Lw",
+            "es": "https://youtu.be/oTHsZX203Lw"
+        },
+        "prospect-knows-text": {
+            "en": "Prospect who knows Immunotec",
+            "es": "Prospecto que conoce Immunotec"
+        },
+        "prospect-knows-link": {
+            "en": "https://youtu.be/ZJVyfLGzyOg",
+            "es": "https://youtu.be/ZJVyfLGzyOg"
+        },
+        "prospect-doesnt-know-text": {
+            "en": "Prospect who doesn't know Immunotec",
+            "es": "Prospecto que no conoce Immunotec"
+        },
+        "prospect-doesnt-know-link": {
+            "en": "https://youtu.be/-qdGYaklyjY",
+            "es": "https://youtu.be/-qdGYaklyjY"
+        }
+    };
+
+    function getData(key, _language) {
+        if (data[key][_language] != undefined) {
+            return data[key][_language];
+        }
+        if (data[key][_language.split("-")[0]] != undefined) {
+            return data[key][_language.split("-")[0]];
+        }
+        return "undefined";
+    }
+
+    window.onload = function () {
+        var _language = getCookie("language");
+        if (_language == "") {
+            document.cookie = "language=es-MX";
+            _language = "es-MX";
+        }
+        this.loadLanguageData(_language);
+    }
+
+    function loadLanguageData(_language) {
+        var lang = _language.split("-")[0];
+        var country = _language.split("-")[1];
+        this.document.getElementById("country-img").src = "/Content/Images/country-flags/16/" + country + ".png";
+        this.document.getElementById("country-name").textContent = data["country-name"][lang][_language];
+        this.document.getElementById("language-list").innerHTML = countryDropdown(_language);
+        for (id in data) {
+            idSplit = id.split("-");
+            type = idSplit[idSplit.length - 1];
+            if (type == "text") {
+                this.document.getElementById(id).innerHTML = getData(id, _language);
+            }
+            if (type == "link") {
+                this.document.getElementById(id).href = getData(id, _language);
+            }
+        }
+    }
+
+    function countryDropdown(_language) {
+        list = "";
+        for (lang in data["country-name"][_language.split("-")[0]]) {
+            _lang = lang.split("-")
+            item = `
+                <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-item-link" data-culture="${lang}">
+                        <img style="vertical-align:text-bottom" src="/Content/Images/country-flags/16/${_lang[1]}.png">
+                        <span style="color: #1F2A44; font-size: 12px;">
+                            ${data["country-name"][_language.split("-")[0]][lang]}
+                        </span>
+                    </a>
+                </li>
+            `;
+            list += item;
+        }
+        return list;
+    }
+
+    function ChangeLanguage(_language) {
+        document.cookie = "language=" + _language;
+        loadLanguageData(_language)
+    }
+
+    function getCookie(name) {
+        var p = ("; " + document.cookie).split("; " + name + "=");
+        if (p.length == 2) return p[1].split(";")[0];
+        return "";
+    }
+
+    function getCountryCode(language) {
+        return language.split("-")[1];
+    }
+
+    $('.changelanguage-list').on('click', 'li a', function () {
+        ChangeLanguage($(this).attr("data-culture"));
+    });
+
+    function hoverArrow() {
+        document.getElementById("arrow").setAttribute('src', '/Content/images/RoadmapToSuccess/Arrow-Loop-2.svg');
+    }
+
+    function unhoverArrow() {
+        document.getElementById("arrow").setAttribute('src', '/Content/images/RoadmapToSuccess/Arrow-Loop.svg');
+    }
+
+    function hoverRecipe() {
+        document.getElementById("recipe-text").style.visibility = 'visible';
+    }
+
+    function unhoverRecipe() {
+        document.getElementById("recipe-text").style.visibility = 'hidden';
+    }
+
+    function showModal() {
+        document.getElementById("modal-roadmap").style.display = "block";
+    }
+
+    function showModal2() {
+        document.getElementById("modal-roadmap2").style.display = "block";
+    }
+
+    window.onclick = function (event) {
+        var modal = document.getElementById("modal-roadmap");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        modal = document.getElementById("modal-roadmap2");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
