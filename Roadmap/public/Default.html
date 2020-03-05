@@ -55,14 +55,17 @@
                 </div>
             </div>
             <div class="flex-item item-3">
-                <a id="schedule-next-contact-link" class="pdf" target="_blank" href="">
-                    <div class="cell H color1">
-                        <div class="cell-content">
-                            <span id="schedule-next-contact-text"></span>
+                <a id="schedule-next-contact-link" class="pdf" target="_blank" href="" onmouseover="hoverArrow();" onmouseout="unhoverArrow();">
+                    <div class="color1">
+                        <div class="cell H">
+                            <div class="cell-content">
+                                <span id="schedule-next-contact-text"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div id="arrow-down-id">
-                        <img src="/Content/images/RoadmapToSuccess/arrow-down.svg">
+                        <div style="position:relative; top:calc(140px - (2 * 10px)); left: calc(-50% - (5 * 5px));">
+                            <img id="arrow-down-id" style="z-index: 2; position: absolute; width: calc(5 * 10px);"
+                                 src="/Content/images/RoadmapToSuccess/Arrow-Loop.svg" />
+                        </div>
                     </div>
                 </a>
             </div>
@@ -670,11 +673,6 @@
             position: relative;
             left: calc(2 * (10px + 4px));
             height: calc(2.5 * 10px);
-        }
-
-        #arrow-down-id {
-            width: 100%;
-            text-align: center;
         }
 
         #triangle-part1 span, #triangle-part2 span, #triangle-part3 span {
@@ -1408,11 +1406,11 @@
     });
 
     function hoverArrow() {
-        document.getElementById("arrow").setAttribute('src', '/Content/images/RoadmapToSuccess/Arrow-Loop-2.svg');
+        document.getElementById("arrow-down-id").setAttribute('src', '/Content/images/RoadmapToSuccess/Arrow-Loop-2.svg');
     }
 
     function unhoverArrow() {
-        document.getElementById("arrow").setAttribute('src', '/Content/images/RoadmapToSuccess/Arrow-Loop.svg');
+        document.getElementById("arrow-down-id").setAttribute('src', '/Content/images/RoadmapToSuccess/Arrow-Loop.svg');
     }
 
     function hoverRecipe() {
