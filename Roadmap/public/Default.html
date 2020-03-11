@@ -1414,11 +1414,10 @@
     }
 
     window.onload = function () {
-        var _language = getCookie("language");
-        if (_language == "") {
-            document.cookie = "language=es-MX";
-            _language = "es-MX";
-        }
+        var _language = URLSearchParams(window.location.search).get('selectedLanguage');
+        if (!_language) _language = getCookie("language");
+        if (!_language) _language = "es-MX";
+        document.cookie = "language=" + _language;
         this.loadLanguageData(_language);
     }
 
@@ -1467,7 +1466,7 @@
     function getCookie(name) {
         var p = ("; " + document.cookie).split("; " + name + "=");
         if (p.length == 2) return p[1].split(";")[0];
-        return "";
+        return null;
     }
 
     function getCountryCode(language) {
