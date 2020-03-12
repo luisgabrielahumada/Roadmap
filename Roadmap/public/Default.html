@@ -1432,7 +1432,7 @@
     }
 
     window.onload = function () {
-        var _language = URLSearchParams(window.location.search).get('selectedLanguage');
+        var _language = new URLSearchParams(window.location.search).get('selectedLanguage');
         if (!_language) _language = getCookie("language");
         if (!_language) _language = "es-MX";
         document.cookie = "language=" + _language;
