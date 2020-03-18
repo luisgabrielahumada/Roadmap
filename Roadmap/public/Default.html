@@ -42,6 +42,7 @@
     </script>
 </head>
 <body>
+    <div id="warning-text" class="alert alert-warning" role="alert"></div>
     <div class="" style="width:100%;">
         <div class="flex-container" id="roadmap">
             <div class="flex-item item-1" style="z-index:99;">
@@ -134,7 +135,7 @@
             <div class="flex-item item-7">
                 <a id="use-your-star-link" class="pdf" target="_blank" href="">
                     <div class="cell S W color1">
-                        <div id="use-your-star-content" class="cell-content">
+                        <div class="cell-content">
                             <div id="use-your-star-text"></div>
                             <div id="star">
                                 <y1 id="share-text" style="display: block; margin: 0; "></y1>
@@ -295,10 +296,15 @@
 <style>
     :root {
         --s-w-content-offset: #999999;
+        --display-warning: none;
     }
 
     body {
         background-color: #F2F3F4;
+    }
+
+    #warning-text {
+        display: var(--display-warning);
     }
 
     @media only screen and (min-width: 600px) {
@@ -1433,13 +1439,18 @@
             "en": "https://youtu.be/nhpXT625beE",
             "es": "https://youtu.be/-qdGYaklyjY",
             "fr": "https://youtu.be/nhpXT625beE",
+        },
+        "warning-text": {
+            "fr": "*Veuillez noter que les vidéos sur cette page sont présentement disponibles en anglais seulement. Les versions françaises seront disponibles bientôt."
         }
     };
 
     function fixStyle(_language) {
+        document.documentElement.style.setProperty('--display-warning', 'none');
         document.documentElement.style.setProperty('--s-w-content-offset', 'translate(35%,calc(-50% + 10px ))');
         if (_language.split("-")[0] == "fr") {
             document.documentElement.style.setProperty('--s-w-content-offset', 'translate(25%,calc(-50% + 10px ))');
+            document.documentElement.style.setProperty('--display-warning', 'block');
         }
     }
 
