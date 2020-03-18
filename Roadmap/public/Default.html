@@ -134,7 +134,7 @@
             <div class="flex-item item-7">
                 <a id="use-your-star-link" class="pdf" target="_blank" href="">
                     <div class="cell S W color1">
-                        <div class="cell-content">
+                        <div id="use-your-star-content" class="cell-content">
                             <div id="use-your-star-text"></div>
                             <div id="star">
                                 <y1 id="share-text" style="display: block; margin: 0; "></y1>
@@ -293,6 +293,10 @@
 </html>
 
 <style>
+    :root {
+        --s-w-content-offset: #999999;
+    }
+
     body {
         background-color: #F2F3F4;
     }
@@ -440,7 +444,7 @@
 
             .S.W .cell-content {
                 text-align: left;
-                transform: translate(35%,calc(-50% + 10px ));
+                transform: var(--s-w-content-offset);
             }
 
             .S.W::before {
@@ -1125,6 +1129,9 @@
     var data = {
         "country-name": {
             "en": {
+                "en-CA": "Canada (Enlish)",
+                "fr-CA": "Canada (French)",
+                "es-CA": "Canada (Spanish)",
                 "en-US": "United States (English)",
                 "es-US": "United States (Spanish)",
                 "es-MX": "Mexico",
@@ -1138,6 +1145,9 @@
                 "en-ES": "Spain (English)"
             },
             "es": {
+                "en-CA": "Canada (Inglés)",
+                "fr-CA": "Canada (Francés)",
+                "es-CA": "Canada (Español)",
                 "en-US": "Estados Unidos (Inglés)",
                 "es-US": "Estados Unidos (Español)",
                 "es-MX": "México",
@@ -1149,57 +1159,78 @@
                 "es-PE": "Perú",
                 "es-ES": "España (Español)",
                 "en-ES": "España (Inglés)"
+            },
+            "fr": {
+                "en-CA": "Canada (Anglais)",
+                "fr-CA": "Canada (Français)",
+                "es-CA": "Canada (Espagnol)",
+                "en-US": "États-Unis (Anglais)",
+                "es-US": "États-Unis (Espagnol)",
+                "es-MX": "Mexique",
+                "en-IE": "Irlande",
+                "en-GB": "Royaume-Uni",
+                "es-DO": "République dominicaine",
+                "es-GT": "Guatemala",
+                "es-CO": "Colombie",
+                "es-PE": "Pérou",
+                "es-ES": "Espagne (Espagnol)",
+                "en-ES": "Espagne (Anglais)"
             }
         },
         "title-text": {
             "en": "Welcome to Our Immunotec<br> Roadmap to Success",
-            "es": "Bienvenido a nuestro<br> Mapa del camino al éxito de Immunotec"
-
+            "es": "Bienvenido a nuestro<br> Mapa del camino al éxito de Immunotec",
+            "fr": "Bienvenue à notre<br> Feuille de route Immunotec pour réussir"
         },
         "select-country-text": {
             "en": "Select your country",
-            "es": "Selecciona tu país"
-
+            "es": "Selecciona tu país",
+            "fr": "Choisissez votre pays"
         },
         "invite-to-join-text": {
             "en": "Invite to join",
-            "es": "Invita a unirse"
-
+            "es": "Invita a unirse",
+            "fr": "Invitez-les à se joindre à vous"
         },
         "yes-text": {
             "en": "Yes",
-            "es": "Sí"
-
+            "es": "Sí",
+            "fr": "Oui"
         },
         "yes-link": {
             "en": "https://youtu.be/1LygSKyZD_w",
-            "es": "https://youtu.be/d4slXTn0Rr8"
+            "es": "https://youtu.be/d4slXTn0Rr8",
+            "fr": "https://youtu.be/1LygSKyZD_w",
         },
         "no-text": {
             "en": "No",
-            "es": "No"
-
+            "es": "No",
+            "fr": "Non"
         },
         "no-link": {
             "en": "https://youtu.be/23ZuvSfNXMg",
-            "es": "https://youtu.be/5epXs8BUmrs"
+            "es": "https://youtu.be/5epXs8BUmrs",
+            "fr": "https://youtu.be/23ZuvSfNXMg",
         },
         "schedule-next-contact-text": {
             "en": "Schedule Your Next Contact",
-            "es": "Programa tu próximo encuentro"
-
+            "es": "Programa tu próximo encuentro",
+            "fr": "Planifiez votre prochain contact"
         },
         "schedule-next-contact-link": {
             "en": "https://media.immunotec.com/roadmap/docs/EN/roadmap-SchedNextContact.pdf",
             "es": "https://media.immunotec.com/roadmap/docs/SP/roadmap-SchedNextContact.pdf",
-            "es-ES": "https://media.immunotec.com/roadmap/docs/SP/ES/roadmap-SchedNextContact.pdf",
+            "fr": "https://media.immunotec.com/roadmap/docs/FR/roadmap-SchedNextContact.pdf"
         },
         "qualify-silver-text": {
             "en": "Qualify As Silver",
-            "es": "Califica como Plata"
-
+            "es": "Califica como Plata",
+            "fr": "Atteignez le niveau Argent"
         },
         "qualify-silver-link": {
+            "en-CA": "https://media.immunotec.com/roadmap/docs/EN/CA/roadmap-QualifySilver.pdf",
+            "fr-CA": "https://media.immunotec.com/roadmap/docs/FR/roadmap-QualifySilver.pdf",
+            "es-CA": "https://media.immunotec.com/roadmap/docs/SP/CA/roadmap-QualifySilver.pdf",
             "en-US": "https://media.immunotec.com/roadmap/docs/EN/US/roadmap-QualifySilver.pdf",
             "es-US": "https://media.immunotec.com/roadmap/docs/SP/US/roadmap-QualifySilver.pdf",
             "es-MX": "https://media.immunotec.com/roadmap/docs/SP/MX/roadmap-QualifySilver.pdf",
@@ -1214,9 +1245,13 @@
         },
         "maintain-silver-text": {
             "en": "Maintain Silver",
-            "es": "Mantén tu rango Plata"
+            "es": "Mantén tu rango Plata",
+            "fr": "Maintenez le niveau Argent"
         },
         "maintain-silver-link": {
+            "en-CA": "https://media.immunotec.com/roadmap/docs/EN/CA/roadmap-MaintainSilver.pdf",
+            "fr-CA": "https://media.immunotec.com/roadmap/docs/FR/roadmap-MaintainSilver.pdf",
+            "es-CA": "https://media.immunotec.com/roadmap/docs/SP/CA/roadmap-MaintainSilver.pdf",
             "en-US": "https://media.immunotec.com/roadmap/docs/EN/US/roadmap-MaintainSilver.pdf",
             "es-US": "https://media.immunotec.com/roadmap/docs/SP/US/roadmap-MaintainSilver.pdf",
             "es-MX": "https://media.immunotec.com/roadmap/docs/SP/MX/roadmap-MaintainSilver.pdf",
@@ -1231,166 +1266,182 @@
         },
         "10-3-1-text": {
             "en": "10-3-1 to get to Silver",
-            "es": "10-3-1 para llegar a Plata"
-
+            "es": "10-3-1 para llegar a Plata",
+            "fr": "10-3-1 pour atteindre le niveau Argent"
         },
         "recipe-text": {
             "en": "The recommended recipe for success is with every 10 prospects your goal is to set up 3 meetings from which you enroll 1 new Consultant.",
-            "es": "La receta recomendada para el éxito consiste en que de cada 10 prospectos tu puedes poner la meta de programar 3 reuniones y de éstas inscribir a 1 nuevo(a) Consultor(a)."
-
+            "es": "La receta recomendada para el éxito consiste en que de cada 10 prospectos tu puedes poner la meta de programar 3 reuniones y de éstas inscribir a 1 nuevo(a) Consultor(a).",
+            "fr": "La recette recommandée pour la réussite : pour chaque bloc de 10 candidats, organisez jusqu’à 3 rencontres avec l'objectif d'inscrire 1 nouveau consultant."
         },
         "prospects-text": {
             "en": "Prospects<br>",
-            "es": "Prospectos<br>"
-
+            "es": "Prospectos<br>",
+            "fr": "Candidats<br>"
         },
         "meetings-text": {
             "en": "Meetings<br>",
-            "es": "Reuniones<br>"
-
+            "es": "Reuniones<br>",
+            "fr": "Rencontres<br>"
         },
         "new-consultant-text": {
             "en": "New Consultant<br>",
-            "es": "Inscripción de nuevos consultores<br>"
-
+            "es": "Inscripción de nuevos consultores<br>",
+            "fr": "Inscription de nouveaux consultants<br>"
         },
         "popup-mobile-text": {
             "en": "The recommended recipe for success is with every 10 prospects your goal is to set up 3 meetings from which you enroll 1 new Consultant.",
-            "es": "La receta recomendada para el éxito consiste en que de cada 10 prospectos tu puedes poner la meta de programar 3 reuniones y de éstas inscribir a 1 nuevo(a) Consultor(a)."
-
+            "es": "La receta recomendada para el éxito consiste en que de cada 10 prospectos tu puedes poner la meta de programar 3 reuniones y de éstas inscribir a 1 nuevo(a) Consultor(a).",
+            "fr": "La recette recommandée pour la réussite : pour chaque bloc de 10 candidats, organisez jusqu’à 3 rencontres avec l'objectif d'inscrire 1 nouveau consultant."
         },
         "use-your-star-link": {
             "en": "https://media.immunotec.com/roadmap/docs/EN/roadmap-STAR.pdf",
             "es": "https://media.immunotec.com/roadmap/docs/SP/roadmap-STAR.pdf",
-            "es-ES": "https://media.immunotec.com/roadmap/docs/SP/ES/roadmap-STAR.pdf",
+            "fr": "https://media.immunotec.com/roadmap/docs/FR/roadmap-STAR.pdf"
         },
         "use-your-star-text": {
             "en": "Use Your \"<y>STAR<y>\"",
-            "es": "Usa tu \"<y>STAR<y>\""
-
+            "es": "Usa tu \"<y>STAR<y>\"",
+            "fr": "Misez sur le « <y>STAR<y> »"
         },
         "share-text": {
             "en": "Share",
-            "es": "Siente, conoce y comparte"
-
+            "es": "Siente, conoce y comparte",
+            "fr": "Se partager l'histoire d'Immunotec"
         },
         "tell-text": {
             "en": "Tell",
-            "es": "Transmite tu historia"
-
+            "es": "Transmite tu historia",
+            "fr": "Transmettez votre histoire"
         },
         "answer-text": {
             "en": "Answer",
-            "es": "Analiza, estudia y contesta"
-
+            "es": "Analiza, estudia y contesta",
+            "fr": "Attentionnez-vous à leurs questions"
         },
         "recommend-text": {
             "en": "Recommend",
-            "es": "Recomienda"
-
+            "es": "Recomienda",
+            "fr": "Recommandez-leur de se joindre à vous!"
         },
         "contact-your-prospects-text": {
             "en": "Contact Your Prospects<br>",
-            "es": "Contacta tus prospectos<br>"
-
+            "es": "Contacta tus prospectos<br>",
+            "fr": "Contactez vos candidats<br>"
         },
         "watch-the-video-text": {
             "en": "Watch the Video",
-            "es": "Ver el video"
-
+            "es": "Ver el video",
+            "fr": "Visionnez la vidéo"
         },
         "watch-the-video-link": {
             "en": "https://youtu.be/Nonv4LyeQI4",
-            "es": "https://youtu.be/lCmTYqwjta4"
+            "es": "https://youtu.be/lCmTYqwjta4",
+            "fr": "https://youtu.be/Nonv4LyeQI4",
         },
         "go-text": {
             "en": "GO!!&nbsp;",
-            "es": "GO!!&nbsp;"
-
+            "es": "GO!!&nbsp;",
+            "fr": "Allez-y!!&nbsp;"
         },
         "start-taking-immunocal-text": {
             "en": "Start taking Immunocal",
-            "es": "Empieza a tomar Immunocal"
-
+            "es": "Empieza a tomar Immunocal",
+            "fr": "Commencez à prendre Immunocal"
         },
         "set-your-goal-text": {
             "en": "Set Your Goal",
-            "es": "Establece tu meta"
-
+            "es": "Establece tu meta",
+            "fr": "Fixez votre objectif"
         },
         "set-your-goal-link": {
             "en": "https://media.immunotec.com/roadmap/docs/EN/roadmap-SetGoals.pdf",
             "es": "https://media.immunotec.com/roadmap/docs/SP/roadmap-SetGoals.pdf",
-            "es-ES": "https://media.immunotec.com/roadmap/docs/SP/ES/roadmap-SetGoals.pdf",
+            "fr": "https://media.immunotec.com/roadmap/docs/FR/roadmap-SetGoals.pdf"
         },
         "make-your-prospect-list-text": {
             "en": "Make Your Prospect List",
-            "es": "Haz tu lista de prospectos"
-
+            "es": "Haz tu lista de prospectos",
+            "fr": "Dressez votre liste de candidats"
         },
         "make-your-prospect-list-link": {
             "en": "https://media.immunotec.com/roadmap/docs/EN/roadmap-ProspectList.pdf",
             "es": "https://media.immunotec.com/roadmap/docs/SP/roadmap-ProspectList.pdf",
-            "es-ES": "https://media.immunotec.com/roadmap/docs/SP/ES/roadmap-ProspectList.pdf",
+            "fr": "https://media.immunotec.com/roadmap/docs/FR/roadmap-ProspectList.pdf"
         },
         "how-to-mix-text": {
             "en": "Learn how to mix Immunocal",
-            "es": "&nbsp;&nbsp;&nbsp;&nbsp;Aprende a mezclar Immunocal"
-
+            "es": "&nbsp;&nbsp;&nbsp;&nbsp;Aprende a mezclar Immunocal",
+            "fr": "Apprenez à mélanger Immunocal"
         },
         "how-to-mix-1-text": {
             "en": "One pouch with orange juice",
-            "es": "Un sobre con jugo de naranja"
-
+            "es": "Un sobre con jugo de naranja",
+            "fr": "Un sachet avec du jus d'orange"
         },
         "how-to-mix-1-link": {
             "en": "https://youtu.be/RykKYMM-bso",
-            "es": "https://youtu.be/wMoFKiheLYw"
+            "es": "https://youtu.be/wMoFKiheLYw",
+            "fr": "https://youtu.be/RykKYMM-bso",
         },
         "how-to-mix-2-text": {
             "en": "One pouch with water",
-            "es": "Un sobre con agua"
-
+            "es": "Un sobre con agua",
+            "fr": "Un sachet avec de l'eau"
         },
         "how-to-mix-2-link": {
             "en": "https://youtu.be/RvGLInd_OFU",
-            "es": "https://youtu.be/DoGw6g6Z-NY"
+            "es": "https://youtu.be/DoGw6g6Z-NY",
+            "fr": "https://youtu.be/RvGLInd_OFU",
         },
         "how-to-mix-3-text": {
             "en": "One pouch of each (Immunocal and Platinum) with water plus Optimizer",
-            "es": "Un sobre de cada uno (Immunocal y Platino) con agua más Optimizer"
-
+            "es": "Un sobre de cada uno (Immunocal y Platino) con agua más Optimizer",
+            "fr": "Un sachet de chacun (Immunocal et Platinum) avec de l'eau plus le Booster"
         },
         "how-to-mix-3-link": {
             "en": "https://youtu.be/wCrtpPry9Zo",
-            "es": "https://youtu.be/sY2v7nvSsss"
+            "es": "https://youtu.be/sY2v7nvSsss",
+            "fr": "https://youtu.be/wCrtpPry9Zo",
         },
         "how-to-mix-4-text": {
             "en": "One pouch with water plus Optimizer",
-            "es": "Un sobre con agua más Optimizer"
-
+            "es": "Un sobre con agua más Optimizer",
+            "fr": "Un sachet avec de l'eau plus le Booster"
         },
         "how-to-mix-4-link": {
             "en": "https://youtu.be/m3An9Ezakq4",
-            "es": "https://youtu.be/oTHsZX203Lw"
+            "es": "https://youtu.be/oTHsZX203Lw",
+            "fr": "https://youtu.be/m3An9Ezakq4",
         },
         "prospect-knows-text": {
             "en": "Prospect knows about Immunotec",
-            "es": "Prospecto que conoce Immunotec"
+            "es": "Prospecto que conoce Immunotec",
+            "fr": "Prospect connaît Immunotec"
         },
         "prospect-knows-link": {
             "en": "https://youtu.be/wcFKeMykd_c",
-            "es": "https://youtu.be/ZJVyfLGzyOg"
+            "es": "https://youtu.be/ZJVyfLGzyOg",
+            "fr": "https://youtu.be/wcFKeMykd_c",
         },
         "prospect-doesnt-know-text": {
             "en": "Prospect does not know about Immunotec",
-            "es": "Prospecto que no conoce Immunotec"
+            "es": "Prospecto que no conoce Immunotec",
+            "fr": "Prospect ne connaît pas Immunotec"
         },
         "prospect-doesnt-know-link": {
             "en": "https://youtu.be/nhpXT625beE",
-            "es": "https://youtu.be/-qdGYaklyjY"
+            "es": "https://youtu.be/-qdGYaklyjY",
+            "fr": "https://youtu.be/nhpXT625beE",
         }
     };
+
+    function fixStyle(_language) {
+        document.documentElement.style.setProperty('--s-w-content-offset', 'translate(35%,calc(-50% + 10px ))');
+        if (_language.split("-")[0] == "fr") {
+            document.documentElement.style.setProperty('--s-w-content-offset', 'translate(25%,calc(-50% + 10px ))');
+        }
+    }
 
     function getData(key, _language) {
         if (data[key][_language] != undefined) {
@@ -1426,6 +1477,7 @@
                 this.document.getElementById(id).href = getData(id, _language);
             }
         }
+        fixStyle(_language);
     }
 
     function countryDropdown(_language) {
