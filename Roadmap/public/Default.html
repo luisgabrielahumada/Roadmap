@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <title> - Immunotec</title>
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/public/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <script async="" src="https://fullstory.com/s/fs.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;display=swap" rel="stylesheet">
@@ -222,7 +222,7 @@
             </div>
             <div class="flex-item item-20">
                 <div class="cell-content">
-                    <img src="/Content/images/immunotec-logo_es.svg">
+                    <img  id="logo-page">
                 </div>
             </div>
         </div>
@@ -1401,8 +1401,8 @@
             "fr": "https://youtu.be/RvGLInd_OFU",
         },
         "how-to-mix-3-text": {
-            "en": "One pouch of each (Immunocal and Platinum) with water plus Optimizer",
-            "es": "Un sobre de cada uno (Immunocal y Platino) con agua más Optimizer",
+            "en": "One pouch of each (Immunocal and Platinum) with water plus Booster",
+            "es": "Un sobre de cada uno (Immunocal y Platino) con agua más Booster",
             "fr": "Un sachet de chacun (Immunocal et Platinum) avec de l'eau plus le Booster"
         },
         "how-to-mix-3-link": {
@@ -1411,8 +1411,8 @@
             "fr": "https://youtu.be/wCrtpPry9Zo",
         },
         "how-to-mix-4-text": {
-            "en": "One pouch with water plus Optimizer",
-            "es": "Un sobre con agua más Optimizer",
+            "en": "One pouch with water plus Booster",
+            "es": "Un sobre con agua más Booster",
             "fr": "Un sachet avec de l'eau plus le Booster"
         },
         "how-to-mix-4-link": {
@@ -1475,6 +1475,7 @@
     function loadLanguageData(_language) {
         var lang = _language.split("-")[0];
         var country = _language.split("-")[1];
+        this.document.getElementById("logo-page").src = "/Content/images/immunotec-logo_" + lang + ".svg";
         this.document.getElementById("country-img").src = "/Content/Images/country-flags/16/" + country + ".png";
         this.document.getElementById("country-name").textContent = data["country-name"][lang][_language];
         this.document.getElementById("language-list").innerHTML = countryDropdown(_language);
