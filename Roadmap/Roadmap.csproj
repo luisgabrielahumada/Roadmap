@@ -468,6 +468,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Default.html" />
+    <Content Include="public\apple-touch-icon.png" />
     <Content Include="public\Default.html" />
     <Content Include="public\favicon.ico" />
     <Content Include="Scripts\app\_run.js" />
