@@ -586,7 +586,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51498</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44327/</IISUrl>
+          <IISUrl>http://localhost:51498/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
