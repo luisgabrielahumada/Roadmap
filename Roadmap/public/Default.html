@@ -51,13 +51,14 @@
     </script>
 </head>
 <body>
+
     <div id="warning-text" class="alert alert-warning hidden" role="alert"></div>
     <div class="" style="width:100%;">
         <div class="flex-container" id="roadmap">
             <div class="flex-item item-1" style="z-index:99;">
                 <span id="title-text" style="line-height: 1.1em;"></span>
                 <div id="language-container">
-                    <span id="select-country-text">Selecciona tu pais</span><br>
+                    <span id="select-country-text">Seleccione su país/idioma</span><br>
                     <div class="dropdown" id="country-dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" id="languageText" aria-expanded="false">
                             <img id="country-img" style="vertical-align:text-bottom">
@@ -75,8 +76,11 @@
                             <a id="yes-link" target="_blank" href="">
                                 <div id="yes-text" class="invite-button"></div>
                             </a>
-                            <a id="no-link" target="_blank" href="">
+                            <div id="no-link" name="no-link" class="no-link-style"  onclick="showModalnolink()">
                                 <div id="no-text" class="invite-button"></div>
+                            </div>
+                            <a id="no-href-link" name="no-href-link" class="no-href-style" target="_blank" href="">
+                                <div id="no-href-text" class="invite-button"></div>
                             </a>
                         </div>
                     </div>
@@ -320,6 +324,26 @@
         </div>
     </div>
 
+    <div class="modal" id="modal-nolink">
+        <div class="modal-content">
+            <div class="row" style="width: 100%">
+                <div style="float:right" onclick="document.getElementById('modal-nolink').style.display = 'none'">X</div>
+            </div>
+            <a id="video-url-no-link" class="yt-video" target="_blank" href="">
+                <div class="cell H color2 modal-cellstyle-50">
+                    <div class="cell-content ">
+                        <span id="video-no-link-text"></span>
+                    </div>
+                </div>
+            </a>
+            <a id="pdf-url-no-link" class="pdf" target="_blank" href="">
+                <div class="cell H color2 modal-cellstyle-50">
+                    <div class="cell-content ">
+                        <span id="pdf-no-link-text"></span>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
 </body>
@@ -675,6 +699,18 @@
             background-color: rgba(0,0,0,0.4);
         }
 
+
+        #modal-nolink {
+            position: fixed;
+            padding-top: 165px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
         .modal-content {
             background-color: #fefefe;
             height: calc(140px * 1.25);
@@ -686,6 +722,11 @@
         }
 
         #modal-roadmap2 .modal-content {
+            width: 50%;
+            height: calc(140px * 1.25);
+        }
+
+        #modal-nolink .modal-content {
             width: 50%;
             height: calc(140px * 1.25);
         }
@@ -1121,9 +1162,9 @@
             border-right: 7px solid #FFFFFF;
         }
 
-        #select-country-text {
+        /* #select-country-text {
             display: none;
-        }
+        }*/
 
         .item-20 {
             padding: 0 10%;
@@ -1221,9 +1262,9 @@
             "fr": "Bienvenue à notre<br> Feuille de route Immunotec pour réussir"
         },
         "select-country-text": {
-            "en": "Select your country",
-            "es": "Selecciona tu país",
-            "fr": "Choisissez votre pays"
+            "en": "Select your country/language",
+            "es": "Seleccione su país/idioma",
+            "fr": "Sélectionnez votre pays/langue"
         },
         "invite-to-join-text": {
             "en": "Invite to join",
@@ -1245,10 +1286,78 @@
             "es": "No",
             "fr": "Non"
         },
-        "no-link": {
+        "no-href-text": {
+            "en": "No",
+            "es": "No",
+            "fr": "Non"
+        },
+        "no-href-link": {
+            "en-CA": "",
+            "fr-CA": "",
+            "es-CA": "",
+            "en-US": "",
+            "es-US": "",
+            "es-MX": "https://youtu.be/5epXs8BUmrs",
+            "en-IE": "",
+            "en-GB": "",
+            "es-DO": "https://youtu.be/5epXs8BUmrs",
+            "es-GT": "https://youtu.be/5epXs8BUmrs",
+            "es-CO": "https://youtu.be/5epXs8BUmrs",
+            "es-PE": "https://youtu.be/5epXs8BUmrs",
+            "es-ES": "",
+            "en-ES": ""
+        },
+        "no-link-style": {
+            "en-CA": "block",
+            "fr-CA": "block",
+            "es-CA": "block",
+            "en-US": "block",
+            "es-US": "block",
+            "es-MX": "none",
+            "en-IE": "block",
+            "en-GB": "block",
+            "es-DO": "none",
+            "es-GT": "none",
+            "es-CO": "none",
+            "es-PE": "none",
+            "es-ES": "block",
+            "en-ES": "block"
+        },
+        "no-href-style": {
+            "en-CA": "none",
+            "fr-CA": "none",
+            "es-CA": "none",
+            "en-US": "none",
+            "es-US": "none",
+            "es-MX": "block",
+            "en-IE": "none",
+            "en-GB": "none",
+            "es-DO": "block",
+            "es-GT": "block",
+            "es-CO": "block",
+            "es-PE": "block",
+            "es-ES": "none",
+            "en-ES": "none"
+        },
+        "video-no-link-text": {
+            "en": "Watch the role-play video",
+            "es": "Vea el video del juego de roles",
+            "fr": "Regardez la vidéo de jeu de rôle",
+        },
+        "pdf-no-link-text": {
+            "en": "View Preferred Customer Flyer",
+            "es": "Ver el folleto para clientes preferentes",
+            "fr": "Voir la brochure sur les clients privilégiés",
+        },
+        "video-url-no-link": {
             "en": "https://youtu.be/23ZuvSfNXMg",
             "es": "https://youtu.be/5epXs8BUmrs",
             "fr": "https://youtu.be/Sz4fQs9-N-8",
+        },
+        "pdf-url-no-link": {
+            "en": "",
+            "es": "",
+            "fr": "",
         },
         "schedule-next-contact-text": {
             "en": "Schedule Your Next Contact",
@@ -1379,7 +1488,7 @@
         },
         "go-text": {
             "en": "GO!!&nbsp;",
-            "es": "GO!!&nbsp;",
+            "es": "¡LISTOS!&nbsp;",
             "fr": "Allez-y!!&nbsp;"
         },
         "start-taking-immunocal-text": {
@@ -1567,6 +1676,11 @@
             if (type == "link") {
                 this.document.getElementById(id).href = getData(id, _language);
             }
+            if (type == "style") {
+                var _display = getData(id, _language);
+                console.log(_display);
+                this.document.getElementsByClassName(id)[0].style.display = _display;
+            }
         }
         fixStyle(_language);
     }
@@ -1642,12 +1756,20 @@
         document.getElementById("modal-roadmap2").style.display = "block";
     }
 
+    function showModalnolink() {
+        document.getElementById("modal-nolink").style.display = "block";
+    }
+
     window.onclick = function (event) {
         var modal = document.getElementById("modal-roadmap");
         if (event.target == modal) {
             modal.style.display = "none";
         }
         modal = document.getElementById("modal-roadmap2");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        modal = document.getElementById("modal-nolink");
         if (event.target == modal) {
             modal.style.display = "none";
         }
