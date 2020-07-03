@@ -76,7 +76,7 @@
                             <a id="yes-link" target="_blank" href="">
                                 <div id="yes-text" class="invite-button"></div>
                             </a>
-                            <div id="no-link" name="no-link" class="no-link-style"  onclick="showModalnolink()">
+                            <div id="no-link" name="no-link" class="no-link-style" onclick="showModalnolink()">
                                 <div id="no-text" class="invite-button"></div>
                             </div>
                             <a id="no-href-link" name="no-href-link" class="no-href-style" target="_blank" href="">
@@ -238,6 +238,9 @@
                     <img id="logo-page">
                 </div>
             </div>
+            <div class="item-21">
+                <span id="new-consultant-training-text"></span>
+            </div>
         </div>
 
         <div class="modal" id="modal-roadmap" style="z-index: 9999999 !important;">
@@ -361,6 +364,13 @@
 
     #warning-text {
         display: var(--display-warning);
+    }
+
+    .item-21 {
+        margin-top: -40px;
+        margin-left: -70px;
+        background: white;
+        padding: 10px;
     }
 
     @media only screen and (min-width: 600px) {
@@ -892,6 +902,10 @@
         .item-20 {
             order: -21;
             width: 100%;
+        }
+
+        .item-21 {
+            margin: 0;
         }
 
         .cell {
@@ -1630,7 +1644,12 @@
         },
         "warning-text": {
             "fr": "*Veuillez noter que les vidéos sur cette page sont présentement disponibles en anglais seulement. Les versions françaises seront disponibles bientôt."
-        }
+        },
+        "new-consultant-training-text": {
+            "en": "For more information and guidance, please visit your Immunotec Business Center 'New Consultant Training' videos \<a target='_blank' href='https://boffqa1.immunotec.com/resources/newconsultanttraining'>here.<a\"",
+            "es": "Para obtener más información y orientación, visite los vídeos de 'Formación de nuevos consultores' del Centro de Negocios Immunotec \<a target='_blank' href='https://boffqa1.immunotec.com/resources/newconsultanttraining'>aquí.<a\"",
+            "fr": "Pour plus d'informations et de conseils, veuillez consulter les vidéos 'New Consultant Training' de votre centre d'affaires Immunotec \<a target='_blank' href='https://boffqa1.immunotec.com/resources/newconsultanttraining'>ici.<a\""
+        },
     };
 
     function fixStyle(_language) {
