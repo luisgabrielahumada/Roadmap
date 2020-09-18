@@ -251,27 +251,27 @@
                         <div style="float:right" onclick="document.getElementById('modal-roadmap').style.display = 'none'">X</div>
                     </div>
                     <a id="how-to-mix-1-link" class="yt-video" target="_blank" href="">
-                        <div class="cell H color2 modal-cellstyle-25">
+                        <div class="cell H color2 modal-cellstyle-25" id="how-to-mix-1-css">
                             <div class="cell-content ">
                                 <span id="how-to-mix-1-text"></span>
                             </div>
                         </div>
                     </a>
                     <a id="how-to-mix-2-link" class="yt-video" target="_blank" href="">
-                        <div class="cell H color2 modal-cellstyle-25">
+                        <div class="cell H color2 modal-cellstyle-25" id="how-to-mix-2-css">
                             <div class="cell-content ">
                                 <span id="how-to-mix-2-text"></span>
                             </div>
                         </div>
                     </a>
-                    <a id="how-to-mix-3-link" class="yt-video" target="_blank" href="">
+                    <a id="how-to-mix-3-link" class="yt-video how-to-mix-3-style" target="_blank" href="">
                         <div class="cell H color2 modal-cellstyle-25">
                             <div class="cell-content ">
                                 <span id="how-to-mix-3-text"></span>
                             </div>
                         </div>
                     </a>
-                    <a id="how-to-mix-4-link" class="yt-video" target="_blank" href="">
+                    <a id="how-to-mix-4-link" class="yt-video how-to-mix-4-style" target="_blank" href="">
                         <div class="cell H color2 modal-cellstyle-25">
                             <div class="cell-content ">
                                 <span id="how-to-mix-4-text"></span>
@@ -1619,7 +1619,7 @@
             "es-PE": "Un sobre de cada uno (Immunocal y Platino) con agua más Optimizer",
             "es-ES": "Un sobre de cada uno (Immunocal y Platino) con agua más Optimizer",
             "en-ES": "Un sobre de cada uno (Immunocal y Platino) con agua más Optimizer",
-            "es-EC": "Un sobre de cada uno (Immunocal y Platino) con agua más Optimizer",
+            "es-EC": "",
         },
         "how-to-mix-3-link": {
             "en": "https://youtu.be/wCrtpPry9Zo",
@@ -1641,7 +1641,41 @@
             "es-PE": "Un sobre con agua más Optimizer",
             "es-ES": "Un sobre con agua más Optimizer",
             "en-ES": "Un sobre con agua más Optimizer",
-            "es-EC": "Un sobre con agua más Optimizer",
+            "es-EC": "",
+        },
+        "how-to-mix-4-style": {
+            "en-CA": "block",
+            "fr-CA": "block",
+            "es-CA": "block",
+            "en-US": "block",
+            "es-US": "block",
+            "es-MX": "block",
+            "en-IE": "block",
+            "en-GB": "block",
+            "es-DO": "block",
+            "es-GT": "block",
+            "es-CO": "block",
+            "es-PE": "block",
+            "es-ES": "block",
+            "en-ES": "block",
+            "es-EC": "none"
+        },
+        "how-to-mix-3-style": {
+            "en-CA": "block",
+            "fr-CA": "block",
+            "es-CA": "block",
+            "en-US": "block",
+            "es-US": "block",
+            "es-MX": "block",
+            "en-IE": "block",
+            "en-GB": "block",
+            "es-DO": "block",
+            "es-GT": "block",
+            "es-CO": "block",
+            "es-PE": "block",
+            "es-ES": "block",
+            "en-ES": "block",
+            "es-EC": "none"
         },
         "how-to-mix-4-link": {
             "en": "https://youtu.be/m3An9Ezakq4",
@@ -1800,6 +1834,14 @@
             document.getElementById("modal-roadmap-content-1").style.visibility = "visible";
         }
         document.getElementById("modal-roadmap").style.display = "block";
+
+        _language = getCookie("language");
+        //document.getElementById("how-to-mix-1-css").className = "cell H color2 modal-cellstyle-25";
+        //document.getElementById("how-to-mix-2-css").className = "cell H color2 modal-cellstyle-25";
+        if (_language == 'es-EC') {
+            document.getElementById("how-to-mix-1-css").className = "cell H color2 modal-cellstyle-50";
+            document.getElementById("how-to-mix-2-css").className = "cell H color2 modal-cellstyle-50";
+        }
     }
 
     function showModal2() {
